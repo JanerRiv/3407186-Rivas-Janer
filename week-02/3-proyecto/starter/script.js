@@ -21,43 +21,23 @@
 // ============================================
 
 // TODO: Reemplaza "Mi Dominio" con el nombre de tu dominio
-const DOMAIN_NAME = "Mi Dominio";
+const DOMAIN_NAME = "Remesas Internacionales";
 
 // TODO: Cambia "Nombre del elemento" por algo de tu dominio
-// Ejemplos con dominios no asignables:
-//   Planetario → "Sistema Solar en 3D"
-//   Acuario    → "Tiburón Ballena"
-//   Museo      → "La Gioconda (réplica)"
-const itemName = "Nombre del elemento";
+const itemName = "Transferencia de dinero Colombia → México";
 
 // TODO: Agrega una categoría, tipo o descripción corta (string)
-// Ejemplos con dominios no asignables:
-//   Planetario → showType = "Función inmersiva"
-//   Acuario    → habitat = "Océano Pacífico"
-//   Museo      → artStyle = "Renacimiento"
-const itemCategory = "Categoría del elemento";
+const itemCategory = "Envío familiar internacional";
 
 // TODO: Agrega un número relevante a tu dominio (integer o decimal)
-// Ejemplos con dominios no asignables:
-//   Planetario → capacity = 250
-//   Acuario    → tankVolume = 2_500_000
-//   Museo      → estimatedValue = 4_800_000
-const itemQuantity = 0; // reemplaza 0 con el número adecuado
+const itemQuantity = 500; // monto de la remesa en USD
 
 // TODO: Agrega un boolean con prefijo semántico (is/has/can/should)
-// Ejemplos con dominios no asignables:
-//   Planetario  → isOpen = true
-//   Acuario     → isEndangered = false
-//   Museo       → isOnDisplay = true
-const isItemAvailable = false; // reemplaza con algo de tu dominio
+const isItemAvailable = true; // la remesa fue procesada correctamente
 
 // TODO: Declara un valor null que signifique "no asignado aún"
 // en tu dominio
-// Ejemplos con dominios no asignables:
-//   Planetario → currentGuide = null
-//   Acuario    → feedingSchedule = null
-//   Museo      → currentOwner = null
-const pendingValue = null; // cambia el nombre a algo de tu dominio
+const exchangeRateAssigned = null; // tasa de cambio aún no asignada
 
 
 // ============================================
@@ -70,11 +50,10 @@ console.log("");
 
 // TODO: Muestra al menos 4 datos del dominio
 // Usa console.log con template literals
-// Ejemplo: console.log(`Título:     ${itemName}`);
-console.log(`Nombre:    ${itemName}`);
-console.log(`Categoría: ${itemCategory}`);
-// TODO: Agrega un console.log para itemQuantity
-// TODO: Agrega un console.log para isItemAvailable
+console.log(`Remesa:        ${itemName}`);
+console.log(`Tipo envío:    ${itemCategory}`);
+console.log(`Monto enviado: ${itemQuantity} USD`);
+console.log(`Procesada:     ${isItemAvailable}`);
 console.log("");
 
 
@@ -84,9 +63,9 @@ console.log("");
 console.log("--- Tipos de datos ---");
 
 // TODO: Usa typeof para mostrar el tipo de al menos 3 variables
-// Ejemplo: console.log("typeof itemName:    ", typeof itemName);
-console.log("typeof itemName:     ", typeof itemName);
-// TODO: Agrega typeof para otras 2 variables
+console.log("typeof itemName:       ", typeof itemName);
+console.log("typeof itemQuantity:   ", typeof itemQuantity);
+console.log("typeof isItemAvailable:", typeof isItemAvailable);
 console.log("");
 
 
@@ -96,17 +75,11 @@ console.log("");
 console.log("--- Conversiones ---");
 
 // TODO: Realiza al menos UNA conversión explícita
-// Opciones:
-//   a) Convertir un number a String() para mostrar con formato
-//   b) Convertir un string a Number() para operar con él
-//   c) Convertir cualquier valor a Boolean() y verificarlo
+// Convertimos el monto a texto
+const amountAsText = String(itemQuantity);
 
-// Ejemplo de opción a:
-// const priceAsText = String(itemQuantity);
-// console.log("Valor como texto:", priceAsText);
-// console.log("typeof (convertido):", typeof priceAsText);
-
-// TODO: Agrega tu conversión aquí
+console.log("Monto como texto:", amountAsText);
+console.log("typeof (convertido):", typeof amountAsText);
 
 console.log("");
 
@@ -117,12 +90,9 @@ console.log("");
 console.log("--- Valor nulo ---");
 
 // TODO: Muestra el valor null y verifica con === null
-// Ejemplo:
-// console.log("Valor pendiente:", pendingValue);
-// console.log("typeof null:", typeof pendingValue);    // "object" ← bug histórico
-// console.log("¿Es null?:", pendingValue === null);    // true
-console.log("Valor pendiente:", pendingValue);
-// TODO: Agrega typeof y la verificación === null
+console.log("Tasa de cambio pendiente:", exchangeRateAssigned);
+console.log("typeof null:", typeof exchangeRateAssigned);
+console.log("¿Es null?:", exchangeRateAssigned === null);
 console.log("");
 
 
@@ -130,5 +100,5 @@ console.log("");
 // CIERRE
 // ============================================
 console.log("===========================");
-console.log("FIN DE FICHA");
+console.log("FIN DE FICHA - SISTEMA DE REMESAS TRANSWORLD");
 console.log("===========================");
