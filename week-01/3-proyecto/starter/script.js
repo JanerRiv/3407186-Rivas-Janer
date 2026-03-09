@@ -43,9 +43,9 @@ crea los tuyos basados en tu dominio asignado.
 // ============================================
 
 // TODO: Cambia el título con el nombre de tu dominio y un identificador
-// Ejemplo (Planetario): '    PLANETARIO MUNICIPAL - FICHA #001    '
+// Ejemplo (Planetario): '    PLANETARIO MUNICIPAL - FICHA     '
 console.log('=========================================');
-console.log('REMESAS INTERNACIONALES - TRANSWORLD #001');
+console.log('REMESAS INTERNACIONALES - TRANSWORLD');
 console.log('=========================================');
 console.log('');
 
