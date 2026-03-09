@@ -1,0 +1,77 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+  <rect width="900" height="520" fill="#1a1a2e"/>
+  <text x="450" y="36" text-anchor="middle" fill="#F0DB4F" font-size="20" font-weight="bold">Arrays de Objetos — map / filter / find / sort</text>
+
+  <!-- Array de objetos fuente -->
+  <rect x="20" y="54" width="860" height="54" rx="6" fill="#16213e" stroke="#F0DB4F" stroke-width="1"/>
+  <text x="450" y="72" text-anchor="middle" fill="#aaa" font-size="11">Array de objetos:</text>
+  <text x="450" y="96" text-anchor="middle" fill="#e0e0e0" font-size="12" font-family="monospace">const items = [ {id:1,name:"Laptop",price:1200,available:true}, {id:2,...}, {id:3,...}, {id:4,...} ]</text>
+
+  <!-- PANEL filter -->
+  <rect x="20" y="126" width="200" height="175" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="120" y="146" text-anchor="middle" fill="#81c784" font-size="13" font-weight="bold">filter()</text>
+  <text x="120" y="162" text-anchor="middle" fill="#aaa" font-size="10">Seleccionar objetos</text>
+
+  <text x="32" y="182" fill="#e0e0e0" font-size="11" font-family="monospace">items.filter(</text>
+  <text x="32" y="198" fill="#e0e0e0" font-size="11" font-family="monospace">  p =&gt; p.available</text>
+  <text x="32" y="214" fill="#e0e0e0" font-size="11" font-family="monospace">);</text>
+  <rect x="32" y="223" width="172" height="36" rx="4" fill="#1a1a2e"/>
+  <text x="118" y="237" text-anchor="middle" fill="#81c784" font-size="10" font-family="monospace">Solo objetos donde</text>
+  <text x="118" y="252" text-anchor="middle" fill="#81c784" font-size="10" font-family="monospace">available === true</text>
+  <text x="32" y="277" fill="#aaa" font-size="10">Resultado: nuevo array</text>
+  <text x="32" y="292" fill="#aaa" font-size="10">de objetos filtrados</text>
+
+  <!-- PANEL find -->
+  <rect x="238" y="126" width="200" height="175" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="338" y="146" text-anchor="middle" fill="#4fc3f7" font-size="13" font-weight="bold">find()</text>
+  <text x="338" y="162" text-anchor="middle" fill="#aaa" font-size="10">Buscar UN objeto</text>
+
+  <text x="250" y="182" fill="#e0e0e0" font-size="11" font-family="monospace">items.find(</text>
+  <text x="250" y="198" fill="#e0e0e0" font-size="11" font-family="monospace">  p =&gt; p.id === 3</text>
+  <text x="250" y="214" fill="#e0e0e0" font-size="11" font-family="monospace">);</text>
+  <rect x="250" y="223" width="172" height="36" rx="4" fill="#1a1a2e"/>
+  <text x="336" y="237" text-anchor="middle" fill="#4fc3f7" font-size="10" font-family="monospace">Primer objeto donde</text>
+  <text x="336" y="252" text-anchor="middle" fill="#4fc3f7" font-size="10" font-family="monospace">id === 3 (o undefined)</text>
+  <text x="250" y="277" fill="#aaa" font-size="10">findIndex() retorna</text>
+  <text x="250" y="292" fill="#aaa" font-size="10">el índice (-1 si no hay)</text>
+
+  <!-- PANEL map -->
+  <rect x="456" y="126" width="200" height="175" rx="8" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="556" y="146" text-anchor="middle" fill="#ce93d8" font-size="13" font-weight="bold">map()</text>
+  <text x="556" y="162" text-anchor="middle" fill="#aaa" font-size="10">Transformar objetos</text>
+
+  <text x="468" y="182" fill="#e0e0e0" font-size="11" font-family="monospace">items.map(p =&gt; ({</text>
+  <text x="468" y="198" fill="#e0e0e0" font-size="11" font-family="monospace">  ...p,</text>
+  <text x="468" y="214" fill="#e0e0e0" font-size="11" font-family="monospace">  priceWithTax:</text>
+  <text x="468" y="230" fill="#ce93d8" font-size="11" font-family="monospace">    p.price * 1.19</text>
+  <text x="468" y="246" fill="#e0e0e0" font-size="11" font-family="monospace">}));</text>
+  <text x="468" y="270" fill="#aaa" font-size="10">Nuevo array con todos</text>
+  <text x="468" y="285" fill="#aaa" font-size="10">los obj + prop nueva</text>
+  <text x="468" y="300" fill="#ffd54f" font-size="10">⚠ Paréntesis: p =&gt; ({ })</text>
+
+  <!-- PANEL sort -->
+  <rect x="674" y="126" width="206" height="175" rx="8" fill="#16213e" stroke="#ffd54f" stroke-width="1.5"/>
+  <text x="777" y="146" text-anchor="middle" fill="#ffd54f" font-size="13" font-weight="bold">sort()</text>
+  <text x="777" y="162" text-anchor="middle" fill="#aaa" font-size="10">Ordenar por propiedad</text>
+
+  <text x="686" y="182" fill="#e0e0e0" font-size="11" font-family="monospace">[...items].sort(</text>
+  <text x="686" y="198" fill="#e0e0e0" font-size="11" font-family="monospace">  (a,b) =&gt; a.price - b.price</text>
+  <text x="686" y="214" fill="#e0e0e0" font-size="11" font-family="monospace">);</text>
+  <rect x="686" y="223" width="178" height="36" rx="4" fill="#1a1a2e"/>
+  <text x="775" y="237" text-anchor="middle" fill="#ffd54f" font-size="10" font-family="monospace">Orden ascendente</text>
+  <text x="775" y="252" text-anchor="middle" fill="#ffd54f" font-size="10" font-family="monospace">por price</text>
+  <text x="686" y="277" fill="#81c784" font-size="10">[...items] evita mutar</text>
+  <text x="686" y="292" fill="#aaa" font-size="10">el array original</text>
+
+  <!-- Patrón encadenado -->
+  <rect x="20" y="322" width="860" height="145" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="1"/>
+  <text x="450" y="342" text-anchor="middle" fill="#F0DB4F" font-size="13" font-weight="bold">Patrón Completo — filter + sort + map encadenados</text>
+
+  <text x="36" y="368" fill="#aaa" font-size="11">// Productos disponibles de tecnología, ordenados por precio, formateados</text>
+  <text x="36" y="388" fill="#e0e0e0" font-size="12" font-family="monospace">const result = items</text>
+  <text x="36" y="406" fill="#81c784" font-size="12" font-family="monospace">  .filter(p =&gt; p.available &amp;&amp; p.category === "tech")</text>
+  <text x="36" y="424" fill="#ffd54f" font-size="12" font-family="monospace">  .sort((a, b) =&gt; a.price - b.price)</text>
+  <text x="36" y="442" fill="#ce93d8" font-size="12" font-family="monospace">  .map(p =&gt; `${p.name} — $${p.price}`);</text>
+
+  <text x="450" y="496" text-anchor="middle" fill="#888" font-size="11">Semana 09 — Bootcamp JavaScript ES2023</text>
+</svg>

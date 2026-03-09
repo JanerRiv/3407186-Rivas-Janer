@@ -1,0 +1,118 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+  <!-- Fondo -->
+  <rect width="900" height="500" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="38" text-anchor="middle" fill="#F0DB4F" font-size="20" font-weight="bold">Métodos de Búsqueda y Extracción</text>
+  <text x="450" y="58" text-anchor="middle" fill="#9e9e9e" font-size="13">includes · indexOf · slice · find · findIndex</text>
+
+  <!-- ═══ PANEL includes ═══ -->
+  <rect x="30" y="75" width="200" height="145" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="130" y="96" text-anchor="middle" fill="#81c784" font-size="13" font-weight="bold">includes()</text>
+  <text x="130" y="112" text-anchor="middle" fill="#9e9e9e" font-size="11">¿Existe el elemento?</text>
+
+  <rect x="45" y="120" width="170" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="53" y="134" fill="#9e9e9e" font-size="11">arr = ["a","b","c","d"]</text>
+
+  <rect x="45" y="144" width="170" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="53" y="158" fill="#e0e0e0" font-size="11">arr.includes("b")  → <tspan fill="#81c784">true</tspan></text>
+
+  <rect x="45" y="168" width="170" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="53" y="182" fill="#e0e0e0" font-size="11">arr.includes("z")  → <tspan fill="#e57373">false</tspan></text>
+
+  <text x="130" y="208" text-anchor="middle" fill="#ffd54f" font-size="11">Devuelve: true / false</text>
+
+  <!-- ═══ PANEL indexOf ═══ -->
+  <rect x="245" y="75" width="200" height="145" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="345" y="96" text-anchor="middle" fill="#4fc3f7" font-size="13" font-weight="bold">indexOf()</text>
+  <text x="345" y="112" text-anchor="middle" fill="#9e9e9e" font-size="11">¿En qué posición está?</text>
+
+  <rect x="260" y="120" width="170" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="268" y="134" fill="#9e9e9e" font-size="11">arr = ["a","b","c","b"]</text>
+
+  <rect x="260" y="144" width="170" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="268" y="158" fill="#e0e0e0" font-size="11">arr.indexOf("b")   → <tspan fill="#F0DB4F">1</tspan></text>
+
+  <rect x="260" y="168" width="170" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="268" y="182" fill="#e0e0e0" font-size="11">arr.indexOf("z")   → <tspan fill="#e57373">-1</tspan></text>
+
+  <text x="345" y="208" text-anchor="middle" fill="#ffd54f" font-size="11">Primera aparición solamente</text>
+
+  <!-- ═══ PANEL slice ═══ -->
+  <rect x="460" y="75" width="410" height="145" rx="8" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="665" y="96" text-anchor="middle" fill="#ce93d8" font-size="13" font-weight="bold">slice(inicio, fin)</text>
+  <text x="665" y="112" text-anchor="middle" fill="#9e9e9e" font-size="11">Extraer una porción — NO modifica el original</text>
+
+  <rect x="475" y="120" width="380" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="483" y="134" fill="#9e9e9e" font-size="11">const num = [10, 20, 30, 40, 50, 60]</text>
+
+  <rect x="475" y="144" width="185" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="483" y="158" fill="#e0e0e0" font-size="11">num.slice(1, 3) → <tspan fill="#ce93d8">[20, 30]</tspan></text>
+
+  <rect x="670" y="144" width="185" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="678" y="158" fill="#e0e0e0" font-size="11">num.slice(3)   → <tspan fill="#ce93d8">[40,50,60]</tspan></text>
+
+  <rect x="475" y="168" width="185" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="483" y="182" fill="#e0e0e0" font-size="11">num.slice(-2)  → <tspan fill="#ce93d8">[50, 60]</tspan></text>
+
+  <rect x="670" y="168" width="185" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="678" y="182" fill="#e0e0e0" font-size="11">num.slice()    → <tspan fill="#ce93d8">copia</tspan></text>
+
+  <text x="665" y="208" text-anchor="middle" fill="#ffd54f" font-size="11" font-style="italic">fin es exclusivo — slice(1,3) incluye índices 1 y 2</text>
+
+  <!-- ═══ PANEL find ═══ -->
+  <rect x="30" y="235" width="415" height="145" rx="8" fill="#16213e" stroke="#ffd54f" stroke-width="1.5"/>
+  <text x="237" y="256" text-anchor="middle" fill="#ffd54f" font-size="13" font-weight="bold">find(callback)</text>
+  <text x="237" y="272" text-anchor="middle" fill="#9e9e9e" font-size="11">Primer elemento que cumple la condición</text>
+
+  <rect x="45" y="280" width="385" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="53" y="294" fill="#9e9e9e" font-size="11">const users = [{ id:1 }, { id:2, role:"admin" }, { id:3 }]</text>
+
+  <rect x="45" y="304" width="385" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="53" y="318" fill="#e0e0e0" font-size="11">users.find(u => u.role === "admin")  → <tspan fill="#ffd54f">{ id:2, role:"admin" }</tspan></text>
+
+  <rect x="45" y="328" width="385" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="53" y="342" fill="#e0e0e0" font-size="11">users.find(u => u.id === 5)          → <tspan fill="#e57373">undefined</tspan></text>
+
+  <text x="237" y="370" text-anchor="middle" fill="#ffd54f" font-size="11">Devuelve: el elemento (o undefined si no hay)</text>
+
+  <!-- ═══ PANEL findIndex ═══ -->
+  <rect x="460" y="235" width="410" height="145" rx="8" fill="#16213e" stroke="#ffd54f" stroke-width="1.5"/>
+  <text x="665" y="256" text-anchor="middle" fill="#ffd54f" font-size="13" font-weight="bold">findIndex(callback)</text>
+  <text x="665" y="272" text-anchor="middle" fill="#9e9e9e" font-size="11">Índice del primer elemento que cumple la condición</text>
+
+  <rect x="475" y="280" width="380" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="483" y="294" fill="#9e9e9e" font-size="11">const scores = [72, 85, 91, 60, 78]</text>
+
+  <rect x="475" y="304" width="380" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="483" y="318" fill="#e0e0e0" font-size="11">scores.findIndex(s => s > 88)   → <tspan fill="#ffd54f">2</tspan></text>
+
+  <rect x="475" y="328" width="380" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="483" y="342" fill="#e0e0e0" font-size="11">scores.findIndex(s => s > 100)  → <tspan fill="#e57373">-1</tspan></text>
+
+  <text x="665" y="370" text-anchor="middle" fill="#ffd54f" font-size="11">Devuelve: índice (o -1 si no hay)</text>
+
+  <!-- ═══ Tabla resumen ═══ -->
+  <rect x="30" y="395" width="840" height="85" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="1"/>
+  <text x="450" y="415" text-anchor="middle" fill="#F0DB4F" font-size="12" font-weight="bold">Comparativa Rápida</text>
+
+  <text x="100" y="433" text-anchor="middle" fill="#9e9e9e" font-size="11" font-weight="bold">Método</text>
+  <text x="290" y="433" text-anchor="middle" fill="#9e9e9e" font-size="11" font-weight="bold">Busca por</text>
+  <text x="490" y="433" text-anchor="middle" fill="#9e9e9e" font-size="11" font-weight="bold">Devuelve</text>
+  <text x="700" y="433" text-anchor="middle" fill="#9e9e9e" font-size="11" font-weight="bold">Modifica original</text>
+
+  <text x="100" y="451" text-anchor="middle" fill="#81c784" font-size="11">includes(v)</text>
+  <text x="290" y="451" text-anchor="middle" fill="#e0e0e0" font-size="11">Valor exacto</text>
+  <text x="490" y="451" text-anchor="middle" fill="#e0e0e0" font-size="11">true / false</text>
+  <text x="700" y="451" text-anchor="middle" fill="#e57373" font-size="11">❌ No</text>
+
+  <text x="100" y="465" text-anchor="middle" fill="#4fc3f7" font-size="11">indexOf(v)</text>
+  <text x="290" y="465" text-anchor="middle" fill="#e0e0e0" font-size="11">Valor exacto</text>
+  <text x="490" y="465" text-anchor="middle" fill="#e0e0e0" font-size="11">Índice o -1</text>
+  <text x="700" y="465" text-anchor="middle" fill="#e57373" font-size="11">❌ No</text>
+
+  <text x="100" y="479" text-anchor="middle" fill="#ce93d8" font-size="11">slice(i, j)</text>
+  <text x="290" y="479" text-anchor="middle" fill="#e0e0e0" font-size="11">Rango de índices</text>
+  <text x="490" y="479" text-anchor="middle" fill="#e0e0e0" font-size="11">Nuevo array</text>
+  <text x="700" y="479" text-anchor="middle" fill="#e57373" font-size="11">❌ No</text>
+</svg>

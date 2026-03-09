@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360">
+  <rect width="900" height="360" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="34" font-family="system-ui, sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#f0db4f">Operadores Lógicos</text>
+  <text x="450" y="54" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#888888">&amp;&amp; (AND) · || (OR) · ! (NOT)</text>
+
+  <!-- AND -->
+  <rect x="20" y="68" width="272" height="170" rx="8" fill="#16213e" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="156" y="93" font-family="'Courier New', monospace" font-size="22" font-weight="700" text-anchor="middle" fill="#4caf50">&amp;&amp;</text>
+  <text x="156" y="112" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle" fill="#cccccc">AND — ambas verdaderas</text>
+  <text x="40" y="137" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">true  &amp;&amp; true  → true</text>
+  <text x="40" y="157" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">true  &amp;&amp; false → false</text>
+  <text x="40" y="177" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">false &amp;&amp; true  → false</text>
+  <text x="40" y="197" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">false &amp;&amp; false → false</text>
+  <text x="156" y="225" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle" fill="#888888">Las dos deben ser true</text>
+
+  <!-- OR -->
+  <rect x="314" y="68" width="272" height="170" rx="8" fill="#16213e" stroke="#42a5f5" stroke-width="1.5"/>
+  <text x="450" y="93" font-family="'Courier New', monospace" font-size="22" font-weight="700" text-anchor="middle" fill="#42a5f5">||</text>
+  <text x="450" y="112" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle" fill="#cccccc">OR — al menos una</text>
+  <text x="334" y="137" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">true  || true  → true</text>
+  <text x="334" y="157" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">true  || false → true</text>
+  <text x="334" y="177" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">false || true  → true</text>
+  <text x="334" y="197" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">false || false → false</text>
+  <text x="450" y="225" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle" fill="#888888">Al menos una debe ser true</text>
+
+  <!-- NOT -->
+  <rect x="608" y="68" width="272" height="170" rx="8" fill="#16213e" stroke="#ffb74d" stroke-width="1.5"/>
+  <text x="744" y="93" font-family="'Courier New', monospace" font-size="22" font-weight="700" text-anchor="middle" fill="#ffb74d">!</text>
+  <text x="744" y="112" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle" fill="#cccccc">NOT — invierte</text>
+  <text x="628" y="137" font-family="'Courier New', monospace" font-size="12" fill="#ffffff">!true       → false</text>
+  <text x="628" y="157" font-family="'Courier New', monospace" font-size="12" fill="#ffffff">!false      → true</text>
+  <text x="628" y="177" font-family="'Courier New', monospace" font-size="12" fill="#ffffff">!0          → true</text>
+  <text x="628" y="197" font-family="'Courier New', monospace" font-size="12" fill="#ffffff">!"texto"    → false</text>
+  <text x="744" y="225" font-family="system-ui, sans-serif" font-size="10" text-anchor="middle" fill="#888888">Invierte el valor booleano</text>
+
+  <!-- Cortocircuito -->
+  <rect x="20" y="254" width="860" height="90" rx="8" fill="#16213e" stroke="#f0db4f" stroke-width="1.2"/>
+  <text x="450" y="276" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#f0db4f">Cortocircuito (short-circuit)</text>
+  <text x="50" y="300" font-family="'Courier New', monospace" font-size="12" fill="#ffffff">null &amp;&amp; user.name</text>
+  <text x="240" y="300" font-family="system-ui, sans-serif" font-size="11" fill="#4caf50">→ null  (no evalúa user.name)</text>
+  <text x="50" y="322" font-family="system-ui, sans-serif" font-size="11" fill="#888888">&amp;&amp; para cuando el 1er valor es falso</text>
+  <text x="490" y="300" font-family="'Courier New', monospace" font-size="12" fill="#ffffff">"" || "Anónimo"</text>
+  <text x="680" y="300" font-family="system-ui, sans-serif" font-size="11" fill="#4caf50">→ "Anónimo"</text>
+  <text x="490" y="322" font-family="system-ui, sans-serif" font-size="11" fill="#888888">|| para valor por defecto cuando es vacío</text>
+</svg>

@@ -1,0 +1,76 @@
+<svg width="800" height="390" viewBox="0 0 800 390" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, 'Open Sans', system-ui, sans-serif">
+  <!-- Fondo -->
+  <rect width="800" height="390" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="400" y="35" text-anchor="middle" font-size="19" font-weight="700" fill="#F0DB4F">Nullish Coalescing ??  y  Optional Chaining ?.</text>
+  <text x="400" y="56" text-anchor="middle" font-size="12" fill="#a0a0c0">ES2020 — Semana 05</text>
+
+  <!-- ===== PANEL ?? ===== -->
+  <rect x="40" y="72" width="340" height="190" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="1.5"/>
+  <text x="210" y="94" text-anchor="middle" font-size="14" font-weight="700" fill="#F0DB4F">??  Nullish Coalescing</text>
+  <text x="210" y="112" text-anchor="middle" font-size="12" fill="#a0a0c0">Devuelve el derecho si el izquierdo es</text>
+  <text x="210" y="128" text-anchor="middle" font-size="12" fill="#e57373">null  o  undefined</text>
+
+  <!-- Tabla ?? -->
+  <rect x="60" y="140" width="300" height="26" rx="4" fill="#0d1117"/>
+  <text x="90" y="157" font-size="12" fill="#ce93d8" font-family="'Courier New', Courier, monospace">null ?? "default"</text>
+  <text x="300" y="157" font-size="12" fill="#81c784" font-family="'Courier New', Courier, monospace">→  "default"</text>
+
+  <rect x="60" y="170" width="300" height="26" rx="4" fill="#16213e"/>
+  <text x="90" y="187" font-size="12" fill="#ce93d8" font-family="'Courier New', Courier, monospace">undefined ?? 42</text>
+  <text x="300" y="187" font-size="12" fill="#81c784" font-family="'Courier New', Courier, monospace">→  42</text>
+
+  <rect x="60" y="200" width="300" height="26" rx="4" fill="#0d1117"/>
+  <text x="90" y="217" font-size="12" fill="#ce93d8" font-family="'Courier New', Courier, monospace">0 ?? "default"</text>
+  <text x="300" y="217" font-size="12" fill="#4fc3f7" font-family="'Courier New', Courier, monospace">→  0</text>
+  <text x="290" y="235" font-size="10" fill="#a0a0c0">← 0 no es null/undefined</text>
+
+  <rect x="60" y="236" width="300" height="20" rx="4" fill="#16213e"/>
+  <text x="90" y="251" font-size="12" fill="#ce93d8" font-family="'Courier New', Courier, monospace">"" ?? "default"</text>
+  <text x="300" y="251" font-size="12" fill="#4fc3f7" font-family="'Courier New', Courier, monospace">→  ""</text>
+
+  <!-- ===== PANEL ?. ===== -->
+  <rect x="420" y="72" width="340" height="190" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="590" y="94" text-anchor="middle" font-size="14" font-weight="700" fill="#4fc3f7">?.  Optional Chaining</text>
+  <text x="590" y="112" text-anchor="middle" font-size="12" fill="#a0a0c0">Accede de forma segura — devuelve</text>
+  <text x="590" y="128" text-anchor="middle" font-size="12" fill="#e57373">undefined  en vez de lanzar error</text>
+
+  <!-- Tabla ?. -->
+  <rect x="440" y="140" width="300" height="26" rx="4" fill="#0d1117"/>
+  <text x="460" y="157" font-size="12" fill="#ce93d8" font-family="'Courier New', Courier, monospace">obj?.name</text>
+  <text x="590" y="157" font-size="12" fill="#81c784" font-family="'Courier New', Courier, monospace">→  valor o undefined</text>
+
+  <rect x="440" y="170" width="300" height="26" rx="4" fill="#16213e"/>
+  <text x="460" y="187" font-size="12" fill="#ce93d8" font-family="'Courier New', Courier, monospace">obj?.addr?.city</text>
+  <text x="590" y="187" font-size="12" fill="#81c784" font-family="'Courier New', Courier, monospace">→  valor o undefined</text>
+
+  <rect x="440" y="200" width="300" height="26" rx="4" fill="#0d1117"/>
+  <text x="460" y="217" font-size="12" fill="#ce93d8" font-family="'Courier New', Courier, monospace">obj?.method?.()</text>
+  <text x="590" y="217" font-size="12" fill="#81c784" font-family="'Courier New', Courier, monospace">→  resultado o undefined</text>
+
+  <rect x="440" y="230" width="300" height="26" rx="4" fill="#16213e"/>
+  <text x="460" y="247" font-size="12" fill="#ce93d8" font-family="'Courier New', Courier, monospace">arr?.[0]</text>
+  <text x="590" y="247" font-size="12" fill="#81c784" font-family="'Courier New', Courier, monospace">→  elemento o undefined</text>
+
+  <!-- ===== DIFERENCIA ?? vs || ===== -->
+  <rect x="40" y="276" width="720" height="90" rx="8" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="400" y="296" text-anchor="middle" font-size="13" font-weight="700" fill="#ce93d8">??  vs  ||  — diferencia clave</text>
+
+  <!-- || -->
+  <text x="90" y="322" font-size="12" fill="#e57373" font-family="'Courier New', Courier, monospace">0 || 50</text>
+  <text x="200" y="322" font-size="12" fill="#e57373" font-family="'Courier New', Courier, monospace">→  50</text>
+  <text x="90" y="342" font-size="11" fill="#a0a0c0">|| activa en cualquier falsy (0, "", false, null, undefined)</text>
+
+  <!-- Separador -->
+  <line x1="400" y1="312" x2="400" y2="358" stroke="#a0a0c0" stroke-width="1"/>
+
+  <!-- ?? -->
+  <text x="450" y="322" font-size="12" fill="#81c784" font-family="'Courier New', Courier, monospace">0 ?? 50</text>
+  <text x="560" y="322" font-size="12" fill="#81c784" font-family="'Courier New', Courier, monospace">→  0</text>
+  <text x="450" y="342" font-size="11" fill="#a0a0c0">?? solo activa en null o undefined</text>
+
+  <!-- Nota combinación -->
+  <rect x="40" y="372" width="720" height="14" rx="4" fill="#1a2a1a"/>
+  <text x="400" y="383" text-anchor="middle" font-size="11" fill="#81c784">Combinación poderosa:  obj?.prop ?? "valor por defecto"</text>
+</svg>

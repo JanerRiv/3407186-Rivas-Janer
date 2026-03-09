@@ -1,0 +1,140 @@
+<svg width="900" height="580" viewBox="0 0 900 580" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, 'Open Sans', system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="900" height="580" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <rect x="0" y="0" width="900" height="52" fill="#16213e"/>
+  <text x="450" y="22" text-anchor="middle" fill="#F0DB4F" font-size="13" font-weight="700" letter-spacing="2">ARQUITECTURA DE UNA APP DE CONSOLA</text>
+  <text x="450" y="40" text-anchor="middle" fill="#a0a8c0" font-size="10">Estructura en 3 capas · Proyecto Integrador Semana 10</text>
+
+  <!-- ═══════════════════════════════════════════
+       CAPA 1: CONFIGURACIÓN Y DATOS
+  ═══════════════════════════════════════════ -->
+  <rect x="20" y="68" width="860" height="28" rx="5" fill="#4fc3f7" opacity="0.15"/>
+  <text x="450" y="86" text-anchor="middle" fill="#4fc3f7" font-size="11" font-weight="700" letter-spacing="1">CAPA 1 — CONFIGURACIÓN Y DATOS</text>
+
+  <!-- Box: Constantes -->
+  <rect x="20" y="104" width="200" height="100" rx="6" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <rect x="20" y="104" width="200" height="22" rx="6" fill="#4fc3f7" opacity="0.2"/>
+  <text x="120" y="119" text-anchor="middle" fill="#4fc3f7" font-size="10" font-weight="700">CONSTANTES</text>
+  <text x="36" y="141" fill="#F0DB4F" font-size="10">const DOMAIN_NAME = "..."</text>
+  <text x="36" y="157" fill="#F0DB4F" font-size="10">const VALUE_LABEL = "..."</text>
+  <text x="36" y="173" fill="#a0a8c0" font-size="9">Identifican y documentan</text>
+  <text x="36" y="186" fill="#a0a8c0" font-size="9">el dominio del proyecto</text>
+
+  <!-- Box: Array de datos -->
+  <rect x="240" y="104" width="420" height="100" rx="6" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <rect x="240" y="104" width="420" height="22" rx="6" fill="#ce93d8" opacity="0.2"/>
+  <text x="450" y="119" text-anchor="middle" fill="#ce93d8" font-size="10" font-weight="700">ARRAY DE DATOS — items[]</text>
+  <text x="256" y="141" fill="#a0a8c0" font-size="9.5">const items = [</text>
+  <text x="280" y="155" fill="#81c784" font-size="9.5">{ id: 1, name: "...", price: X, active: true, optional: "..." },</text>
+  <text x="280" y="169" fill="#81c784" font-size="9.5">{ id: 2, name: "...", price: Y, active: false },</text>
+  <text x="256" y="183" fill="#a0a8c0" font-size="9.5">];  // mínimo 6 objetos · 5+ propiedades cada uno</text>
+
+  <!-- Box: propiedades -->
+  <rect x="680" y="104" width="200" height="100" rx="6" fill="#16213e" stroke="#ffd54f" stroke-width="1.5"/>
+  <rect x="680" y="104" width="200" height="22" rx="6" fill="#ffd54f" opacity="0.2"/>
+  <text x="780" y="119" text-anchor="middle" fill="#ffd54f" font-size="10" font-weight="700">TIPOS DE PROPIEDAD</text>
+  <text x="696" y="141" fill="#a0a8c0" font-size="9.5">• id         → number</text>
+  <text x="696" y="155" fill="#a0a8c0" font-size="9.5">• name       → string</text>
+  <text x="696" y="169" fill="#81c784" font-size="9.5">• [numérica] → number</text>
+  <text x="696" y="183" fill="#81c784" font-size="9.5">• active     → boolean</text>
+
+  <!-- ═══════════════════════════════════════════
+       CAPA 2: FUNCIONES
+  ═══════════════════════════════════════════ -->
+  <rect x="20" y="222" width="860" height="28" rx="5" fill="#81c784" opacity="0.15"/>
+  <text x="450" y="240" text-anchor="middle" fill="#81c784" font-size="11" font-weight="700" letter-spacing="1">CAPA 2 — FUNCIONES</text>
+
+  <!-- Subfila funciones: CRUD -->
+  <rect x="20" y="258" width="270" height="110" rx="6" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <rect x="20" y="258" width="270" height="22" rx="6" fill="#81c784" opacity="0.2"/>
+  <text x="155" y="273" text-anchor="middle" fill="#81c784" font-size="10" font-weight="700">CRUD · Gestión de datos</text>
+  <text x="36" y="295" fill="#a0a8c0" font-size="9.5">addItem(item)      → push</text>
+  <text x="36" y="309" fill="#a0a8c0" font-size="9.5">findById(id)       → find</text>
+  <text x="36" y="323" fill="#a0a8c0" font-size="9.5">removeById(id)     → filter</text>
+  <text x="36" y="337" fill="#a0a8c0" font-size="9.5">updateItem(id,obj) → map + spread</text>
+  <text x="36" y="351" fill="#ffd54f" font-size="9">inmutable: { ...item, ...changes }</text>
+
+  <!-- Subfila funciones: Análisis -->
+  <rect x="310" y="258" width="270" height="110" rx="6" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <rect x="310" y="258" width="270" height="22" rx="6" fill="#81c784" opacity="0.2"/>
+  <text x="445" y="273" text-anchor="middle" fill="#81c784" font-size="10" font-weight="700">ANÁLISIS · Consultas</text>
+  <text x="326" y="295" fill="#a0a8c0" font-size="9.5">getActive()         → filter active</text>
+  <text x="326" y="309" fill="#a0a8c0" font-size="9.5">filterByField(val)  → filter</text>
+  <text x="326" y="323" fill="#a0a8c0" font-size="9.5">calculateStats()    → min/max/avg</text>
+  <text x="326" y="337" fill="#F0DB4F" font-size="9.5">Object.values() + reduce()</text>
+  <text x="326" y="351" fill="#F0DB4F" font-size="9.5">Object.keys/entries() para inspect</text>
+
+  <!-- Subfila funciones: Display -->
+  <rect x="600" y="258" width="280" height="110" rx="6" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <rect x="600" y="258" width="280" height="22" rx="6" fill="#81c784" opacity="0.2"/>
+  <text x="740" y="273" text-anchor="middle" fill="#81c784" font-size="10" font-weight="700">DISPLAY · Presentación</text>
+  <text x="616" y="295" fill="#a0a8c0" font-size="9.5">formatItem(item)    → string formateado</text>
+  <text x="616" y="309" fill="#a0a8c0" font-size="9.5">printItem(item)     → console.log</text>
+  <text x="616" y="323" fill="#a0a8c0" font-size="9.5">buildReport()       → reporte completo</text>
+  <text x="616" y="337" fill="#ffd54f" font-size="9.5">template literals para toda la salida</text>
+  <text x="616" y="351" fill="#ffd54f" font-size="9.5">padEnd() para alineación en columnas</text>
+
+  <!-- ═══════════════════════════════════════════
+       CAPA 3: EJECUCIÓN
+  ═══════════════════════════════════════════ -->
+  <rect x="20" y="388" width="860" height="28" rx="5" fill="#F0DB4F" opacity="0.15"/>
+  <text x="450" y="406" text-anchor="middle" fill="#F0DB4F" font-size="11" font-weight="700" letter-spacing="1">CAPA 3 — EJECUCIÓN PRINCIPAL</text>
+
+  <!-- Box ejecución -->
+  <rect x="20" y="424" width="860" height="88" rx="6" fill="#16213e" stroke="#F0DB4F" stroke-width="1.5"/>
+
+  <!-- Secuencia de llamadas -->
+  <!-- Paso 1 -->
+  <rect x="36" y="440" width="110" height="40" rx="4" fill="#4fc3f7" opacity="0.15" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="91" y="457" text-anchor="middle" fill="#4fc3f7" font-size="9" font-weight="700">1. Datos iniciales</text>
+  <text x="91" y="472" text-anchor="middle" fill="#a0a8c0" font-size="8.5">items ya definidos</text>
+
+  <line x1="146" y1="460" x2="162" y2="460" stroke="#a0a8c0" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Paso 2 -->
+  <rect x="162" y="440" width="130" height="40" rx="4" fill="#81c784" opacity="0.15" stroke="#81c784" stroke-width="1"/>
+  <text x="227" y="457" text-anchor="middle" fill="#81c784" font-size="9" font-weight="700">2. Demostrar CRUD</text>
+  <text x="227" y="472" text-anchor="middle" fill="#a0a8c0" font-size="8.5">add, find, update</text>
+
+  <line x1="292" y1="460" x2="308" y2="460" stroke="#a0a8c0" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Paso 3 -->
+  <rect x="308" y="440" width="130" height="40" rx="4" fill="#81c784" opacity="0.15" stroke="#81c784" stroke-width="1"/>
+  <text x="373" y="457" text-anchor="middle" fill="#81c784" font-size="9" font-weight="700">3. Análisis</text>
+  <text x="373" y="472" text-anchor="middle" fill="#a0a8c0" font-size="8.5">filter, stats, sort</text>
+
+  <line x1="438" y1="460" x2="454" y2="460" stroke="#a0a8c0" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Paso 4 -->
+  <rect x="454" y="440" width="130" height="40" rx="4" fill="#ce93d8" opacity="0.15" stroke="#ce93d8" stroke-width="1"/>
+  <text x="519" y="457" text-anchor="middle" fill="#ce93d8" font-size="9" font-weight="700">4. Object.*</text>
+  <text x="519" y="472" text-anchor="middle" fill="#a0a8c0" font-size="8.5">keys/values/entries/hasOwn</text>
+
+  <line x1="584" y1="460" x2="600" y2="460" stroke="#a0a8c0" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Paso 5 -->
+  <rect x="600" y="440" width="110" height="40" rx="4" fill="#F0DB4F" opacity="0.15" stroke="#F0DB4F" stroke-width="1"/>
+  <text x="655" y="457" text-anchor="middle" fill="#F0DB4F" font-size="9" font-weight="700">5. Spread</text>
+  <text x="655" y="472" text-anchor="middle" fill="#a0a8c0" font-size="8.5">copia · merge · update</text>
+
+  <line x1="710" y1="460" x2="726" y2="460" stroke="#a0a8c0" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Paso 6 -->
+  <rect x="726" y="440" width="134" height="40" rx="4" fill="#ffd54f" opacity="0.15" stroke="#ffd54f" stroke-width="1"/>
+  <text x="793" y="457" text-anchor="middle" fill="#ffd54f" font-size="9" font-weight="700">6. buildReport()</text>
+  <text x="793" y="472" text-anchor="middle" fill="#a0a8c0" font-size="8.5">reporte final completo</text>
+
+  <!-- Footer -->
+  <text x="450" y="565" text-anchor="middle" fill="#4a5568" font-size="10">node app.js → salida completa en consola</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#a0a8c0"/>
+    </marker>
+  </defs>
+
+</svg>

@@ -1,0 +1,123 @@
+<svg viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+  <!-- Fondo -->
+  <rect width="900" height="540" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="38" text-anchor="middle" fill="#F0DB4F" font-size="20" font-weight="bold">Métodos de Mutación</text>
+  <text x="450" y="58" text-anchor="middle" fill="#9e9e9e" font-size="13">push · pop · unshift · shift · splice</text>
+
+  <!-- ═══ PANEL push ═══ -->
+  <rect x="30"  y="75" width="190" height="130" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="125" y="96"  text-anchor="middle" fill="#81c784" font-size="14" font-weight="bold">push()</text>
+  <text x="125" y="113" text-anchor="middle" fill="#9e9e9e" font-size="11">Agrega al final</text>
+
+  <rect x="45"  y="120" width="160" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="53"  y="134" fill="#9e9e9e" font-size="11">ANTES: [a, b, c]</text>
+
+  <text x="125" y="158" text-anchor="middle" fill="#81c784" font-size="20">↓</text>
+  <text x="125" y="175" text-anchor="middle" fill="#e0e0e0" font-size="11">arr.push("d")</text>
+
+  <rect x="45"  y="182" width="160" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="53"  y="196" fill="#81c784" font-size="11">DESPUÉS: [a, b, c, <tspan font-weight="bold">d</tspan>]</text>
+
+  <!-- ═══ PANEL pop ═══ -->
+  <rect x="235" y="75" width="190" height="130" rx="8" fill="#16213e" stroke="#e57373" stroke-width="1.5"/>
+  <text x="330" y="96"  text-anchor="middle" fill="#e57373" font-size="14" font-weight="bold">pop()</text>
+  <text x="330" y="113" text-anchor="middle" fill="#9e9e9e" font-size="11">Elimina del final</text>
+
+  <rect x="250" y="120" width="160" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="258" y="134" fill="#9e9e9e" font-size="11">ANTES: [a, b, c]</text>
+
+  <text x="330" y="158" text-anchor="middle" fill="#e57373" font-size="20">→</text>
+  <text x="330" y="175" text-anchor="middle" fill="#e0e0e0" font-size="11">arr.pop() ⟶ "c"</text>
+
+  <rect x="250" y="182" width="160" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="258" y="196" fill="#e57373" font-size="11">DESPUÉS: [a, b]</text>
+
+  <!-- ═══ PANEL unshift ═══ -->
+  <rect x="440" y="75" width="190" height="130" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="535" y="96"  text-anchor="middle" fill="#81c784" font-size="14" font-weight="bold">unshift()</text>
+  <text x="535" y="113" text-anchor="middle" fill="#9e9e9e" font-size="11">Agrega al inicio</text>
+
+  <rect x="455" y="120" width="160" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="463" y="134" fill="#9e9e9e" font-size="11">ANTES: [b, c, d]</text>
+
+  <text x="535" y="158" text-anchor="middle" fill="#81c784" font-size="20">↓</text>
+  <text x="535" y="175" text-anchor="middle" fill="#e0e0e0" font-size="11">arr.unshift("a")</text>
+
+  <rect x="455" y="182" width="160" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="463" y="196" fill="#81c784" font-size="11">DESPUÉS: [<tspan font-weight="bold">a</tspan>, b, c, d]</text>
+
+  <!-- ═══ PANEL shift ═══ -->
+  <rect x="645" y="75" width="225" height="130" rx="8" fill="#16213e" stroke="#e57373" stroke-width="1.5"/>
+  <text x="757" y="96"  text-anchor="middle" fill="#e57373" font-size="14" font-weight="bold">shift()</text>
+  <text x="757" y="113" text-anchor="middle" fill="#9e9e9e" font-size="11">Elimina del inicio</text>
+
+  <rect x="660" y="120" width="195" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="668" y="134" fill="#9e9e9e" font-size="11">ANTES: [a, b, c, d]</text>
+
+  <text x="757" y="158" text-anchor="middle" fill="#e57373" font-size="20">←</text>
+  <text x="757" y="175" text-anchor="middle" fill="#e0e0e0" font-size="11">arr.shift() ⟶ "a"</text>
+
+  <rect x="660" y="182" width="195" height="20" rx="3" fill="#0d1b2a"/>
+  <text x="668" y="196" fill="#e57373" font-size="11">DESPUÉS: [b, c, d]</text>
+
+  <!-- ═══ PANEL splice GRANDE ═══ -->
+  <rect x="30" y="220" width="840" height="195" rx="8" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="450" y="242" text-anchor="middle" fill="#ce93d8" font-size="14" font-weight="bold">splice(inicio, cantEliminar, ...insertar) — el más poderoso</text>
+
+  <!-- splice eliminar -->
+  <rect x="45" y="252" width="250" height="145" rx="6" fill="#0d1b2a"/>
+  <text x="170" y="271" text-anchor="middle" fill="#e57373" font-size="12" font-weight="bold">Eliminar</text>
+  <text x="53" y="290" fill="#9e9e9e" font-size="11">arr = ["a","b","c","d","e"]</text>
+  <text x="53" y="308" fill="#e0e0e0" font-size="11">arr.splice(2, 1)</text>
+  <text x="53" y="324" fill="#e57373" font-size="11">→ elimina 1 elem en índice 2</text>
+  <text x="53" y="342" fill="#9e9e9e" font-size="11">arr = ["a","b","d","e"]</text>
+  <text x="53" y="358" fill="#9e9e9e" font-size="11">devuelve: ["c"]</text>
+  <text x="53" y="381" fill="#ffd54f" font-size="10" font-style="italic">splice siempre devuelve array</text>
+
+  <!-- splice insertar -->
+  <rect x="310" y="252" width="250" height="145" rx="6" fill="#0d1b2a"/>
+  <text x="435" y="271" text-anchor="middle" fill="#81c784" font-size="12" font-weight="bold">Insertar</text>
+  <text x="318" y="290" fill="#9e9e9e" font-size="11">arr = ["a","b","d","e"]</text>
+  <text x="318" y="308" fill="#e0e0e0" font-size="11">arr.splice(2, 0, "c")</text>
+  <text x="318" y="324" fill="#81c784" font-size="11">→ inserta "c" en índice 2</text>
+  <text x="318" y="342" fill="#9e9e9e" font-size="11">arr = ["a","b","c","d","e"]</text>
+  <text x="318" y="358" fill="#9e9e9e" font-size="11">devuelve: []  (nada eliminado)</text>
+  <text x="318" y="381" fill="#ffd54f" font-size="10" font-style="italic">0 = no eliminar nada</text>
+
+  <!-- splice reemplazar -->
+  <rect x="575" y="252" width="280" height="145" rx="6" fill="#0d1b2a"/>
+  <text x="715" y="271" text-anchor="middle" fill="#ffd54f" font-size="12" font-weight="bold">Reemplazar</text>
+  <text x="583" y="290" fill="#9e9e9e" font-size="11">arr = ["a","B","c","d"]</text>
+  <text x="583" y="308" fill="#e0e0e0" font-size="11">arr.splice(1, 1, "b")</text>
+  <text x="583" y="324" fill="#ffd54f" font-size="11">→ reemplaza 1 en índice 1</text>
+  <text x="583" y="342" fill="#9e9e9e" font-size="11">arr = ["a","b","c","d"]</text>
+  <text x="583" y="358" fill="#9e9e9e" font-size="11">devuelve: ["B"]</text>
+  <text x="583" y="381" fill="#ffd54f" font-size="10" font-style="italic">eliminar 1 + insertar 1 = reemplazar</text>
+
+  <!-- ═══ Tabla resumen ═══ -->
+  <rect x="30" y="430" width="840" height="95" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="1"/>
+  <text x="450" y="452" text-anchor="middle" fill="#F0DB4F" font-size="12" font-weight="bold">Resumen: ¿Qué devuelve cada método?</text>
+
+  <!-- headers -->
+  <text x="100" y="470" text-anchor="middle" fill="#9e9e9e" font-size="11" font-weight="bold">Método</text>
+  <text x="280" y="470" text-anchor="middle" fill="#9e9e9e" font-size="11" font-weight="bold">Posición</text>
+  <text x="460" y="470" text-anchor="middle" fill="#9e9e9e" font-size="11" font-weight="bold">Acción</text>
+  <text x="640" y="470" text-anchor="middle" fill="#9e9e9e" font-size="11" font-weight="bold">Devuelve</text>
+
+  <text x="100" y="488" text-anchor="middle" fill="#81c784" font-size="11">push(elem)</text>
+  <text x="280" y="488" text-anchor="middle" fill="#e0e0e0" font-size="11">Final</text>
+  <text x="460" y="488" text-anchor="middle" fill="#e0e0e0" font-size="11">Agrega</text>
+  <text x="640" y="488" text-anchor="middle" fill="#ffd54f" font-size="11">Nuevo tamaño</text>
+
+  <text x="100" y="506" text-anchor="middle" fill="#e57373" font-size="11">pop()</text>
+  <text x="280" y="506" text-anchor="middle" fill="#e0e0e0" font-size="11">Final</text>
+  <text x="460" y="506" text-anchor="middle" fill="#e0e0e0" font-size="11">Elimina</text>
+  <text x="640" y="506" text-anchor="middle" fill="#ffd54f" font-size="11">Elemento eliminado</text>
+
+  <text x="100" y="518" text-anchor="middle" fill="#81c784" font-size="11">unshift(elem)</text>
+  <text x="280" y="518" text-anchor="middle" fill="#e0e0e0" font-size="11">Inicio</text>
+  <text x="460" y="518" text-anchor="middle" fill="#e0e0e0" font-size="11">Agrega</text>
+  <text x="640" y="518" text-anchor="middle" fill="#ffd54f" font-size="11">Nuevo tamaño</text>
+</svg>

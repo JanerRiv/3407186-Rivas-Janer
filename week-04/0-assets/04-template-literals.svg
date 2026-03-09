@@ -1,0 +1,62 @@
+<svg width="700" height="430" viewBox="0 0 700 430" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+  <!-- Fondo -->
+  <rect width="700" height="420" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <rect x="20" y="16" width="660" height="44" rx="6" fill="#16213e"/>
+  <text x="350" y="44" text-anchor="middle" font-size="18" font-weight="700" fill="#F0DB4F">Template Literals</text>
+
+  <!-- Comparativa: concatenación vs template -->
+  <rect x="20" y="76" width="320" height="100" rx="6" fill="#2d1b1b"/>
+  <text x="36" y="98" font-size="12" font-weight="700" fill="#fc8181">❌ Concatenación con +</text>
+  <rect x="36" y="106" width="288" height="58" rx="3" fill="#1a0a0a"/>
+  <text x="46" y="124" font-size="12" fill="#e2e8f0">const name = 'Ana';</text>
+  <text x="46" y="142" font-size="12" fill="#e2e8f0">const age = 25;</text>
+  <text x="46" y="160" font-size="11" fill="#fc8181">'Hola ' + name + ', tienes ' + age</text>
+
+  <rect x="360" y="76" width="320" height="100" rx="6" fill="#1b2d1e"/>
+  <text x="376" y="98" font-size="12" font-weight="700" fill="#68d391">✅ Template literal</text>
+  <rect x="376" y="106" width="288" height="58" rx="3" fill="#0a1a0d"/>
+  <text x="386" y="124" font-size="12" fill="#e2e8f0">const name = 'Ana';</text>
+  <text x="386" y="142" font-size="12" fill="#e2e8f0">const age = 25;</text>
+  <text x="386" y="160" font-size="12" fill="#68d391">`Hola ${name}, tienes ${age}`</text>
+
+  <!-- Anatomía del template literal -->
+  <rect x="20" y="190" width="660" height="84" rx="6" fill="#16213e"/>
+  <text x="36" y="212" font-size="12" font-weight="700" fill="#F0DB4F">Anatomía de un template literal</text>
+
+  <!-- String con anotaciones -->
+  <text x="36" y="248" font-size="16" fill="#a0aec0">`</text>
+  <text x="50" y="248" font-size="16" fill="#e2e8f0">Hola, </text>
+  <rect x="118" y="232" width="70" height="24" rx="3" fill="#0f3460" stroke="#F0DB4F" stroke-width="1.5"/>
+  <text x="123" y="248" font-size="15" fill="#F0DB4F">${name}</text>
+  <text x="196" y="248" font-size="16" fill="#e2e8f0">tienes </text>
+  <rect x="298" y="232" width="62" height="24" rx="3" fill="#0f3460" stroke="#F0DB4F" stroke-width="1.5"/>
+  <text x="303" y="248" font-size="15" fill="#F0DB4F">${age}</text>
+  <text x="364" y="248" font-size="16" fill="#e2e8f0"> años.</text>
+  <text x="422" y="248" font-size="16" fill="#a0aec0">`</text>
+
+  <text x="118" y="268" font-size="11" fill="#F0DB4F">↑ variable</text>
+  <text x="298" y="268" font-size="11" fill="#F0DB4F">↑ variable</text>
+
+  <!-- Expresiones en ${} -->
+  <rect x="20" y="284" width="320" height="80" rx="6" fill="#16213e"/>
+  <text x="36" y="306" font-size="12" font-weight="700" fill="#F0DB4F">Expresiones en ${}</text>
+  <rect x="36" y="314" width="288" height="42" rx="3" fill="#0f3460"/>
+  <text x="46" y="330" font-size="11" fill="#e2e8f0">`Total: ${price * qty}`</text>
+  <text x="46" y="348" font-size="11" fill="#e2e8f0">`${stock &gt; 0 ? 'ok' : 'sin stock'}`</text>
+
+  <!-- Multilínea -->
+  <rect x="360" y="284" width="320" height="80" rx="6" fill="#16213e"/>
+  <text x="376" y="306" font-size="12" font-weight="700" fill="#F0DB4F">Strings multilínea</text>
+  <rect x="376" y="314" width="288" height="42" rx="3" fill="#0f3460"/>
+  <text x="386" y="330" font-size="11" fill="#68d391">` Línea 1</text>
+  <text x="386" y="346" font-size="11" fill="#68d391">  Línea 2 `  ← salto real, sin \n</text>
+
+  <!-- Regla golden -->
+  <rect x="20" y="378" width="660" height="32" rx="6" fill="#16213e" stroke="#F0DB4F" stroke-width="1.5"/>
+  <text x="350" y="399" text-anchor="middle" font-size="13" font-weight="700" fill="#F0DB4F">Usa siempre template literals cuando combines texto con variables o expresiones</text>
+
+  <!-- Footer -->
+  <text x="350" y="424" text-anchor="middle" font-size="11" fill="#4a5568">Bootcamp JavaScript ES2023 — Semana 04</text>
+</svg>

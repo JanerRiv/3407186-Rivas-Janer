@@ -1,0 +1,74 @@
+<svg width="700" height="400" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+  <!-- Fondo -->
+  <rect width="700" height="400" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <rect x="20" y="16" width="660" height="44" rx="6" fill="#16213e"/>
+  <text x="350" y="44" text-anchor="middle" font-size="18" font-weight="700" fill="#F0DB4F">Métodos de Transformación de Strings</text>
+
+  <!-- Método toUpperCase -->
+  <rect x="20" y="76" width="320" height="72" rx="6" fill="#16213e"/>
+  <text x="36" y="98" font-size="12" font-weight="700" fill="#F0DB4F">.toUpperCase()</text>
+  <text x="36" y="118" font-size="12" fill="#a0aec0">Input:</text>
+  <rect x="80" y="104" width="230" height="20" rx="3" fill="#0f3460"/>
+  <text x="90" y="118" font-size="12" fill="#e2e8f0">'JavaScript ES2023'</text>
+  <text x="36" y="140" font-size="12" fill="#a0aec0">Output:</text>
+  <rect x="84" y="126" width="236" height="20" rx="3" fill="#0f3460"/>
+  <text x="94" y="140" font-size="12" fill="#68d391">'JAVASCRIPT ES2023'</text>
+
+  <!-- Método toLowerCase -->
+  <rect x="360" y="76" width="320" height="72" rx="6" fill="#16213e"/>
+  <text x="376" y="98" font-size="12" font-weight="700" fill="#F0DB4F">.toLowerCase()</text>
+  <text x="376" y="118" font-size="12" fill="#a0aec0">Input:</text>
+  <rect x="420" y="104" width="230" height="20" rx="3" fill="#0f3460"/>
+  <text x="430" y="118" font-size="12" fill="#e2e8f0">'JavaScript ES2023'</text>
+  <text x="376" y="140" font-size="12" fill="#a0aec0">Output:</text>
+  <rect x="424" y="126" width="236" height="20" rx="3" fill="#0f3460"/>
+  <text x="434" y="140" font-size="12" fill="#68d391">'javascript es2023'</text>
+
+  <!-- Método trim -->
+  <rect x="20" y="162" width="320" height="90" rx="6" fill="#16213e"/>
+  <text x="36" y="184" font-size="12" font-weight="700" fill="#F0DB4F">.trim() / .trimStart() / .trimEnd()</text>
+  <text x="36" y="204" font-size="12" fill="#a0aec0">Input:</text>
+  <rect x="80" y="190" width="230" height="20" rx="3" fill="#0f3460"/>
+  <text x="90" y="204" font-size="12" fill="#e2e8f0">'   hola mundo   '</text>
+  <text x="36" y="226" font-size="12" fill="#a0aec0">trim():</text>
+  <rect x="82" y="212" width="230" height="20" rx="3" fill="#0f3460"/>
+  <text x="92" y="226" font-size="12" fill="#68d391">'hola mundo'</text>
+  <text x="36" y="243" font-size="12" fill="#718096">Elimina espacios en los extremos</text>
+
+  <!-- Método replaceAll -->
+  <rect x="360" y="162" width="320" height="90" rx="6" fill="#16213e"/>
+  <text x="376" y="184" font-size="12" font-weight="700" fill="#F0DB4F">.replace() / .replaceAll()</text>
+  <text x="376" y="204" font-size="12" fill="#a0aec0">Input:</text>
+  <rect x="420" y="190" width="240" height="20" rx="3" fill="#0f3460"/>
+  <text x="430" y="204" font-size="12" fill="#e2e8f0">'El gato y el gato'</text>
+  <text x="376" y="226" font-size="12" fill="#a0aec0">replaceAll:</text>
+  <rect x="438" y="212" width="232" height="20" rx="3" fill="#0f3460"/>
+  <text x="448" y="226" font-size="12" fill="#68d391">'El perro y el perro'</text>
+  <text x="376" y="243" font-size="12" fill="#718096">replace → solo primera ocurrencia</text>
+
+  <!-- Método repeat -->
+  <rect x="20" y="266" width="320" height="72" rx="6" fill="#16213e"/>
+  <text x="36" y="288" font-size="12" font-weight="700" fill="#F0DB4F">.repeat(n)</text>
+  <text x="36" y="308" font-size="12" fill="#a0aec0">Input:</text>
+  <rect x="80" y="294" width="230" height="20" rx="3" fill="#0f3460"/>
+  <text x="90" y="308" font-size="12" fill="#e2e8f0">'-'.repeat(10)</text>
+  <text x="36" y="330" font-size="12" fill="#a0aec0">Output:</text>
+  <rect x="84" y="316" width="230" height="20" rx="3" fill="#0f3460"/>
+  <text x="94" y="330" font-size="12" fill="#68d391">'----------'</text>
+
+  <!-- Encadenamiento -->
+  <rect x="360" y="266" width="320" height="72" rx="6" fill="#16213e"/>
+  <text x="376" y="288" font-size="12" font-weight="700" fill="#F0DB4F">Encadenamiento de métodos</text>
+  <rect x="376" y="296" width="288" height="36" rx="3" fill="#0f3460"/>
+  <text x="386" y="311" font-size="11" fill="#e2e8f0">'  JS  '.trim()</text>
+  <text x="386" y="327" font-size="11" fill="#68d391">         .toLowerCase()  →  'js'</text>
+
+  <!-- Nota inmutabilidad -->
+  <rect x="20" y="352" width="660" height="28" rx="6" fill="#2d1b1b"/>
+  <text x="350" y="371" text-anchor="middle" font-size="12" fill="#fc8181">Ningún método modifica el string original — todos devuelven un nuevo string</text>
+
+  <!-- Footer -->
+  <text x="350" y="396" text-anchor="middle" font-size="11" fill="#4a5568">Bootcamp JavaScript ES2023 — Semana 04</text>
+</svg>

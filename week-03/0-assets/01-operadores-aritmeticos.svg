@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="900" height="360">
+  <rect width="900" height="360" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="34" font-family="system-ui, sans-serif" font-size="21" font-weight="700" text-anchor="middle" fill="#f0db4f">Operadores Aritméticos</text>
+  <text x="450" y="54" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#888888">+ · - · * · / · % · **</text>
+
+  <!-- Tarjeta + -->
+  <rect x="20" y="70" width="130" height="110" rx="8" fill="#16213e" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="85" y="101" font-family="'Courier New', monospace" font-size="30" font-weight="700" text-anchor="middle" fill="#4caf50">+</text>
+  <text x="85" y="121" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#cccccc">Suma</text>
+  <text x="85" y="143" font-family="'Courier New', monospace" font-size="12" text-anchor="middle" fill="#f0db4f">10 + 3</text>
+  <text x="85" y="163" font-family="'Courier New', monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#ffffff">= 13</text>
+
+  <!-- Tarjeta - -->
+  <rect x="165" y="70" width="130" height="110" rx="8" fill="#16213e" stroke="#ef5350" stroke-width="1.5"/>
+  <text x="230" y="101" font-family="'Courier New', monospace" font-size="30" font-weight="700" text-anchor="middle" fill="#ef5350">-</text>
+  <text x="230" y="121" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#cccccc">Resta</text>
+  <text x="230" y="143" font-family="'Courier New', monospace" font-size="12" text-anchor="middle" fill="#f0db4f">10 - 3</text>
+  <text x="230" y="163" font-family="'Courier New', monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#ffffff">= 7</text>
+
+  <!-- Tarjeta * -->
+  <rect x="310" y="70" width="130" height="110" rx="8" fill="#16213e" stroke="#42a5f5" stroke-width="1.5"/>
+  <text x="375" y="101" font-family="'Courier New', monospace" font-size="30" font-weight="700" text-anchor="middle" fill="#42a5f5">*</text>
+  <text x="375" y="121" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#cccccc">Multiplicación</text>
+  <text x="375" y="143" font-family="'Courier New', monospace" font-size="12" text-anchor="middle" fill="#f0db4f">10 * 3</text>
+  <text x="375" y="163" font-family="'Courier New', monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#ffffff">= 30</text>
+
+  <!-- Tarjeta / -->
+  <rect x="455" y="70" width="130" height="110" rx="8" fill="#16213e" stroke="#ffb74d" stroke-width="1.5"/>
+  <text x="520" y="101" font-family="'Courier New', monospace" font-size="30" font-weight="700" text-anchor="middle" fill="#ffb74d">/</text>
+  <text x="520" y="121" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#cccccc">División</text>
+  <text x="520" y="143" font-family="'Courier New', monospace" font-size="12" text-anchor="middle" fill="#f0db4f">10 / 4</text>
+  <text x="520" y="163" font-family="'Courier New', monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#ffffff">= 2.5</text>
+
+  <!-- Tarjeta % -->
+  <rect x="600" y="70" width="130" height="110" rx="8" fill="#16213e" stroke="#ab47bc" stroke-width="1.5"/>
+  <text x="665" y="101" font-family="'Courier New', monospace" font-size="30" font-weight="700" text-anchor="middle" fill="#ab47bc">%</text>
+  <text x="665" y="121" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#cccccc">Módulo (resto)</text>
+  <text x="665" y="143" font-family="'Courier New', monospace" font-size="12" text-anchor="middle" fill="#f0db4f">10 % 3</text>
+  <text x="665" y="163" font-family="'Courier New', monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#ffffff">= 1</text>
+
+  <!-- Tarjeta ** -->
+  <rect x="745" y="70" width="130" height="110" rx="8" fill="#16213e" stroke="#f0db4f" stroke-width="1.5"/>
+  <text x="810" y="101" font-family="'Courier New', monospace" font-size="26" font-weight="700" text-anchor="middle" fill="#f0db4f">**</text>
+  <text x="810" y="121" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#cccccc">Potencia</text>
+  <text x="810" y="143" font-family="'Courier New', monospace" font-size="12" text-anchor="middle" fill="#f0db4f">2 ** 8</text>
+  <text x="810" y="163" font-family="'Courier New', monospace" font-size="14" font-weight="700" text-anchor="middle" fill="#ffffff">= 256</text>
+
+  <!-- Sección módulo especial -->
+  <rect x="20" y="200" width="410" height="140" rx="8" fill="#16213e" stroke="#ab47bc" stroke-width="1.2"/>
+  <text x="225" y="222" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#ab47bc">% Módulo — usos frecuentes</text>
+  <text x="40" y="247" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">10 % 2 === 0</text>
+  <text x="220" y="247" font-family="system-ui, sans-serif" font-size="11" fill="#888888">→ par (sin resto)</text>
+  <text x="40" y="267" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">7  % 2 === 1</text>
+  <text x="220" y="267" font-family="system-ui, sans-serif" font-size="11" fill="#888888">→ impar (resto 1)</text>
+  <text x="40" y="287" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">15 % 5 === 0</text>
+  <text x="220" y="287" font-family="system-ui, sans-serif" font-size="11" fill="#888888">→ múltiplo de 5</text>
+  <text x="40" y="307" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">17 % 5 === 2</text>
+  <text x="220" y="307" font-family="system-ui, sans-serif" font-size="11" fill="#888888">→ no es múltiplo</text>
+  <text x="40" y="327" font-family="system-ui, sans-serif" font-size="11" fill="#888888">Clave: resto de la división entera</text>
+
+  <!-- Sección + advertencia -->
+  <rect x="450" y="200" width="430" height="140" rx="8" fill="#16213e" stroke="#ef5350" stroke-width="1.2"/>
+  <text x="665" y="222" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#ef5350">⚠️  + con strings = concatenación</text>
+  <text x="470" y="247" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">10 + 20     →  30</text>
+  <text x="700" y="247" font-family="system-ui, sans-serif" font-size="11" fill="#888888">number + number</text>
+  <text x="470" y="267" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">"10" + 20   →  "1020"</text>
+  <text x="700" y="267" font-family="system-ui, sans-serif" font-size="11" fill="#ef5350">concatena!</text>
+  <text x="470" y="287" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">10 + "20"   →  "1020"</text>
+  <text x="700" y="287" font-family="system-ui, sans-serif" font-size="11" fill="#ef5350">concatena!</text>
+  <text x="470" y="310" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">Number("10") + 20 → 30</text>
+  <text x="700" y="310" font-family="system-ui, sans-serif" font-size="11" fill="#4caf50">✓ correcto</text>
+  <text x="470" y="330" font-family="system-ui, sans-serif" font-size="11" fill="#888888">Solución: convierte explícitamente con Number()</text>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" font-family="Inter, Roboto, 'Open Sans', system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="800" height="460" fill="#1a1a2e" rx="12"/>
+
+  <!-- Título -->
+  <text x="400" y="42" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">Tu Entorno de Desarrollo</text>
+  <text x="400" y="64" text-anchor="middle" font-size="13" fill="#a0aec0">Tres herramientas que trabajan juntas</text>
+
+  <!-- ══════════ VS CODE ══════════ -->
+  <rect x="30" y="85" width="225" height="310" rx="10" fill="#16213e" stroke="#0078d4" stroke-width="2"/>
+  <!-- header -->
+  <rect x="30" y="85" width="225" height="38" rx="10" fill="#1e3a5f"/>
+  <rect x="30" y="109" width="225" height="14" fill="#1e3a5f"/>
+  <text x="142" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#0078d4">VS Code</text>
+
+  <!-- sidebar simulado -->
+  <rect x="46" y="138" width="36" height="240" rx="4" fill="#1a2d4a"/>
+  <!-- iconos sidebar -->
+  <rect x="52" y="148" width="24" height="20" rx="3" fill="#0078d4" opacity="0.7"/>
+  <rect x="52" y="176" width="24" height="20" rx="3" fill="#2d4a6a" opacity="0.7"/>
+  <rect x="52" y="204" width="24" height="20" rx="3" fill="#2d4a6a" opacity="0.7"/>
+  <rect x="52" y="232" width="24" height="20" rx="3" fill="#2d4a6a" opacity="0.7"/>
+
+  <!-- editor simulado -->
+  <rect x="88" y="138" width="150" height="130" rx="4" fill="#0d1b2a"/>
+  <!-- líneas de código simuladas -->
+  <rect x="96" y="148" width="80" height="7" rx="2" fill="#F0DB4F" opacity="0.7"/>
+  <rect x="96" y="162" width="50" height="7" rx="2" fill="#68d391" opacity="0.6"/>
+  <rect x="106" y="176" width="110" height="7" rx="2" fill="#90cdf4" opacity="0.6"/>
+  <rect x="106" y="190" width="90" height="7" rx="2" fill="#90cdf4" opacity="0.6"/>
+  <rect x="96" y="204" width="60" height="7" rx="2" fill="#68d391" opacity="0.6"/>
+  <rect x="96" y="218" width="40" height="7" rx="2" fill="#718096" opacity="0.6"/>
+  <rect x="96" y="232" width="95" height="7" rx="2" fill="#90cdf4" opacity="0.6"/>
+  <rect x="96" y="246" width="70" height="7" rx="2" fill="#718096" opacity="0.5"/>
+
+  <!-- terminal integrada simulada -->
+  <rect x="88" y="276" width="150" height="60" rx="4" fill="#0a0a0a"/>
+  <text x="96" y="292" font-size="10" font-family="'Courier New', monospace" fill="#68d391">$ node script.js</text>
+  <text x="96" y="307" font-size="10" font-family="'Courier New', monospace" fill="#e2e8f0">Hola, mundo!</text>
+  <rect x="96" y="314" width="4" height="12" fill="#68d391" opacity="0.8"/>
+
+  <text x="142" y="362" text-anchor="middle" font-size="12" font-weight="700" fill="#90cdf4">Editor de código</text>
+  <text x="142" y="378" text-anchor="middle" font-size="11" fill="#718096">Donde escribes JS</text>
+  <text x="142" y="394" text-anchor="middle" font-size="10" fill="#4a5568">code.visualstudio.com</text>
+
+  <!-- ══════════ NODE.JS ══════════ -->
+  <rect x="287" y="85" width="225" height="310" rx="10" fill="#16213e" stroke="#68d391" stroke-width="2"/>
+  <rect x="287" y="85" width="225" height="38" rx="10" fill="#1c4532"/>
+  <rect x="287" y="109" width="225" height="14" fill="#1c4532"/>
+  <text x="399" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#68d391">Node.js</text>
+
+  <!-- logo hexágono simplificado -->
+  <polygon points="399,148 422,162 422,190 399,204 376,190 376,162" fill="#276749" stroke="#68d391" stroke-width="1.5"/>
+  <text x="399" y="183" text-anchor="middle" font-size="16" font-weight="900" fill="#c6f6d5">v22</text>
+
+  <text x="399" y="225" text-anchor="middle" font-size="12" fill="#9ae6b4">Motor de JavaScript</text>
+  <text x="399" y="243" text-anchor="middle" font-size="12" fill="#9ae6b4">fuera del navegador</text>
+
+  <line x1="307" y1="258" x2="492" y2="258" stroke="#2d3748" stroke-width="1"/>
+
+  <!-- verificación instalacion -->
+  <rect x="307" y="268" width="185" height="60" rx="4" fill="#0a0a0a"/>
+  <text x="318" y="285" font-size="10" font-family="'Courier New', monospace" fill="#a0aec0">$ node --version</text>
+  <text x="318" y="300" font-size="10" font-family="'Courier New', monospace" fill="#68d391">v22.x.x</text>
+  <text x="318" y="315" font-size="10" font-family="'Courier New', monospace" fill="#a0aec0">$ node script.js</text>
+
+  <text x="399" y="362" text-anchor="middle" font-size="12" font-weight="700" fill="#9ae6b4">Ejecuta JS</text>
+  <text x="399" y="378" text-anchor="middle" font-size="11" fill="#718096">Sin necesitar navegador</text>
+  <text x="399" y="394" text-anchor="middle" font-size="10" fill="#4a5568">nodejs.org</text>
+
+  <!-- ══════════ TERMINAL ══════════ -->
+  <rect x="544" y="85" width="225" height="310" rx="10" fill="#16213e" stroke="#F0DB4F" stroke-width="2"/>
+  <rect x="544" y="85" width="225" height="38" rx="10" fill="#2d3300"/>
+  <rect x="544" y="109" width="225" height="14" fill="#2d3300"/>
+  <text x="656" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#F0DB4F">Terminal</text>
+
+  <!-- ventana terminal -->
+  <rect x="560" y="132" width="192" height="190" rx="4" fill="#0a0a0a"/>
+  <!-- prompt -->
+  <text x="568" y="153" font-size="10" font-family="'Courier New', monospace" fill="#68d391">ergrato@pc:~/bootcamp$</text>
+  <text x="568" y="170" font-size="10" font-family="'Courier New', monospace" fill="#e2e8f0">ls</text>
+  <text x="568" y="186" font-size="10" font-family="'Courier New', monospace" fill="#90cdf4">script.js   README.md</text>
+  <text x="568" y="203" font-size="10" font-family="'Courier New', monospace" fill="#68d391">ergrato@pc:~/bootcamp$</text>
+  <text x="568" y="219" font-size="10" font-family="'Courier New', monospace" fill="#e2e8f0">node script.js</text>
+  <text x="568" y="235" font-size="10" font-family="'Courier New', monospace" fill="#fefcbf">Hola, mundo!</text>
+  <text x="568" y="252" font-size="10" font-family="'Courier New', monospace" fill="#fefcbf">42</text>
+  <text x="568" y="268" font-size="10" font-family="'Courier New', monospace" fill="#68d391">ergrato@pc:~/bootcamp$</text>
+  <rect x="568" y="274" width="4" height="12" fill="#68d391" opacity="0.8"/>
+  <text x="580" y="285" font-size="10" font-family="'Courier New', monospace" fill="#a0aec0">█</text>
+
+  <!-- comandos esenciales -->
+  <text x="656" y="340" text-anchor="middle" font-size="11" fill="#fefcbf">pwd · ls · cd · node</text>
+
+  <text x="656" y="362" text-anchor="middle" font-size="12" font-weight="700" fill="#fefcbf">Tu interfaz de control</text>
+  <text x="656" y="378" text-anchor="middle" font-size="11" fill="#718096">Donde ejecutas programas</text>
+  <text x="656" y="394" text-anchor="middle" font-size="10" fill="#4a5568">Ctrl + ` en VS Code</text>
+
+  <!-- ══════════ FLUJO INFERIOR ══════════ -->
+  <rect x="30" y="412" width="740" height="36" rx="8" fill="#16213e" stroke="#2d3748" stroke-width="1"/>
+  <text x="142" y="428" text-anchor="middle" font-size="11" fill="#718096">1. Escribes</text>
+  <text x="142" y="443" text-anchor="middle" font-size="12" font-weight="600" fill="#90cdf4">en VS Code</text>
+  <text x="280" y="430" text-anchor="middle" font-size="18" fill="#F0DB4F">→</text>
+  <text x="400" y="428" text-anchor="middle" font-size="11" fill="#718096">2. Guardas el archivo</text>
+  <text x="400" y="443" text-anchor="middle" font-size="12" font-weight="600" fill="#fefcbf">script.js</text>
+  <text x="520" y="430" text-anchor="middle" font-size="18" fill="#F0DB4F">→</text>
+  <text x="656" y="428" text-anchor="middle" font-size="11" fill="#718096">3. Ejecutas</text>
+  <text x="656" y="443" text-anchor="middle" font-size="12" font-weight="600" fill="#9ae6b4">node script.js</text>
+
+</svg>

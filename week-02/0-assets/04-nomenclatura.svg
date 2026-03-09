@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380">
+  <rect width="900" height="380" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="36" font-family="system-ui, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#f0db4f">Nomenclatura en JavaScript</text>
+  <text x="450" y="57" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle" fill="#888888">camelCase · nombres descriptivos · numeric separators (ES2021)</text>
+
+  <!-- camelCase -->
+  <rect x="30" y="74" width="400" height="160" rx="10" fill="#16213e" stroke="#f0db4f" stroke-width="1.5"/>
+  <text x="230" y="100" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#f0db4f">camelCase</text>
+
+  <text x="50" y="126" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">✓  firstName</text>
+  <text x="50" y="146" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">✓  productPrice</text>
+  <text x="50" y="166" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">✓  isUserLoggedIn</text>
+  <text x="50" y="186" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">✓  maxRetryCount</text>
+  <text x="220" y="126" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">✗  first_name</text>
+  <text x="220" y="146" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">✗  ProductPrice</text>
+  <text x="220" y="166" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">✗  isUserloggedin</text>
+  <text x="220" y="186" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">✗  MAXRETRYCOUNT</text>
+  <text x="230" y="220" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#888888">Primera palabra minúscula · cada nueva palabra con Mayúscula inicial</text>
+
+  <!-- Booleans - prefijos -->
+  <rect x="470" y="74" width="400" height="160" rx="10" fill="#16213e" stroke="#ab47bc" stroke-width="1.5"/>
+  <text x="670" y="100" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#ab47bc">Booleans — prefijos</text>
+
+  <text x="490" y="126" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">✓  isActive</text>
+  <text x="490" y="146" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">✓  hasDiscount</text>
+  <text x="490" y="166" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">✓  canEdit</text>
+  <text x="490" y="186" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">✓  shouldNotify</text>
+  <text x="666" y="126" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">✗  active</text>
+  <text x="666" y="146" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">✗  discount</text>
+  <text x="666" y="166" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">✗  editUser</text>
+  <text x="666" y="186" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">✗  notify</text>
+  <text x="670" y="220" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#888888">Prefijo  is  has  can  should  → comunica que es boolean</text>
+
+  <!-- Numeric separators -->
+  <rect x="30" y="252" width="840" height="110" rx="10" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="450" y="276" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#4fc3f7">Numeric Separators — ES2021</text>
+  <text x="450" y="295" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#888888">El guión bajo _ mejora la legibilidad de números grandes. No afecta el valor.</text>
+
+  <text x="60" y="320" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">✗  1250000000</text>
+  <text x="60" y="342" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">✓  1_250_000_000</text>
+
+  <text x="310" y="320" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">✗  29900</text>
+  <text x="310" y="342" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">✓  29_900</text>
+
+  <text x="520" y="320" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">✗  0.000001</text>
+  <text x="520" y="342" font-family="'Courier New', monospace" font-size="12" fill="#4caf50">✓  0.000_001</text>
+
+  <text x="740" y="320" font-family="'Courier New', monospace" font-size="11" fill="#4fc3f7">1_000 === 1000</text>
+  <text x="753" y="342" font-family="system-ui, sans-serif" font-size="11" fill="#888888">mismo valor</text>
+</svg>

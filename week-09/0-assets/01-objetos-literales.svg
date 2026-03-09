@@ -1,0 +1,98 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+  <!-- Fondo -->
+  <rect width="900" height="520" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="38" text-anchor="middle" fill="#F0DB4F" font-size="20" font-weight="bold">Objetos Literales en JavaScript</text>
+
+  <!-- PANEL 1: Anatomía de un objeto -->
+  <rect x="20" y="58" width="400" height="200" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="1.5"/>
+  <text x="220" y="80" text-anchor="middle" fill="#F0DB4F" font-size="13" font-weight="bold">Anatomía de un Objeto</text>
+
+  <!-- Llaves del objeto -->
+  <text x="40" y="108" fill="#e0e0e0" font-size="13" font-family="monospace">const product = {</text>
+  <text x="40" y="130" fill="#81c784" font-size="13" font-family="monospace">  id:</text>
+  <text x="76" y="130" fill="#4fc3f7" font-size="13" font-family="monospace">1</text>
+  <text x="84" y="130" fill="#e0e0e0" font-size="13" font-family="monospace">,</text>
+  <text x="40" y="152" fill="#81c784" font-size="13" font-family="monospace">  name:</text>
+  <text x="92" y="152" fill="#ce93d8" font-size="13" font-family="monospace">"Laptop Pro"</text>
+  <text x="192" y="152" fill="#e0e0e0" font-size="13" font-family="monospace">,</text>
+  <text x="40" y="174" fill="#81c784" font-size="13" font-family="monospace">  price:</text>
+  <text x="100" y="174" fill="#4fc3f7" font-size="13" font-family="monospace">1200</text>
+  <text x="128" y="174" fill="#e0e0e0" font-size="13" font-family="monospace">,</text>
+  <text x="40" y="196" fill="#81c784" font-size="13" font-family="monospace">  available:</text>
+  <text x="128" y="196" fill="#ffd54f" font-size="13" font-family="monospace">true</text>
+  <text x="157" y="196" fill="#e0e0e0" font-size="13" font-family="monospace">,</text>
+  <text x="40" y="218" fill="#e0e0e0" font-size="13" font-family="monospace">};</text>
+
+  <!-- Etiquetas de anatomía -->
+  <line x1="76" y1="135" x2="280" y2="135" stroke="#81c784" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="283" y="139" fill="#81c784" font-size="11">← clave (key)</text>
+  <line x1="192" y1="155" x2="280" y2="155" stroke="#ce93d8" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="283" y="159" fill="#ce93d8" font-size="11">← valor string</text>
+  <line x1="128" y1="178" x2="280" y2="178" stroke="#4fc3f7" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="283" y="182" fill="#4fc3f7" font-size="11">← valor number</text>
+  <line x1="157" y1="200" x2="280" y2="200" stroke="#ffd54f" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="283" y="204" fill="#ffd54f" font-size="11">← valor boolean</text>
+
+  <!-- PANEL 2: Acceso con punto -->
+  <rect x="440" y="58" width="440" height="200" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="660" y="80" text-anchor="middle" fill="#4fc3f7" font-size="13" font-weight="bold">Acceso a Propiedades</text>
+
+  <!-- Punto -->
+  <rect x="460" y="92" width="190" height="72" rx="5" fill="#1a1a2e"/>
+  <text x="555" y="108" text-anchor="middle" fill="#F0DB4F" font-size="11" font-weight="bold">Notación de punto</text>
+  <text x="470" y="128" fill="#e0e0e0" font-size="12" font-family="monospace">product.name</text>
+  <text x="470" y="146" fill="#ce93d8" font-size="12" font-family="monospace">// "Laptop Pro"</text>
+  <text x="470" y="158" fill="#e0e0e0" font-size="12" font-family="monospace">product.price</text>
+
+  <!-- Corchetes -->
+  <rect x="670" y="92" width="190" height="72" rx="5" fill="#1a1a2e"/>
+  <text x="765" y="108" text-anchor="middle" fill="#F0DB4F" font-size="11" font-weight="bold">Notación de corchetes</text>
+  <text x="680" y="128" fill="#e0e0e0" font-size="12" font-family="monospace">product["name"]</text>
+  <text x="680" y="146" fill="#ce93d8" font-size="12" font-family="monospace">// "Laptop Pro"</text>
+  <text x="680" y="158" fill="#e0e0e0" font-size="12" font-family="monospace">product[key]  // dinámico</text>
+
+  <!-- Cuándo usar -->
+  <text x="460" y="185" fill="#e6e6e6" font-size="11">Clave simple → punto</text>
+  <text x="460" y="201" fill="#e6e6e6" font-size="11">Clave dinámica / con guion → corchetes</text>
+  <text x="460" y="218" fill="#81c784" font-size="11">Optional chaining:  product?.address?.city</text>
+
+  <!-- PANEL 3: Modificar -->
+  <rect x="20" y="278" width="400" height="160" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="220" y="300" text-anchor="middle" fill="#81c784" font-size="13" font-weight="bold">Modificar Propiedades</text>
+
+  <text x="40" y="322" fill="#e0e0e0" font-size="12" font-family="monospace">const product = { name: "Laptop", price: 1200 };</text>
+  <text x="40" y="345" fill="#e0e0e0" font-size="12" font-family="monospace">product.price = 999;     </text>
+  <text x="250" y="345" fill="#81c784" font-size="12" font-family="monospace">// modificar</text>
+  <text x="40" y="365" fill="#e0e0e0" font-size="12" font-family="monospace">product.discount = 0.1;  </text>
+  <text x="250" y="365" fill="#F0DB4F" font-size="12" font-family="monospace">// agregar</text>
+  <text x="40" y="385" fill="#e0e0e0" font-size="12" font-family="monospace">delete product.discount; </text>
+  <text x="250" y="385" fill="#e57373" font-size="12" font-family="monospace">// eliminar</text>
+  <text x="40" y="415" fill="#ffd54f" font-size="11">⚠ const permite modificar propiedades, no reasignar la variable</text>
+
+  <!-- PANEL 4: Valores válidos -->
+  <rect x="440" y="278" width="440" height="160" rx="8" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="660" y="300" text-anchor="middle" fill="#ce93d8" font-size="13" font-weight="bold">Tipos de Valores en un Objeto</text>
+
+  <text x="460" y="322" fill="#ce93d8" font-size="12" font-family="monospace">const obj = {</text>
+  <text x="460" y="340" fill="#e0e0e0" font-size="12" font-family="monospace">  text:   </text>
+  <text x="518" y="340" fill="#ce93d8" font-size="12" font-family="monospace">"hola"</text>
+  <text x="560" y="340" fill="#aaa" font-size="11">           // string</text>
+  <text x="460" y="357" fill="#e0e0e0" font-size="12" font-family="monospace">  count:  </text>
+  <text x="520" y="357" fill="#4fc3f7" font-size="12" font-family="monospace">42</text>
+  <text x="540" y="357" fill="#aaa" font-size="11">                // number</text>
+  <text x="460" y="374" fill="#e0e0e0" font-size="12" font-family="monospace">  active: </text>
+  <text x="520" y="374" fill="#ffd54f" font-size="12" font-family="monospace">true</text>
+  <text x="549" y="374" fill="#aaa" font-size="11">             // boolean</text>
+  <text x="460" y="391" fill="#e0e0e0" font-size="12" font-family="monospace">  tags:   </text>
+  <text x="518" y="391" fill="#81c784" font-size="12" font-family="monospace">["a","b"]</text>
+  <text x="587" y="391" fill="#aaa" font-size="11">        // array</text>
+  <text x="460" y="408" fill="#e0e0e0" font-size="12" font-family="monospace">  meta:   </text>
+  <text x="518" y="408" fill="#F0DB4F" font-size="12" font-family="monospace">{ city: "Lima" }</text>
+  <text x="655" y="408" fill="#aaa" font-size="11">  // objeto</text>
+  <text x="460" y="425" fill="#e0e0e0" font-size="12" font-family="monospace">};</text>
+
+  <!-- Nota inferior -->
+  <text x="450" y="465" text-anchor="middle" fill="#888" font-size="11">Semana 09 — Bootcamp JavaScript ES2023</text>
+</svg>

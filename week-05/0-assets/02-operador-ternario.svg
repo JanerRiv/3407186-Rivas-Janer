@@ -1,0 +1,46 @@
+<svg width="800" height="340" viewBox="0 0 800 340" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, 'Open Sans', system-ui, sans-serif">
+  <!-- Fondo -->
+  <rect width="800" height="340" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="400" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">Operador Ternario  condición ? valorTrue : valorFalse</text>
+  <text x="400" y="58" text-anchor="middle" font-size="13" fill="#a0a0c0">Semana 05 — Etapa 0</text>
+
+  <!-- ===== ANATOMÍA DEL TERNARIO ===== -->
+  <!-- Caja de código -->
+  <rect x="80" y="75" width="640" height="52" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="1.5"/>
+  <text x="400" y="97" text-anchor="middle" font-size="15" fill="#ffffff" font-family="'Courier New', Courier, monospace">const label = score &gt;= 70  ?  "Aprobado"  :  "No aprobado";</text>
+  <text x="400" y="117" text-anchor="middle" font-size="12" fill="#a0a0c0" font-family="'Courier New', Courier, monospace">       ↑            ↑           ↑                ↑</text>
+
+  <!-- Etiquetas de anatomía -->
+  <text x="158" y="148" text-anchor="middle" font-size="12" fill="#a0a0c0">resultado</text>
+  <text x="302" y="148" text-anchor="middle" font-size="12" fill="#4fc3f7">condición</text>
+  <text x="452" y="148" text-anchor="middle" font-size="12" fill="#81c784">valor true</text>
+  <text x="590" y="148" text-anchor="middle" font-size="12" fill="#e57373">valor false</text>
+
+  <!-- ===== PANEL COMPARACIÓN: if/else vs ternario ===== -->
+  <!-- Panel izquierdo: if/else -->
+  <rect x="60" y="168" width="310" height="130" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="215" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#4fc3f7">Con if/else (4 líneas)</text>
+  <text x="80" y="212" font-size="12" fill="#ce93d8" font-family="'Courier New', Courier, monospace">let label;</text>
+  <text x="80" y="230" font-size="12" fill="#81c784" font-family="'Courier New', Courier, monospace">if (score &gt;= 70) {</text>
+  <text x="80" y="248" font-size="12" fill="#ffffff" font-family="'Courier New', Courier, monospace">  label = "Aprobado";</text>
+  <text x="80" y="266" font-size="12" fill="#a0a0c0" font-family="'Courier New', Courier, monospace">} else {</text>
+  <text x="80" y="284" font-size="12" fill="#ffffff" font-family="'Courier New', Courier, monospace">  label = "No aprobado";</text>
+  <text x="80" y="286" font-size="12" fill="#a0a0c0" font-family="'Courier New', Courier, monospace">}</text>
+
+  <!-- Flecha de equivalencia -->
+  <text x="400" y="238" text-anchor="middle" font-size="24" fill="#F0DB4F">⟺</text>
+
+  <!-- Panel derecho: ternario -->
+  <rect x="430" y="168" width="310" height="130" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="1.5"/>
+  <text x="585" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#F0DB4F">Con ternario (1 línea)</text>
+  <text x="450" y="230" font-size="12" fill="#ce93d8" font-family="'Courier New', Courier, monospace">const label =</text>
+  <text x="450" y="252" font-size="12" fill="#4fc3f7" font-family="'Courier New', Courier, monospace">  score &gt;= 70</text>
+  <text x="450" y="270" font-size="12" fill="#81c784" font-family="'Courier New', Courier, monospace">  ? "Aprobado"</text>
+  <text x="450" y="288" font-size="12" fill="#e57373" font-family="'Courier New', Courier, monospace">  : "No aprobado";</text>
+
+  <!-- ===== NOTA DE USO ===== -->
+  <rect x="60" y="308" width="680" height="22" rx="6" fill="#1a2a1a" stroke="#81c784" stroke-width="1"/>
+  <text x="400" y="323" text-anchor="middle" font-size="12" fill="#81c784">✔  Usa el ternario para condiciones simples de dos ramas en una sola asignación</text>
+</svg>

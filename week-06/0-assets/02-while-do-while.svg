@@ -1,0 +1,114 @@
+<svg width="820" height="420" viewBox="0 0 820 420" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="820" height="420" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="410" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#F0DB4F">while vs do...while</text>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- Panel izquierdo: while         -->
+  <!-- ═══════════════════════════════ -->
+  <rect x="30" y="55" width="370" height="340" rx="10" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="215" y="78" text-anchor="middle" font-size="15" font-weight="700" fill="#4fc3f7">while</text>
+  <text x="215" y="96" text-anchor="middle" font-size="11" fill="#94a3b8">Condición ANTES del cuerpo</text>
+
+  <!-- Código while -->
+  <rect x="50" y="106" width="330" height="70" rx="6" fill="#0d1117"/>
+  <text x="65" y="127" font-size="13" font-family="monospace" fill="#81c784">while (</text>
+  <text x="130" y="127" font-size="13" font-family="monospace" fill="#ffd54f">condición</text>
+  <text x="222" y="127" font-size="13" font-family="monospace" fill="#81c784">) {</text>
+  <text x="65" y="148" font-size="13" font-family="monospace" fill="#e2e8f0">  // cuerpo</text>
+  <text x="65" y="167" font-size="13" font-family="monospace" fill="#81c784">}</text>
+
+  <!-- Diagrama de flujo while -->
+  <!-- INICIO -->
+  <rect x="166" y="190" width="98" height="28" rx="14" fill="#2d2d5e"/>
+  <text x="215" y="209" text-anchor="middle" font-size="12" fill="#e2e8f0">INICIO</text>
+
+  <!-- Flecha -->
+  <line x1="215" y1="218" x2="215" y2="232" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowW)"/>
+
+  <!-- Condición (rombo) -->
+  <polygon points="215,232 270,255 215,278 160,255" fill="#1a3c2e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="215" y="259" text-anchor="middle" font-size="12" fill="#81c784">condición</text>
+
+  <!-- false → NO ejecutar (derecha) -->
+  <line x1="270" y1="255" x2="330" y2="255" stroke="#e57373" stroke-width="1.5" marker-end="url(#arrowW)"/>
+  <text x="302" y="248" text-anchor="middle" font-size="11" fill="#e57373">false</text>
+  <rect x="330" y="241" width="50" height="28" rx="14" fill="#2d2d5e"/>
+  <text x="355" y="259" text-anchor="middle" font-size="11" fill="#e2e8f0">FIN</text>
+
+  <!-- true → cuerpo (abajo) -->
+  <line x1="215" y1="278" x2="215" y2="295" stroke="#81c784" stroke-width="1.5" marker-end="url(#arrowW)"/>
+  <text x="227" y="292" font-size="11" fill="#81c784">true</text>
+
+  <!-- Cuerpo -->
+  <rect x="148" y="295" width="134" height="30" rx="6" fill="#1e3a5f" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="215" y="315" text-anchor="middle" font-size="12" fill="#4fc3f7">// cuerpo</text>
+
+  <!-- Flecha de vuelta a condición -->
+  <path d="M 148 310 Q 115 310 115 255 Q 115 232 160 232" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowW)" stroke-dasharray="5 3"/>
+
+  <!-- Nota importante -->
+  <rect x="50" y="340" width="330" height="40" rx="6" fill="#0d1117"/>
+  <text x="215" y="358" text-anchor="middle" font-size="11" fill="#ffd54f">⚠ Si la condición es false desde el inicio,</text>
+  <text x="215" y="374" text-anchor="middle" font-size="11" fill="#ffd54f">el cuerpo NUNCA se ejecuta (0 veces)</text>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- Panel derecho: do...while      -->
+  <!-- ═══════════════════════════════ -->
+  <rect x="420" y="55" width="370" height="340" rx="10" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="605" y="78" text-anchor="middle" font-size="15" font-weight="700" fill="#ce93d8">do...while</text>
+  <text x="605" y="96" text-anchor="middle" font-size="11" fill="#94a3b8">Cuerpo ANTES de la condición</text>
+
+  <!-- Código do...while -->
+  <rect x="440" y="106" width="330" height="70" rx="6" fill="#0d1117"/>
+  <text x="455" y="127" font-size="13" font-family="monospace" fill="#ce93d8">do {</text>
+  <text x="455" y="148" font-size="13" font-family="monospace" fill="#e2e8f0">  // cuerpo</text>
+  <text x="455" y="167" font-size="13" font-family="monospace" fill="#ce93d8">} while (</text>
+  <text x="550" y="167" font-size="13" font-family="monospace" fill="#ffd54f">condición</text>
+  <text x="640" y="167" font-size="13" font-family="monospace" fill="#ce93d8">);</text>
+
+  <!-- Diagrama de flujo do...while -->
+  <!-- INICIO -->
+  <rect x="556" y="190" width="98" height="28" rx="14" fill="#2d2d5e"/>
+  <text x="605" y="209" text-anchor="middle" font-size="12" fill="#e2e8f0">INICIO</text>
+
+  <!-- Flecha -->
+  <line x1="605" y1="218" x2="605" y2="232" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowW)"/>
+
+  <!-- Cuerpo PRIMERO -->
+  <rect x="538" y="232" width="134" height="30" rx="6" fill="#2d1a3e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="605" y="252" text-anchor="middle" font-size="12" fill="#ce93d8">// cuerpo</text>
+
+  <!-- Flecha a condición -->
+  <line x1="605" y1="262" x2="605" y2="278" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrowW)"/>
+
+  <!-- Condición (rombo) -->
+  <polygon points="605,278 660,302 605,326 550,302" fill="#1a3c2e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="605" y="306" text-anchor="middle" font-size="12" fill="#81c784">condición</text>
+
+  <!-- false → FIN (derecha) -->
+  <line x1="660" y1="302" x2="720" y2="302" stroke="#e57373" stroke-width="1.5" marker-end="url(#arrowW)"/>
+  <text x="692" y="295" text-anchor="middle" font-size="11" fill="#e57373">false</text>
+  <rect x="720" y="288" width="50" height="28" rx="14" fill="#2d2d5e"/>
+  <text x="745" y="306" text-anchor="middle" font-size="11" fill="#e2e8f0">FIN</text>
+
+  <!-- true → vuelve al cuerpo (izquierda) -->
+  <path d="M 550 302 Q 515 302 515 247 Q 515 232 538 232" fill="none" stroke="#81c784" stroke-width="1.5" marker-end="url(#arrowW)" stroke-dasharray="5 3"/>
+  <text x="502" y="268" text-anchor="middle" font-size="11" fill="#81c784">true</text>
+
+  <!-- Nota importante -->
+  <rect x="440" y="340" width="330" height="40" rx="6" fill="#0d1117"/>
+  <text x="605" y="358" text-anchor="middle" font-size="11" fill="#81c784">✓ El cuerpo siempre se ejecuta</text>
+  <text x="605" y="374" text-anchor="middle" font-size="11" fill="#81c784">AL MENOS UNA VEZ (aunque condición sea false)</text>
+
+  <!-- Marcador de flecha -->
+  <defs>
+    <marker id="arrowW" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+</svg>

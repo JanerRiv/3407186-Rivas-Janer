@@ -1,0 +1,116 @@
+<svg width="820" height="400" viewBox="0 0 820 400" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="820" height="400" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="410" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#F0DB4F">break vs continue</text>
+
+  <!-- Array de referencia (arriba) -->
+  <text x="410" y="62" text-anchor="middle" font-size="12" fill="#94a3b8">Array: [10, 20, 30, 40, 50]  — condición en 30</text>
+
+  <!-- Celdas del array compartidas -->
+  <!-- 10 -->
+  <rect x="130" y="72" width="80" height="36" rx="5" fill="#2d2d5e" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="170" y="95" text-anchor="middle" font-size="14" font-weight="600" fill="#4fc3f7">10</text>
+  <!-- 20 -->
+  <rect x="220" y="72" width="80" height="36" rx="5" fill="#2d2d5e" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="260" y="95" text-anchor="middle" font-size="14" font-weight="600" fill="#4fc3f7">20</text>
+  <!-- 30 -->
+  <rect x="310" y="72" width="80" height="36" rx="5" fill="#3d3100" stroke="#ffd54f" stroke-width="2"/>
+  <text x="350" y="95" text-anchor="middle" font-size="14" font-weight="600" fill="#ffd54f">30</text>
+  <!-- 40 -->
+  <rect x="400" y="72" width="80" height="36" rx="5" fill="#2d2d5e" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="440" y="95" text-anchor="middle" font-size="14" font-weight="600" fill="#4fc3f7">40</text>
+  <!-- 50 -->
+  <rect x="490" y="72" width="80" height="36" rx="5" fill="#2d2d5e" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="535" y="95" text-anchor="middle" font-size="14" font-weight="600" fill="#4fc3f7">50</text>
+
+  <!-- Etiqueta condición -->
+  <text x="350" y="123" text-anchor="middle" font-size="11" fill="#ffd54f">condición aquí</text>
+
+  <!-- ══════════════════════ -->
+  <!-- Panel break (izq)     -->
+  <!-- ══════════════════════ -->
+  <rect x="30" y="136" width="370" height="240" rx="10" fill="#16213e" stroke="#e57373" stroke-width="1.5"/>
+  <text x="215" y="158" text-anchor="middle" font-size="14" font-weight="700" fill="#e57373">break — Sale del bucle</text>
+
+  <!-- Código -->
+  <rect x="48" y="166" width="334" height="60" rx="6" fill="#0d1117"/>
+  <text x="63" y="187" font-size="12" font-family="monospace" fill="#e2e8f0">for (const n of [10, 20, 30, 40, 50]) {</text>
+  <text x="63" y="205" font-size="12" font-family="monospace" fill="#ffd54f">  if (n === 30) </text>
+  <text x="193" y="205" font-size="12" font-family="monospace" fill="#e57373">break;</text>
+  <text x="63" y="222" font-size="12" font-family="monospace" fill="#e2e8f0">  console.log(n);</text>
+
+  <!-- Traza visual -->
+  <text x="215" y="248" text-anchor="middle" font-size="12" fill="#94a3b8">Resultado en consola:</text>
+
+  <!-- Celdas con resultado -->
+  <rect x="90" y="256" width="50" height="28" rx="5" fill="#1a3c2e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="115" y="275" text-anchor="middle" font-size="13" fill="#81c784">10</text>
+  <rect x="153" y="256" width="50" height="28" rx="5" fill="#1a3c2e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="178" y="275" text-anchor="middle" font-size="13" fill="#81c784">20</text>
+  <!-- 30 con X -->
+  <rect x="216" y="256" width="50" height="28" rx="5" fill="#3a1a1a" stroke="#e57373" stroke-width="1.5"/>
+  <text x="241" y="275" text-anchor="middle" font-size="13" fill="#e57373">30✗</text>
+  <!-- 40 tapado -->
+  <rect x="279" y="256" width="50" height="28" rx="5" fill="#2d2d5e" stroke="#2d2d5e" stroke-width="1"/>
+  <text x="304" y="275" text-anchor="middle" font-size="13" fill="#4a5568">40</text>
+  <!-- 50 tapado -->
+  <rect x="342" y="256" width="50" height="28" rx="5" fill="#2d2d5e" stroke="#2d2d5e" stroke-width="1"/>
+  <text x="367" y="275" text-anchor="middle" font-size="13" fill="#4a5568">50</text>
+
+  <!-- Línea de ruptura -->
+  <line x1="216" y1="244" x2="216" y2="296" stroke="#e57373" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="217" y="310" font-size="10" fill="#e57373">¡sale aquí!</text>
+
+  <text x="215" y="340" text-anchor="middle" font-size="12" fill="#e2e8f0">Imprime: 10, 20</text>
+  <text x="215" y="358" text-anchor="middle" font-size="11" fill="#94a3b8">30, 40 y 50 nunca se procesan</text>
+
+  <!-- ═══════════════════════ -->
+  <!-- Panel continue (der)   -->
+  <!-- ═══════════════════════ -->
+  <rect x="420" y="136" width="370" height="240" rx="10" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="605" y="158" text-anchor="middle" font-size="14" font-weight="700" fill="#81c784">continue — Salta una iteración</text>
+
+  <!-- Código -->
+  <rect x="438" y="166" width="334" height="60" rx="6" fill="#0d1117"/>
+  <text x="453" y="187" font-size="12" font-family="monospace" fill="#e2e8f0">for (const n of [10, 20, 30, 40, 50]) {</text>
+  <text x="453" y="205" font-size="12" font-family="monospace" fill="#ffd54f">  if (n === 30) </text>
+  <text x="583" y="205" font-size="12" font-family="monospace" fill="#81c784">continue;</text>
+  <text x="453" y="222" font-size="12" font-family="monospace" fill="#e2e8f0">  console.log(n);</text>
+
+  <!-- Traza visual -->
+  <text x="605" y="248" text-anchor="middle" font-size="12" fill="#94a3b8">Resultado en consola:</text>
+
+  <!-- Celdas con resultado -->
+  <rect x="480" y="256" width="50" height="28" rx="5" fill="#1a3c2e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="505" y="275" text-anchor="middle" font-size="13" fill="#81c784">10</text>
+
+  <rect x="540" y="256" width="50" height="28" rx="5" fill="#1a3c2e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="565" y="275" text-anchor="middle" font-size="13" fill="#81c784">20</text>
+
+  <!-- 30 saltado -->
+  <rect x="600" y="256" width="50" height="28" rx="5" fill="#3a1a1a" stroke="#ffd54f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="625" y="272" text-anchor="middle" font-size="11" fill="#ffd54f">skip</text>
+
+  <!-- Flecha curvada por encima de 30 -->
+  <path d="M 620 256 Q 620 238 660 256" fill="none" stroke="#ffd54f" stroke-width="1.5" marker-end="url(#arrowC)" stroke-dasharray="4 2"/>
+
+  <rect x="660" y="256" width="50" height="28" rx="5" fill="#1a3c2e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="685" y="275" text-anchor="middle" font-size="13" fill="#81c784">40</text>
+
+  <rect x="720" y="256" width="50" height="28" rx="5" fill="#1a3c2e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="745" y="275" text-anchor="middle" font-size="13" fill="#81c784">50</text>
+
+  <text x="605" y="340" text-anchor="middle" font-size="12" fill="#e2e8f0">Imprime: 10, 20, 40, 50</text>
+  <text x="605" y="358" text-anchor="middle" font-size="11" fill="#94a3b8">Solo 30 es omitido, el bucle continúa</text>
+
+  <!-- Marcadores de flecha -->
+  <defs>
+    <marker id="arrowC" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#ffd54f"/>
+    </marker>
+  </defs>
+
+</svg>

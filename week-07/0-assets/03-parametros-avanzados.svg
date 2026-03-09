@@ -1,0 +1,79 @@
+<svg width="900" height="480" viewBox="0 0 900 480" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="900" height="480" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">Parámetros por Defecto</text>
+  <line x1="60" y1="50" x2="840" y2="50" stroke="#F0DB4F" stroke-width="1" opacity="0.3"/>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!--  Panel superior: SIN vs CON default -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="65" width="390" height="160" rx="8" fill="#16213e" stroke="#e57373" stroke-width="1.5"/>
+  <text x="235" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#e57373">❌ SIN valor por defecto</text>
+
+  <text x="60" y="115" font-size="12" font-family="monospace" fill="#ffffff">const greet = (name, greeting) =></text>
+  <text x="60" y="137" font-size="12" font-family="monospace" fill="#ffffff">  `${greeting}, ${name}!`;</text>
+
+  <text x="60" y="165" font-size="12" font-family="monospace" fill="#888">// Argumento omitido</text>
+  <text x="60" y="185" font-size="12" font-family="monospace" fill="#ffffff">greet("Carlos");</text>
+  <text x="60" y="205" font-size="12" font-family="monospace" fill="#e57373">// "undefined, Carlos!" ← problema</text>
+
+  <rect x="460" y="65" width="400" height="160" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="660" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#81c784">✅ CON valor por defecto</text>
+
+  <text x="480" y="115" font-size="12" font-family="monospace" fill="#ffffff">const greet = (name, </text>
+  <text x="672" y="115" font-size="12" font-family="monospace" fill="#4fc3f7">greeting</text>
+  <text x="724" y="115" font-size="12" font-family="monospace" fill="#F0DB4F"> = "Hola"</text>
+  <text x="789" y="115" font-size="12" font-family="monospace" fill="#ffffff">) =></text>
+  <text x="480" y="137" font-size="12" font-family="monospace" fill="#ffffff">  `${greeting}, ${name}!`;</text>
+
+  <text x="480" y="165" font-size="12" font-family="monospace" fill="#888">// Argumento omitido → usa default</text>
+  <text x="480" y="185" font-size="12" font-family="monospace" fill="#ffffff">greet("Carlos");</text>
+  <text x="480" y="205" font-size="12" font-family="monospace" fill="#81c784">// "Hola, Carlos!" ✅</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel medio: qué activa el default -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="245" width="820" height="90" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="450" y="268" text-anchor="middle" font-size="13" font-weight="700" fill="#4fc3f7">¿Cuándo se usa el valor por defecto?</text>
+
+  <!-- Celda 1 -->
+  <rect x="60" y="280" width="230" height="40" rx="4" fill="#81c78422"/>
+  <text x="175" y="296" text-anchor="middle" font-size="11" fill="#cccccc">Argumento omitido</text>
+  <text x="175" y="312" text-anchor="middle" font-size="12" font-family="monospace" fill="#81c784">greet("Ana")  ✅ usa default</text>
+
+  <!-- Celda 2 -->
+  <rect x="305" y="280" width="270" height="40" rx="4" fill="#81c78422"/>
+  <text x="440" y="296" text-anchor="middle" font-size="11" fill="#cccccc">Argumento es undefined</text>
+  <text x="440" y="312" text-anchor="middle" font-size="12" font-family="monospace" fill="#81c784">greet("Ana", undefined)  ✅ usa default</text>
+
+  <!-- Celda 3 -->
+  <rect x="590" y="280" width="250" height="40" rx="4" fill="#e5737322"/>
+  <text x="715" y="296" text-anchor="middle" font-size="11" fill="#cccccc">Argumento es null o falsy</text>
+  <text x="715" y="312" text-anchor="middle" font-size="12" font-family="monospace" fill="#e57373">greet("Ana", null)  ❌ null ≠ undefined</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel inferior: ORDEN CORRECTO -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="355" width="820" height="110" rx="8" fill="#16213e" stroke="#ffd54f" stroke-width="1.5"/>
+  <text x="450" y="378" text-anchor="middle" font-size="13" font-weight="700" fill="#ffd54f">ORDEN: parámetros obligatorios primero</text>
+
+  <!-- MAL -->
+  <rect x="60" y="390" width="350" height="62" rx="4" fill="#e5737318" stroke="#e57373" stroke-width="1"/>
+  <text x="235" y="407" text-anchor="middle" font-size="11" fill="#e57373">❌ Parámetro sin default después de uno con default</text>
+  <text x="75" y="430" font-size="12" font-family="monospace" fill="#ffffff">const bad = (</text>
+  <text x="165" y="430" font-size="12" font-family="monospace" fill="#e57373">a = 1</text>
+  <text x="199" y="430" font-size="12" font-family="monospace" fill="#ffffff">, b) => a + b;</text>
+  <text x="75" y="446" font-size="11" fill="#e57373">// b nunca puede saber su posición</text>
+
+  <!-- BIEN -->
+  <rect x="430" y="390" width="410" height="62" rx="4" fill="#81c78418" stroke="#81c784" stroke-width="1"/>
+  <text x="635" y="407" text-anchor="middle" font-size="11" fill="#81c784">✅ Obligatorios primero, con default al final</text>
+  <text x="445" y="430" font-size="12" font-family="monospace" fill="#ffffff">const good = (a, </text>
+  <text x="565" y="430" font-size="12" font-family="monospace" fill="#81c784">b = 1</text>
+  <text x="600" y="430" font-size="12" font-family="monospace" fill="#ffffff">) => a + b;</text>
+  <text x="445" y="446" font-size="12" font-family="monospace" fill="#81c784">good(5) → 6   |   good(5, 3) → 8</text>
+
+</svg>

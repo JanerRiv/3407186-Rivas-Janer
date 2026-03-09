@@ -1,0 +1,68 @@
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+  <rect width="900" height="500" fill="#1a1a2e"/>
+  <text x="450" y="36" text-anchor="middle" fill="#F0DB4F" font-size="20" font-weight="bold">Spread Operator con Objetos  { ...obj }</text>
+
+  <!-- PANEL 1: Referencia vs Copia -->
+  <rect x="20" y="56" width="415" height="180" rx="8" fill="#16213e" stroke="#e57373" stroke-width="1.5"/>
+  <text x="227" y="77" text-anchor="middle" fill="#e57373" font-size="13" font-weight="bold">❌ Problema: Referencia con =</text>
+
+  <text x="36" y="100" fill="#e0e0e0" font-size="12" font-family="monospace">const original = { name: "Ana", score: 85 };</text>
+  <text x="36" y="120" fill="#e0e0e0" font-size="12" font-family="monospace">const wrongCopy = original;  </text>
+  <text x="250" y="120" fill="#e57373" font-size="11">← misma referencia</text>
+  <text x="36" y="142" fill="#e0e0e0" font-size="12" font-family="monospace">wrongCopy.score = 100;</text>
+  <text x="36" y="162" fill="#e57373" font-size="12" font-family="monospace">console.log(original.score); // 100 ← ¡cambió!</text>
+
+  <!-- Flecha entre paneles -->
+  <text x="447" y="148" text-anchor="middle" fill="#F0DB4F" font-size="24" font-weight="bold">→</text>
+
+  <rect x="465" y="56" width="415" height="180" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="672" y="77" text-anchor="middle" fill="#81c784" font-size="13" font-weight="bold">✅ Solución: Spread { ...obj }</text>
+
+  <text x="481" y="100" fill="#e0e0e0" font-size="12" font-family="monospace">const original = { name: "Ana", score: 85 };</text>
+  <text x="481" y="120" fill="#e0e0e0" font-size="12" font-family="monospace">const safeCopy = { ...original }; </text>
+  <text x="674" y="120" fill="#81c784" font-size="11">← copia real</text>
+  <text x="481" y="142" fill="#e0e0e0" font-size="12" font-family="monospace">safeCopy.score = 100;</text>
+  <text x="481" y="162" fill="#81c784" font-size="12" font-family="monospace">console.log(original.score); // 85 ← intacto</text>
+  <text x="481" y="182" fill="#81c784" font-size="12" font-family="monospace">console.log(safeCopy.score); // 100</text>
+
+  <!-- PANEL 2: Fusionar y sobrescribir (3 sub-paneles) -->
+  <rect x="20" y="254" width="270" height="195" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="155" y="275" text-anchor="middle" fill="#4fc3f7" font-size="13" font-weight="bold">Fusionar Objetos</text>
+
+  <text x="36" y="298" fill="#e0e0e0" font-size="11" font-family="monospace">const a = { x: 1, y: 2 };</text>
+  <text x="36" y="315" fill="#e0e0e0" font-size="11" font-family="monospace">const b = { y: 99, z: 3 };</text>
+  <text x="36" y="337" fill="#e0e0e0" font-size="11" font-family="monospace">const merged = { ...a, ...b };</text>
+  <rect x="36" y="346" width="238" height="24" rx="4" fill="#1a1a2e"/>
+  <text x="155" y="363" text-anchor="middle" fill="#81c784" font-size="11" font-family="monospace">{ x: 1, y: 99, z: 3 }</text>
+  <text x="36" y="388" fill="#ffd54f" font-size="10">⚠ b sobrescribe y de a</text>
+  <text x="36" y="403" fill="#aaa" font-size="10">Orden importa: el de la derecha gana</text>
+  <text x="36" y="428" fill="#aaa" font-size="10">{ ...defaults, ...userConfig }</text>
+
+  <rect x="308" y="254" width="270" height="195" rx="8" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="443" y="275" text-anchor="middle" fill="#ce93d8" font-size="13" font-weight="bold">Actualizar (Inmutable)</text>
+
+  <text x="324" y="298" fill="#e0e0e0" font-size="11" font-family="monospace">const product = {</text>
+  <text x="324" y="315" fill="#e0e0e0" font-size="11" font-family="monospace">  id: 1, name: "Laptop", price: 1200</text>
+  <text x="324" y="332" fill="#e0e0e0" font-size="11" font-family="monospace">};</text>
+  <text x="324" y="354" fill="#e0e0e0" font-size="9" font-family="monospace">const updated = { ...product, price: 999 };</text>
+  <rect x="324" y="363" width="238" height="24" rx="4" fill="#1a1a2e"/>
+  <text x="443" y="380" text-anchor="middle" fill="#ce93d8" font-size="11" font-family="monospace">{ id:1, name:"Laptop", price:999 }</text>
+  <text x="324" y="403" fill="#81c784" font-size="10">✅ product.price sigue siendo 1200</text>
+  <text x="324" y="420" fill="#aaa" font-size="10">Patrón inmutable: crear nuevo,</text>
+  <text x="324" y="436" fill="#aaa" font-size="10">no modificar el original</text>
+
+  <rect x="596" y="254" width="284" height="195" rx="8" fill="#16213e" stroke="#ffd54f" stroke-width="1.5"/>
+  <text x="738" y="275" text-anchor="middle" fill="#ffd54f" font-size="13" font-weight="bold">Shallow Copy ⚠</text>
+  <text x="738" y="292" text-anchor="middle" fill="#aaa" font-size="10">Solo copia el primer nivel</text>
+
+  <text x="612" y="315" fill="#e0e0e0" font-size="11" font-family="monospace">const orig = {</text>
+  <text x="612" y="332" fill="#e0e0e0" font-size="11" font-family="monospace">  name: "Ana",</text>
+  <text x="612" y="349" fill="#ffd54f" font-size="11" font-family="monospace">  addr: { city: "Lima" }</text>
+  <text x="612" y="366" fill="#e0e0e0" font-size="11" font-family="monospace">};</text>
+  <text x="612" y="386" fill="#e0e0e0" font-size="11" font-family="monospace">const copy = { ...orig };</text>
+  <text x="612" y="406" fill="#e0e0e0" font-size="11" font-family="monospace">copy.addr.city = "Bogotá";</text>
+  <text x="612" y="424" fill="#e57373" font-size="11" font-family="monospace">// orig.addr.city → "Bogotá" !</text>
+  <text x="612" y="442" fill="#81c784" font-size="10">Fix: { ...orig, addr: { ...orig.addr } }</text>
+
+  <text x="450" y="478" text-anchor="middle" fill="#888" font-size="11">Semana 09 — Bootcamp JavaScript ES2023</text>
+</svg>

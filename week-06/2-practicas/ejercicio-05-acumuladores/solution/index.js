@@ -1,0 +1,103 @@
+// ============================================
+// EJERCICIO 05: Contadores y Acumuladores — SOLUCIÓN
+// Semana 06 — Prácticas
+// ============================================
+
+// ============================================
+// PASO 1: Contador — contar ocurrencias
+// ============================================
+console.log("--- Paso 1: contador ---");
+
+const results = ["pass", "fail", "pass", "pass", "fail", "pass"];
+let passCount = 0;
+
+for (const result of results) {
+  if (result === "pass") {
+    passCount++;
+  }
+}
+
+console.log(`Aprobados: ${passCount} de ${results.length}`);
+
+console.log("");
+
+// ============================================
+// PASO 2: Acumulador — sumar valores
+// ============================================
+console.log("--- Paso 2: acumulador ---");
+
+const prices = [15.5, 8.0, 23.0, 6.5, 12.0];
+let total = 0;
+
+for (const price of prices) {
+  total += price;
+}
+
+const average = total / prices.length;
+console.log(`Total: $${total}`);
+console.log(`Promedio: $${average.toFixed(2)}`);
+
+console.log("");
+
+// ============================================
+// PASO 3: Máximo y mínimo
+// ============================================
+console.log("--- Paso 3: máximo y mínimo ---");
+
+const measurements = [34, 67, 21, 89, 45, 12, 78];
+
+// Iniciamos con el primer elemento como referencia inicial
+let maxVal = measurements[0];
+let minVal = measurements[0];
+
+for (const value of measurements) {
+  if (value > maxVal) maxVal = value;
+  if (value < minVal) minVal = value;
+}
+
+console.log(`Máximo: ${maxVal}`);
+console.log(`Mínimo: ${minVal}`);
+console.log(`Rango: ${maxVal - minVal}`);
+
+console.log("");
+
+// ============================================
+// PASO 4: Combinar contador + acumulador
+// ============================================
+console.log("--- Paso 4: combinar patrones ---");
+
+const evaluations = [72, 88, 45, 91, 63, 55, 84, 77];
+let totalScore = 0;
+let passedCount = 0;
+let highestScore = evaluations[0];
+
+// Un solo bucle realiza las tres operaciones
+for (const score of evaluations) {
+  totalScore += score;
+  if (score >= 60) passedCount++;
+  if (score > highestScore) highestScore = score;
+}
+
+const avgScore = totalScore / evaluations.length;
+console.log(`Promedio:  ${avgScore.toFixed(1)}`);
+console.log(`Aprobados: ${passedCount}/${evaluations.length}`);
+console.log(`Más alto:  ${highestScore}`);
+
+console.log("");
+
+// ============================================
+// PASO 5: Acumular en array — lista filtrada
+// ============================================
+console.log("--- Paso 5: acumular en array ---");
+
+const allItems = ["activo", "inactivo", "activo", "pendiente", "activo", "inactivo"];
+const activeItems = []; // acumulador tipo array
+
+for (const item of allItems) {
+  if (item === "activo") {
+    activeItems.push(item); // agrega al final del array acumulador
+  }
+}
+
+console.log(`Total: ${allItems.length}`);
+console.log(`Activos: ${activeItems.length}`);

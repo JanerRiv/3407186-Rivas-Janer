@@ -1,0 +1,71 @@
+<svg width="800" height="380" viewBox="0 0 800 380" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, 'Open Sans', system-ui, sans-serif">
+  <!-- Fondo -->
+  <rect width="800" height="380" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="400" y="35" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">Truthiness y Falsy Values</text>
+  <text x="400" y="56" text-anchor="middle" font-size="13" fill="#a0a0c0">Los 6 valores falsy — todo lo demás es truthy</text>
+
+  <!-- ===== COLUMNA FALSY ===== -->
+  <rect x="40" y="72" width="330" height="240" rx="8" fill="#16213e" stroke="#e57373" stroke-width="2"/>
+  <text x="205" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#e57373">✘  FALSY  (6 valores)</text>
+
+  <!-- Lista falsy -->
+  <rect x="60" y="105" width="290" height="26" rx="4" fill="#2a1010"/>
+  <text x="80" y="122" font-size="13" fill="#e57373" font-family="'Courier New', Courier, monospace">false</text>
+  <text x="230" y="122" font-size="12" fill="#a0a0c0">el booleano false</text>
+
+  <rect x="60" y="135" width="290" height="26" rx="4" fill="#1e1010"/>
+  <text x="80" y="152" font-size="13" fill="#e57373" font-family="'Courier New', Courier, monospace">0</text>
+  <text x="230" y="152" font-size="12" fill="#a0a0c0">el número cero</text>
+
+  <rect x="60" y="165" width="290" height="26" rx="4" fill="#2a1010"/>
+  <text x="80" y="182" font-size="13" fill="#e57373" font-family="'Courier New', Courier, monospace">""</text>
+  <text x="230" y="182" font-size="12" fill="#a0a0c0">string vacío</text>
+
+  <rect x="60" y="195" width="290" height="26" rx="4" fill="#1e1010"/>
+  <text x="80" y="212" font-size="13" fill="#e57373" font-family="'Courier New', Courier, monospace">null</text>
+  <text x="230" y="212" font-size="12" fill="#a0a0c0">ausencia intencional</text>
+
+  <rect x="60" y="225" width="290" height="26" rx="4" fill="#2a1010"/>
+  <text x="80" y="242" font-size="13" fill="#e57373" font-family="'Courier New', Courier, monospace">undefined</text>
+  <text x="230" y="242" font-size="12" fill="#a0a0c0">sin valor asignado</text>
+
+  <rect x="60" y="255" width="290" height="26" rx="4" fill="#1e1010"/>
+  <text x="80" y="272" font-size="13" fill="#e57373" font-family="'Courier New', Courier, monospace">NaN</text>
+  <text x="230" y="272" font-size="12" fill="#a0a0c0">Not a Number</text>
+
+  <!-- ===== COLUMNA TRUTHY ===== -->
+  <rect x="430" y="72" width="330" height="240" rx="8" fill="#16213e" stroke="#81c784" stroke-width="2"/>
+  <text x="595" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#81c784">✔  TRUTHY  (todo lo demás)</text>
+
+  <!-- Lista truthy -->
+  <rect x="450" y="105" width="290" height="26" rx="4" fill="#0a1a0a"/>
+  <text x="470" y="122" font-size="13" fill="#81c784" font-family="'Courier New', Courier, monospace">true, 1, -1</text>
+  <text x="620" y="122" font-size="12" fill="#a0a0c0">booleano / números</text>
+
+  <rect x="450" y="135" width="290" height="26" rx="4" fill="#0d200d"/>
+  <text x="470" y="152" font-size="13" fill="#81c784" font-family="'Courier New', Courier, monospace">"texto", "0"</text>
+  <text x="620" y="152" font-size="12" fill="#a0a0c0">string con contenido</text>
+
+  <rect x="450" y="165" width="290" height="26" rx="4" fill="#0a1a0a"/>
+  <text x="470" y="182" font-size="13" fill="#81c784" font-family="'Courier New', Courier, monospace">[]</text>
+  <text x="620" y="182" font-size="12" fill="#F0DB4F">array vacío ← truthy</text>
+
+  <rect x="450" y="195" width="290" height="26" rx="4" fill="#0d200d"/>
+  <text x="470" y="212" font-size="13" fill="#81c784" font-family="'Courier New', Courier, monospace">{}</text>
+  <text x="620" y="212" font-size="12" fill="#F0DB4F">objeto vacío ← truthy</text>
+
+  <rect x="450" y="225" width="290" height="26" rx="4" fill="#0a1a0a"/>
+  <text x="470" y="242" font-size="13" fill="#81c784" font-family="'Courier New', Courier, monospace">"false"</text>
+  <text x="620" y="242" font-size="12" fill="#F0DB4F">string "false" ← truthy</text>
+
+  <rect x="450" y="255" width="290" height="26" rx="4" fill="#0d200d"/>
+  <text x="470" y="272" font-size="13" fill="#81c784" font-family="'Courier New', Courier, monospace">() => {}, new Date()</text>
+  <text x="470" y="284" font-size="11" fill="#a0a0c0">funciones y objetos</text>
+
+  <!-- ===== CORTOCIRCUITO ===== -->
+  <rect x="40" y="325" width="720" height="44" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="400" y="344" text-anchor="middle" font-size="13" font-weight="700" fill="#4fc3f7">Cortocircuito (short-circuit)</text>
+  <text x="400" y="362" text-anchor="middle" font-size="12" fill="#a0a0c0">&amp;&amp;  se detiene en el primer falsy    |    ||  se detiene en el primer truthy</text>
+</svg>

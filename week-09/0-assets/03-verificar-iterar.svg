@@ -1,0 +1,73 @@
+<svg width="900" height="490" viewBox="0 0 900 490" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+  <rect width="900" height="490" fill="#1a1a2e"/>
+  <text x="450" y="36" text-anchor="middle" fill="#F0DB4F" font-size="20" font-weight="bold">Verificar Propiedades e Iterar con for...in</text>
+
+  <!-- PANEL: Object.hasOwn -->
+  <rect x="20" y="56" width="420" height="195" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="230" y="77" text-anchor="middle" fill="#81c784" font-size="14" font-weight="bold">Object.hasOwn() — ES2022</text>
+  <text x="230" y="93" text-anchor="middle" fill="#aaa" font-size="11">Verifica propiedades propias (no heredadas)</text>
+
+  <text x="36" y="116" fill="#e0e0e0" font-size="12" font-family="monospace">const product = { id: 1, name: "Laptop", price: 1200 };</text>
+  <text x="36" y="138" fill="#e0e0e0" font-size="12" font-family="monospace">Object.hasOwn(product, "name")</text>
+  <text x="36" y="155" fill="#81c784" font-size="12" font-family="monospace">// true  ← existe como propiedad propia</text>
+  <text x="36" y="177" fill="#e0e0e0" font-size="12" font-family="monospace">Object.hasOwn(product, "category")</text>
+  <text x="36" y="194" fill="#e57373" font-size="12" font-family="monospace">// false ← no existe</text>
+  <text x="36" y="216" fill="#ffd54f" font-size="11">⚠ Preferir sobre hasOwnProperty() — más seguro (ES2022)</text>
+  <text x="36" y="234" fill="#aaa" font-size="11">✅ Object.hasOwn(obj, key)    ❌ obj.hasOwnProperty(key)</text>
+
+  <!-- PANEL: Operador in -->
+  <rect x="460" y="56" width="420" height="195" rx="8" fill="#16213e" stroke="#ffd54f" stroke-width="1.5"/>
+  <text x="670" y="77" text-anchor="middle" fill="#ffd54f" font-size="14" font-weight="bold">Operador in</text>
+  <text x="670" y="93" text-anchor="middle" fill="#aaa" font-size="11">Incluye propiedades heredadas del prototype</text>
+
+  <text x="476" y="116" fill="#e0e0e0" font-size="12" font-family="monospace">const obj = { name: "Ana" };</text>
+  <text x="476" y="138" fill="#e0e0e0" font-size="12" font-family="monospace">"name" in obj</text>
+  <text x="476" y="155" fill="#81c784" font-size="12" font-family="monospace">// true  ← propiedad propia</text>
+  <text x="476" y="177" fill="#e0e0e0" font-size="12" font-family="monospace">"toString" in obj</text>
+  <text x="476" y="194" fill="#ffd54f" font-size="12" font-family="monospace">// true  ← heredada de Object!</text>
+  <text x="476" y="216" fill="#aaa" font-size="11">Usar cuando herencia es intencional</text>
+  <text x="476" y="234" fill="#aaa" font-size="11">Object.hasOwn detecta solo propias</text>
+
+  <!-- PANEL: for...in -->
+  <rect x="20" y="270" width="420" height="185" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="230" y="291" text-anchor="middle" fill="#4fc3f7" font-size="14" font-weight="bold">for...in — Iterar Propiedades</text>
+
+  <text x="36" y="314" fill="#e0e0e0" font-size="10" font-family="monospace">const config = { host: "localhost", port: 3000, debug: false };</text>
+  <text x="36" y="336" fill="#e0e0e0" font-size="12" font-family="monospace">for (const key in config) {</text>
+  <text x="36" y="354" fill="#4fc3f7" font-size="12" font-family="monospace">  console.log(`${key}: ${config[key]}`);</text>
+  <text x="36" y="372" fill="#e0e0e0" font-size="12" font-family="monospace">}</text>
+  <text x="36" y="392" fill="#81c784" font-size="12" font-family="monospace">// host: localhost</text>
+  <text x="36" y="408" fill="#81c784" font-size="12" font-family="monospace">// port: 3000   /  debug: false</text>
+  <text x="36" y="428" fill="#ffd54f" font-size="11">⚠ Agregar Object.hasOwn(obj, key) para filtrar heredadas</text>
+  <text x="36" y="445" fill="#aaa" font-size="11">cuando el objeto puede heredar propiedades externas</text>
+
+  <!-- PANEL: Comparación for...in vs Object.keys -->
+  <rect x="460" y="270" width="420" height="185" rx="8" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="670" y="291" text-anchor="middle" fill="#ce93d8" font-size="14" font-weight="bold">for...in  vs  Object.keys</text>
+
+  <!-- encabezado tabla -->
+  <rect x="476" y="300" width="388" height="22" rx="3" fill="#0d1117"/>
+  <text x="570" y="315" text-anchor="middle" fill="#e0e0e0" font-size="11" font-weight="bold">for...in</text>
+  <text x="760" y="315" text-anchor="middle" fill="#e0e0e0" font-size="11" font-weight="bold">Object.keys().forEach</text>
+
+  <text x="476" y="338" fill="#aaa" font-size="11">Herencia</text>
+  <text x="570" y="338" text-anchor="middle" fill="#ffd54f" font-size="11">Incluye (sin filtro)</text>
+  <text x="760" y="338" text-anchor="middle" fill="#81c784" font-size="11">Solo propias</text>
+
+  <text x="476" y="358" fill="#aaa" font-size="11">Soporte break</text>
+  <text x="570" y="358" text-anchor="middle" fill="#81c784" font-size="11">✅ sí</text>
+  <text x="760" y="358" text-anchor="middle" fill="#e57373" font-size="11">❌ no</text>
+
+  <text x="476" y="378" fill="#aaa" font-size="11">Estilo</text>
+  <text x="570" y="378" text-anchor="middle" fill="#aaa" font-size="11">Imperativo</text>
+  <text x="760" y="378" text-anchor="middle" fill="#81c784" font-size="11">Funcional ✅ preferido</text>
+
+  <text x="476" y="398" fill="#aaa" font-size="11">Uso sugerido</text>
+  <text x="570" y="398" text-anchor="middle" fill="#aaa" font-size="11">Con break / herencia</text>
+  <text x="760" y="398" text-anchor="middle" fill="#81c784" font-size="11">Código moderno</text>
+
+  <text x="476" y="428" fill="#ce93d8" font-size="11">Preferir Object.keys().forEach() en código nuevo</text>
+  <text x="476" y="445" fill="#aaa" font-size="11">for...in cuando necesitas break o propiedades heredadas</text>
+
+  <text x="450" y="476" text-anchor="middle" fill="#888" font-size="11">Semana 09 — Bootcamp JavaScript ES2023</text>
+</svg>

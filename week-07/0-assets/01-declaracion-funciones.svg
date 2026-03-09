@@ -1,0 +1,98 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="900" height="520" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">Declaración de Funciones</text>
+  <line x1="60" y1="50" x2="840" y2="50" stroke="#F0DB4F" stroke-width="1" opacity="0.3"/>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel izquierdo: ANATOMÍA -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="70" width="390" height="220" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="235" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#4fc3f7">ANATOMÍA DE UNA FUNCIÓN</text>
+
+  <!-- Código con colores -->
+  <text x="65" y="125" font-size="13" font-family="monospace" fill="#ce93d8">function </text>
+  <text x="150" y="125" font-size="13" font-family="monospace" fill="#F0DB4F">calculateArea</text>
+  <text x="270" y="125" font-size="13" font-family="monospace" fill="#ffffff">(</text>
+  <text x="279" y="125" font-size="13" font-family="monospace" fill="#81c784">width</text>
+  <text x="319" y="125" font-size="13" font-family="monospace" fill="#ffffff">, </text>
+  <text x="333" y="125" font-size="13" font-family="monospace" fill="#81c784">height</text>
+  <text x="383" y="125" font-size="13" font-family="monospace" fill="#ffffff">) {</text>
+
+  <text x="80" y="150" font-size="13" font-family="monospace" fill="#ffffff">const area = width * height;</text>
+  <text x="80" y="175" font-size="13" font-family="monospace" fill="#ffd54f">return</text>
+  <text x="127" y="175" font-size="13" font-family="monospace" fill="#ffffff"> area;</text>
+  <text x="65" y="200" font-size="13" font-family="monospace" fill="#ffffff">}</text>
+
+  <!-- Etiquetas con flechas -->
+  <!-- function keyword -->
+  <line x1="108" y1="132" x2="108" y2="240" stroke="#ce93d8" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="108" y="255" text-anchor="middle" font-size="11" fill="#ce93d8">palabra clave</text>
+
+  <!-- nombre -->
+  <line x1="205" y1="132" x2="205" y2="265" stroke="#F0DB4F" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="205" y="280" text-anchor="middle" font-size="11" fill="#F0DB4F">nombre</text>
+
+  <!-- parámetros -->
+  <line x1="325" y1="132" x2="325" y2="240" stroke="#81c784" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="325" y="255" text-anchor="middle" font-size="11" fill="#81c784">parámetros</text>
+
+  <!-- return -->
+  <line x1="100" y1="180" x2="55" y2="220" stroke="#ffd54f" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="42" y="233" text-anchor="start" font-size="11" fill="#ffd54f">return</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel derecho: LLAMADA Y RESULTADO -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="460" y="70" width="400" height="220" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="660" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#81c784">DECLARAR vs LLAMAR</text>
+
+  <!-- Declaración -->
+  <rect x="478" y="105" width="365" height="55" rx="4" fill="#1a1a2e"/>
+  <text x="490" y="123" font-size="11" fill="#888">// 1. Declarar — define qué hace</text>
+  <text x="490" y="145" font-size="13" font-family="monospace" fill="#ffffff">function sayHello(name) { ... }</text>
+
+  <!-- Llamada -->
+  <rect x="478" y="170" width="365" height="80" rx="4" fill="#1a1a2e"/>
+  <text x="490" y="188" font-size="11" fill="#888">// 2. Llamar — executa y usa el resultado</text>
+  <text x="490" y="210" font-size="13" font-family="monospace" fill="#ffffff">const msg = </text>
+  <text x="588" y="210" font-size="13" font-family="monospace" fill="#F0DB4F">sayHello</text>
+  <text x="645" y="210" font-size="13" font-family="monospace" fill="#ffffff">("Ana");</text>
+  <text x="490" y="235" font-size="11" fill="#888">//          ↑ argumento real</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Fila inferior: tabla parámetro vs argumento -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="315" width="820" height="130" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="1.5"/>
+  <text x="450" y="340" text-anchor="middle" font-size="13" font-weight="700" fill="#F0DB4F">PARÁMETRO vs ARGUMENTO</text>
+
+  <!-- Encabezados tabla -->
+  <rect x="60" y="352" width="230" height="28" rx="4" fill="#F0DB4F" opacity="0.15"/>
+  <text x="175" y="371" text-anchor="middle" font-size="12" font-weight="700" fill="#F0DB4F">Concepto</text>
+  <rect x="300" y="352" width="250" height="28" rx="4" fill="#F0DB4F" opacity="0.15"/>
+  <text x="425" y="371" text-anchor="middle" font-size="12" font-weight="700" fill="#F0DB4F">Descripción</text>
+  <rect x="560" y="352" width="280" height="28" rx="4" fill="#F0DB4F" opacity="0.15"/>
+  <text x="700" y="371" text-anchor="middle" font-size="12" font-weight="700" fill="#F0DB4F">Ejemplo</text>
+
+  <!-- Filas -->
+  <line x1="60" y1="380" x2="840" y2="380" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <text x="175" y="400" text-anchor="middle" font-size="12" fill="#81c784">Parámetro</text>
+  <text x="425" y="400" text-anchor="middle" font-size="12" fill="#cccccc">Variable en la declaración</text>
+  <text x="700" y="400" text-anchor="middle" font-size="12" font-family="monospace" fill="#81c784">function f(name)</text>
+
+  <line x1="60" y1="410" x2="840" y2="410" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <text x="175" y="430" text-anchor="middle" font-size="12" fill="#ffd54f">Argumento</text>
+  <text x="425" y="430" text-anchor="middle" font-size="12" fill="#cccccc">Valor real al llamar</text>
+  <text x="700" y="430" text-anchor="middle" font-size="12" font-family="monospace" fill="#ffd54f">f("Ana")</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Footer: return -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="460" width="820" height="48" rx="8" fill="#16213e" stroke="#ffd54f" stroke-width="1.5"/>
+  <text x="450" y="479" text-anchor="middle" font-size="12" font-weight="700" fill="#ffd54f">⚠️  return</text>
+  <text x="450" y="498" text-anchor="middle" font-size="12" fill="#cccccc">Si no hay return, la función devuelve undefined. Siempre usa el valor retornado.</text>
+
+</svg>

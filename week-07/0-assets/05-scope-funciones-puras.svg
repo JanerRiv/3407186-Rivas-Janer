@@ -1,0 +1,98 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="900" height="520" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">Scope y Funciones Puras</text>
+  <line x1="60" y1="50" x2="840" y2="50" stroke="#F0DB4F" stroke-width="1" opacity="0.3"/>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel izquierdo: SCOPE visual -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="65" width="390" height="260" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="235" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#4fc3f7">SCOPE — Ámbito de variables</text>
+
+  <!-- Scope global -->
+  <rect x="58" y="100" width="355" height="212" rx="6" fill="#4fc3f712" stroke="#4fc3f7" stroke-width="1" stroke-dasharray="5,3"/>
+  <text x="240" y="120" text-anchor="middle" font-size="11" fill="#4fc3f7">🌍  SCOPE GLOBAL</text>
+  <text x="75" y="142" font-size="12" font-family="monospace" fill="#ffd54f">const</text>
+  <text x="112" y="142" font-size="12" font-family="monospace" fill="#ffffff"> APP_NAME = "Mi App";</text>
+
+  <!-- Scope función -->
+  <rect x="75" y="155" width="320" height="145" rx="6" fill="#ce93d812" stroke="#ce93d8" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="235" y="175" text-anchor="middle" font-size="11" fill="#ce93d8">🔒  SCOPE LOCAL (función)</text>
+  <text x="90" y="197" font-size="12" font-family="monospace" fill="#ce93d8">const</text>
+  <text x="128" y="197" font-size="12" font-family="monospace" fill="#F0DB4F"> showVersion</text>
+  <text x="215" y="197" font-size="12" font-family="monospace" fill="#ffffff"> = () => {</text>
+  <text x="105" y="217" font-size="12" font-family="monospace" fill="#ffd54f">const</text>
+  <text x="143" y="217" font-size="12" font-family="monospace" fill="#ffffff"> ver = "1.0"; </text>
+  <text x="243" y="217" font-size="11" fill="#81c784">← local</text>
+  <text x="105" y="237" font-size="12" font-family="monospace" fill="#ffffff">console.log(APP_NAME);</text>
+  <text x="105" y="252" font-size="11" fill="#81c784">// ✅ puede ver globales</text>
+  <text x="90" y="272" font-size="12" font-family="monospace" fill="#ffffff">};</text>
+  <text x="90" y="292" font-size="12" font-family="monospace" fill="#e57373">ver; // ❌ no existe aquí</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel derecho: FUNCIONES PURAS -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="460" y="65" width="400" height="260" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="660" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#81c784">FUNCIÓN PURA — 2 reglas</text>
+
+  <!-- Regla 1 -->
+  <rect x="478" y="100" width="365" height="55" rx="4" fill="#81c78415"/>
+  <text x="660" y="118" text-anchor="middle" font-size="12" font-weight="700" fill="#81c784">Regla 1: mismo input → mismo output</text>
+  <text x="490" y="142" font-size="12" font-family="monospace" fill="#ffffff">add(3, 4); </text>
+  <text x="563" y="142" font-size="12" font-family="monospace" fill="#81c784">// siempre 7</text>
+  <text x="648" y="142" font-size="12" font-family="monospace" fill="#ffffff">add(3, 4); </text>
+  <text x="721" y="142" font-size="12" font-family="monospace" fill="#81c784">// siempre 7</text>
+
+  <!-- Regla 2 -->
+  <rect x="478" y="162" width="365" height="55" rx="4" fill="#81c78415"/>
+  <text x="660" y="180" text-anchor="middle" font-size="12" font-weight="700" fill="#81c784">Regla 2: sin efectos secundarios</text>
+  <text x="490" y="204" font-size="12" font-family="monospace" fill="#888">// No modifica nada fuera de ella</text>
+
+  <!-- Comparación MAL vs BIEN -->
+  <rect x="478" y="225" width="170" height="88" rx="4" fill="#e5737315" stroke="#e57373" stroke-width="1"/>
+  <text x="562" y="241" text-anchor="middle" font-size="11" fill="#e57373">❌ No pura</text>
+  <text x="488" y="258" font-size="11" font-family="monospace" fill="#888">let count = 0;</text>
+  <text x="488" y="274" font-size="11" font-family="monospace" fill="#ffffff">const add = (n) => {</text>
+  <text x="488" y="290" font-size="11" font-family="monospace" fill="#e57373">  count++; </text>
+  <text x="488" y="306" font-size="11" font-family="monospace" fill="#ffffff">  return n + 1;</text>
+  <text x="488" y="301" font-size="11" font-family="monospace" fill="#ffffff">};</text>
+
+  <rect x="660" y="225" width="183" height="88" rx="4" fill="#81c78415" stroke="#81c784" stroke-width="1"/>
+  <text x="751" y="241" text-anchor="middle" font-size="11" fill="#81c784">✅ Pura</text>
+  <text x="670" y="258" font-size="11" font-family="monospace" fill="#ffffff">const add = (n, count)</text>
+  <text x="670" y="274" font-size="11" font-family="monospace" fill="#ffffff">  => ({</text>
+  <text x="670" y="290" font-size="11" font-family="monospace" fill="#ffffff">    result: n + 1,</text>
+  <text x="670" y="306" font-size="11" font-family="monospace" fill="#ffffff">    count: count + 1</text>
+  <text x="670" y="322" font-size="11" font-family="monospace" fill="#ffffff">  });</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel inferior: efectos secundarios tabla -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="345" width="820" height="160" rx="8" fill="#16213e" stroke="#ffd54f" stroke-width="1.5"/>
+  <text x="450" y="368" text-anchor="middle" font-size="13" font-weight="700" fill="#ffd54f">PATRÓN: separar CÁLCULO de EFECTO</text>
+
+  <!-- Funciones puras (izq) -->
+  <rect x="58" y="380" width="350" height="110" rx="4" fill="#81c78410"/>
+  <text x="233" y="397" text-anchor="middle" font-size="12" font-weight="700" fill="#81c784">Funciones de cálculo (puras)</text>
+  <text x="68" y="415" font-size="11" font-family="monospace" fill="#ffffff">const applyDiscount = (p, d) =></text>
+  <text x="68" y="431" font-size="11" font-family="monospace" fill="#ffffff">  p * (1 - d / 100);</text>
+  <text x="68" y="450" font-size="11" font-family="monospace" fill="#ffffff">const formatPrice = (p) =></text>
+  <text x="68" y="466" font-size="11" font-family="monospace" fill="#ffffff">  `USD ${p.toFixed(2)}`;</text>
+  <text x="68" y="482" font-size="11" font-family="monospace" fill="#ffffff">const isAffordable = (p, b) =></text>
+  <text x="68" y="484" font-size="11" font-family="monospace" fill="#ffffff">  p &lt;= b;</text>
+
+  <!-- Función de efecto (der) -->
+  <rect x="428" y="380" width="415" height="110" rx="4" fill="#ffd54f10"/>
+  <text x="635" y="397" text-anchor="middle" font-size="12" font-weight="700" fill="#ffd54f">Función de efecto (usa las puras)</text>
+  <text x="438" y="415" font-size="11" font-family="monospace" fill="#ffffff">const showSummary = (product, budget) => {</text>
+  <text x="438" y="431" font-size="11" font-family="monospace" fill="#ffffff">  const disc = applyDiscount(product.price, 10);</text>
+  <text x="438" y="447" font-size="11" font-family="monospace" fill="#ffffff">  const label = formatPrice(disc);</text>
+  <text x="438" y="463" font-size="11" font-family="monospace" fill="#ffd54f">  console.log(label);</text>
+  <text x="438" y="479" font-size="11" font-family="monospace" fill="#ffffff">};</text>
+  <text x="438" y="485" font-size="11" fill="#888">         ↑ único efecto secundario aquí</text>
+
+</svg>

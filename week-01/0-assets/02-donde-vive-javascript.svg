@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" font-family="Inter, Roboto, 'Open Sans', system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="800" height="440" fill="#1a1a2e" rx="12"/>
+
+  <!-- Título -->
+  <text x="400" y="42" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">¿Dónde vive JavaScript?</text>
+  <text x="400" y="64" text-anchor="middle" font-size="13" fill="#a0aec0">Un lenguaje que corre en muchos lugares al mismo tiempo</text>
+
+  <!-- ─────── NAVEGADOR (izquierda) ─────── -->
+  <rect x="40" y="90" width="220" height="300" rx="10" fill="#16213e" stroke="#4299e1" stroke-width="2"/>
+  <!-- barra del navegador -->
+  <rect x="40" y="90" width="220" height="36" rx="10" fill="#2a4365"/>
+  <rect x="40" y="112" width="220" height="14" fill="#2a4365"/>
+  <circle cx="66" cy="108" r="6" fill="#fc8181"/>
+  <circle cx="86" cy="108" r="6" fill="#F0DB4F"/>
+  <circle cx="106" cy="108" r="6" fill="#68d391"/>
+  <rect x="120" y="100" width="122" height="16" rx="8" fill="#1a365d"/>
+  <text x="181" y="112" text-anchor="middle" font-size="9" fill="#90cdf4">google.com</text>
+
+  <text x="150" y="158" text-anchor="middle" font-size="14" font-weight="700" fill="#4299e1">Navegador</text>
+  <text x="150" y="178" text-anchor="middle" font-size="11" fill="#718096">(Frontend)</text>
+
+  <line x1="60" y1="192" x2="240" y2="192" stroke="#2d3748" stroke-width="1"/>
+
+  <text x="150" y="215" text-anchor="middle" font-size="12" fill="#90cdf4">Páginas web interactivas</text>
+  <text x="150" y="235" text-anchor="middle" font-size="12" fill="#90cdf4">Formularios y validaciones</text>
+  <text x="150" y="255" text-anchor="middle" font-size="12" fill="#90cdf4">Menús y animaciones</text>
+  <text x="150" y="275" text-anchor="middle" font-size="12" fill="#90cdf4">Aplicaciones web (Gmail,</text>
+  <text x="150" y="292" text-anchor="middle" font-size="12" fill="#90cdf4">YouTube, Twitter…)</text>
+
+  <!-- badge JS -->
+  <rect x="110" y="330" width="80" height="36" rx="6" fill="#F0DB4F"/>
+  <text x="150" y="354" text-anchor="middle" font-size="18" font-weight="900" fill="#1a1a2e">JS</text>
+  <text x="150" y="378" text-anchor="middle" font-size="11" fill="#718096">Chrome · Firefox · Safari</text>
+
+  <!-- ─────── FLECHA central ─────── -->
+  <text x="400" y="172" text-anchor="middle" font-size="28" fill="#F0DB4F">⟷</text>
+  <text x="400" y="192" text-anchor="middle" font-size="11" fill="#718096">mismo lenguaje</text>
+
+  <!-- logo JS central -->
+  <rect x="368" y="210" width="64" height="64" rx="10" fill="#F0DB4F"/>
+  <text x="400" y="261" text-anchor="middle" font-size="34" font-weight="900" fill="#1a1a2e">JS</text>
+
+  <text x="400" y="300" text-anchor="middle" font-size="11" fill="#a0aec0">JavaScript</text>
+  <text x="400" y="316" text-anchor="middle" font-size="10" fill="#718096">ES2023</text>
+
+  <!-- ─────── NODE.JS (derecha) ─────── -->
+  <rect x="540" y="90" width="220" height="300" rx="10" fill="#16213e" stroke="#68d391" stroke-width="2"/>
+  <!-- terminal header -->
+  <rect x="540" y="90" width="220" height="36" rx="10" fill="#1c4532"/>
+  <rect x="540" y="112" width="220" height="14" fill="#1c4532"/>
+  <text x="650" y="112" text-anchor="middle" font-size="11" font-family="'Courier New', monospace" fill="#68d391">terminal</text>
+
+  <text x="650" y="158" text-anchor="middle" font-size="14" font-weight="700" fill="#68d391">Node.js</text>
+  <text x="650" y="178" text-anchor="middle" font-size="11" fill="#718096">(Backend / Herramienta)</text>
+
+  <line x1="560" y1="192" x2="740" y2="192" stroke="#2d3748" stroke-width="1"/>
+
+  <text x="650" y="215" text-anchor="middle" font-size="12" fill="#9ae6b4">Servidores web</text>
+  <text x="650" y="235" text-anchor="middle" font-size="12" fill="#9ae6b4">APIs y bases de datos</text>
+  <text x="650" y="255" text-anchor="middle" font-size="12" fill="#9ae6b4">Scripts y automatizaciones</text>
+  <text x="650" y="275" text-anchor="middle" font-size="12" fill="#9ae6b4">Herramientas de desarrollo</text>
+  <text x="650" y="292" text-anchor="middle" font-size="12" fill="#9ae6b4">(webpack, jest, eslint…)</text>
+
+  <!-- badge node -->
+  <rect x="600" y="326" width="100" height="36" rx="6" fill="#276749"/>
+  <text x="650" y="350" text-anchor="middle" font-size="13" font-weight="700" fill="#c6f6d5">Node.js</text>
+  <text x="650" y="378" text-anchor="middle" font-size="11" fill="#718096">En este bootcamp usamos Node</text>
+
+  <!-- ─────── nota inferior ─────── -->
+  <rect x="200" y="408" width="400" height="24" rx="6" fill="#2d3748"/>
+  <text x="400" y="424" text-anchor="middle" font-size="12" fill="#a0aec0">En este bootcamp usamos Node.js para ejecutar JS desde la terminal</text>
+
+</svg>

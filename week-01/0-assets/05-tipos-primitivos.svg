@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="Inter, Roboto, 'Open Sans', system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="800" height="500" fill="#1a1a2e" rx="12"/>
+
+  <!-- Título -->
+  <text x="400" y="42" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">Tipos de Datos Primitivos</text>
+  <text x="400" y="64" text-anchor="middle" font-size="13" fill="#a0aec0">Los bloques básicos con los que JavaScript trabaja</text>
+
+  <!-- ══════════ STRING ══════════ -->
+  <rect x="30" y="84" width="222" height="168" rx="10" fill="#16213e" stroke="#f6ad55" stroke-width="2"/>
+  <rect x="30" y="84" width="222" height="34" rx="10" fill="#7b3f00"/>
+  <rect x="30" y="104" width="222" height="14" fill="#7b3f00"/>
+  <text x="141" y="107" text-anchor="middle" font-size="14" font-weight="700" fill="#f6ad55">String</text>
+  <text x="141" y="122" text-anchor="middle" font-size="10" fill="#fbd38d">Texto (cadena de caracteres)</text>
+
+  <rect x="46" y="128" width="190" height="124" rx="6" fill="#0d1117"/>
+  <text x="58" y="148" font-size="11" font-family="'Courier New', monospace" fill="#68d391">const</text>
+  <text x="104" y="148" font-size="11" font-family="'Courier New', monospace" fill="#e2e8f0"> name = </text>
+  <text x="164" y="148" font-size="11" font-family="'Courier New', monospace" fill="#f6ad55">'Ana'</text>
+  <text x="58" y="166" font-size="11" font-family="'Courier New', monospace" fill="#68d391">const</text>
+  <text x="104" y="166" font-size="11" font-family="'Courier New', monospace" fill="#e2e8f0"> city = </text>
+  <text x="163" y="166" font-size="11" font-family="'Courier New', monospace" fill="#f6ad55">"Bogotá"</text>
+  <text x="58" y="184" font-size="11" font-family="'Courier New', monospace" fill="#68d391">const</text>
+  <text x="104" y="184" font-size="11" font-family="'Courier New', monospace" fill="#e2e8f0"> msg = </text>
+  <text x="155" y="184" font-size="9" font-family="'Courier New', monospace" fill="#f6ad55">`Hola ${"{"}name{"}"}`</text>
+
+  <line x1="58" y1="196" x2="220" y2="196" stroke="#2d3748" stroke-width="1"/>
+  <text x="58" y="212" font-size="10" fill="#718096">Comillas simples </text>
+  <text x="174" y="212" font-size="10" fill="#f6ad55">''</text>
+  <text x="58" y="228" font-size="10" fill="#718096">Comillas dobles </text>
+  <text x="170" y="228" font-size="10" fill="#f6ad55">""</text>
+  <text x="58" y="244" font-size="10" fill="#718096">Backticks </text>
+  <text x="136" y="244" font-size="10" fill="#F0DB4F">``  </text>
+  <text x="158" y="244" font-size="9" fill="#4a5568">← preferidas</text>
+
+  <!-- typeof string -->
+  <rect x="30" y="252" width="222" height="28" rx="0" fill="#4a2200"/>
+  <rect x="30" y="263" width="222" height="17" rx="0" fill="#4a2200"/>
+  <text x="141" y="272" text-anchor="middle" font-size="10" font-family="'Courier New', monospace" fill="#f6ad55">typeof 'Ana'  →  "string"</text>
+
+  <!-- ══════════ NUMBER ══════════ -->
+  <rect x="289" y="84" width="222" height="168" rx="10" fill="#16213e" stroke="#68d391" stroke-width="2"/>
+  <rect x="289" y="84" width="222" height="34" rx="10" fill="#1c4532"/>
+  <rect x="289" y="104" width="222" height="14" fill="#1c4532"/>
+  <text x="400" y="107" text-anchor="middle" font-size="14" font-weight="700" fill="#68d391">Number</text>
+  <text x="400" y="122" text-anchor="middle" font-size="10" fill="#9ae6b4">Enteros y decimales</text>
+
+  <rect x="305" y="128" width="190" height="124" rx="6" fill="#0d1117"/>
+  <text x="317" y="148" font-size="11" font-family="'Courier New', monospace" fill="#68d391">const</text>
+  <text x="363" y="148" font-size="11" font-family="'Courier New', monospace" fill="#e2e8f0"> age = </text>
+  <text x="413" y="148" font-size="11" font-family="'Courier New', monospace" fill="#90cdf4">25</text>
+  <text x="317" y="166" font-size="11" font-family="'Courier New', monospace" fill="#68d391">const</text>
+  <text x="363" y="166" font-size="11" font-family="'Courier New', monospace" fill="#e2e8f0"> price = </text>
+  <text x="421" y="166" font-size="11" font-family="'Courier New', monospace" fill="#90cdf4">9.99</text>
+  <text x="317" y="184" font-size="11" font-family="'Courier New', monospace" fill="#68d391">const</text>
+  <text x="363" y="184" font-size="11" font-family="'Courier New', monospace" fill="#e2e8f0"> big = </text>
+  <text x="411" y="184" font-size="11" font-family="'Courier New', monospace" fill="#90cdf4">1_000_000</text>
+
+  <line x1="317" y1="196" x2="479" y2="196" stroke="#2d3748" stroke-width="1"/>
+  <text x="317" y="212" font-size="10" fill="#718096">Sin comillas</text>
+  <text x="317" y="228" font-size="10" fill="#718096">Incluye decimales con </text>
+  <text x="455" y="228" font-size="10" fill="#90cdf4">.</text>
+  <text x="317" y="244" font-size="10" fill="#F0DB4F">1_000_000</text>
+  <text x="382" y="244" font-size="9" fill="#4a5568"> separador ES2021</text>
+
+  <rect x="289" y="252" width="222" height="28" rx="0" fill="#1a3329"/>
+  <rect x="289" y="263" width="222" height="17" rx="0" fill="#1a3329"/>
+  <text x="400" y="272" text-anchor="middle" font-size="10" font-family="'Courier New', monospace" fill="#68d391">typeof 25  →  "number"</text>
+
+  <!-- ══════════ BOOLEAN ══════════ -->
+  <rect x="548" y="84" width="222" height="168" rx="10" fill="#16213e" stroke="#9f7aea" stroke-width="2"/>
+  <rect x="548" y="84" width="222" height="34" rx="10" fill="#322659"/>
+  <rect x="548" y="104" width="222" height="14" fill="#322659"/>
+  <text x="659" y="107" text-anchor="middle" font-size="14" font-weight="700" fill="#9f7aea">Boolean</text>
+  <text x="659" y="122" text-anchor="middle" font-size="10" fill="#d6bcfa">Solo dos valores posibles</text>
+
+  <rect x="564" y="128" width="190" height="124" rx="6" fill="#0d1117"/>
+  <text x="576" y="148" font-size="11" font-family="'Courier New', monospace" fill="#68d391">const</text>
+  <text x="622" y="148" font-size="11" font-family="'Courier New', monospace" fill="#e2e8f0"> active = </text>
+  <text x="682" y="148" font-size="11" font-family="'Courier New', monospace" fill="#9f7aea">true</text>
+  <text x="576" y="166" font-size="11" font-family="'Courier New', monospace" fill="#68d391">const</text>
+  <text x="622" y="166" font-size="11" font-family="'Courier New', monospace" fill="#e2e8f0"> paid = </text>
+  <text x="674" y="166" font-size="11" font-family="'Courier New', monospace" fill="#9f7aea">false</text>
+  <text x="576" y="184" font-size="11" font-family="'Courier New', monospace" fill="#68d391">const</text>
+  <text x="622" y="184" font-size="11" font-family="'Courier New', monospace" fill="#e2e8f0"> adult = </text>
+  <text x="682" y="184" font-size="11" font-family="'Courier New', monospace" fill="#e2e8f0">age </text>
+  <text x="710" y="184" font-size="11" font-family="'Courier New', monospace" fill="#fc8181">&gt;= </text>
+  <text x="731" y="184" font-size="11" font-family="'Courier New', monospace" fill="#90cdf4">18</text>
+
+  <line x1="576" y1="196" x2="738" y2="196" stroke="#2d3748" stroke-width="1"/>
+  <text x="576" y="212" font-size="10" fill="#718096">Solo </text>
+  <text x="608" y="212" font-size="10" fill="#9f7aea">true </text>
+  <text x="640" y="212" font-size="10" fill="#718096">o </text>
+  <text x="655" y="212" font-size="10" fill="#9f7aea">false</text>
+  <text x="576" y="228" font-size="10" fill="#718096">Sin comillas</text>
+  <text x="576" y="244" font-size="10" fill="#718096">Resultado de comparaciones</text>
+
+  <rect x="548" y="252" width="222" height="28" rx="0" fill="#251d40"/>
+  <rect x="548" y="263" width="222" height="17" rx="0" fill="#251d40"/>
+  <text x="659" y="272" text-anchor="middle" font-size="10" font-family="'Courier New', monospace" fill="#9f7aea">typeof true  →  "boolean"</text>
+
+  <!-- ══════════ TYPEOF TABLA ══════════ -->
+  <rect x="30" y="300" width="740" height="90" rx="10" fill="#16213e" stroke="#2d3748" stroke-width="1"/>
+  <text x="400" y="322" text-anchor="middle" font-size="13" font-weight="700" fill="#F0DB4F">typeof — pregunta el tipo de cualquier valor</text>
+
+  <!-- columnas -->
+  <text x="110" y="348" text-anchor="middle" font-size="11" font-family="'Courier New', monospace" fill="#f6ad55">typeof 'hola'</text>
+  <text x="110" y="366" text-anchor="middle" font-size="11" font-family="'Courier New', monospace" fill="#4a5568">→ "string"</text>
+  <text x="110" y="382" text-anchor="middle" font-size="9" fill="#718096">texto entre comillas</text>
+
+  <line x1="210" y1="335" x2="210" y2="385" stroke="#2d3748" stroke-width="1"/>
+
+  <text x="290" y="348" text-anchor="middle" font-size="11" font-family="'Courier New', monospace" fill="#90cdf4">typeof 42</text>
+  <text x="290" y="366" text-anchor="middle" font-size="11" font-family="'Courier New', monospace" fill="#4a5568">→ "number"</text>
+  <text x="290" y="382" text-anchor="middle" font-size="9" fill="#718096">número sin comillas</text>
+
+  <line x1="370" y1="335" x2="370" y2="385" stroke="#2d3748" stroke-width="1"/>
+
+  <text x="450" y="348" text-anchor="middle" font-size="11" font-family="'Courier New', monospace" fill="#9f7aea">typeof true</text>
+  <text x="450" y="366" text-anchor="middle" font-size="11" font-family="'Courier New', monospace" fill="#4a5568">→ "boolean"</text>
+  <text x="450" y="382" text-anchor="middle" font-size="9" fill="#718096">true o false</text>
+
+  <line x1="530" y1="335" x2="530" y2="385" stroke="#2d3748" stroke-width="1"/>
+
+  <text x="610" y="348" text-anchor="middle" font-size="11" font-family="'Courier New', monospace" fill="#718096">typeof null</text>
+  <text x="610" y="363" text-anchor="middle" font-size="11" font-family="'Courier New', monospace" fill="#fc8181">→ "object" ⚠</text>
+  <text x="610" y="378" text-anchor="middle" font-size="9" fill="#718096">bug histórico de JS</text>
+
+  <line x1="690" y1="335" x2="690" y2="385" stroke="#2d3748" stroke-width="1"/>
+
+  <text x="730" y="348" text-anchor="middle" font-size="11" font-family="'Courier New', monospace" fill="#718096">typeof x</text>
+  <text x="730" y="363" text-anchor="middle" font-size="11" font-family="'Courier New', monospace" fill="#718096">→ "undefined"</text>
+  <text x="730" y="378" text-anchor="middle" font-size="9" fill="#718096">sin valor</text>
+
+  <!-- ══════════ NOTA null/undefined ══════════ -->
+  <rect x="30" y="406" width="740" height="76" rx="8" fill="#16213e" stroke="#2d3748" stroke-width="1"/>
+  <text x="400" y="428" text-anchor="middle" font-size="12" font-weight="700" fill="#a0aec0">Dos tipos especiales — ausencia de valor</text>
+
+  <rect x="46" y="438" width="325" height="34" rx="6" fill="#1a365d"/>
+  <text x="84" y="452" font-size="12" font-family="'Courier New', monospace" fill="#68d391">undefined</text>
+  <text x="160" y="452" font-size="11" fill="#90cdf4"> — sin valor asignado</text>
+  <text x="84" y="466" font-size="10" font-family="'Courier New', monospace" fill="#718096">let x;  // x es undefined</text>
+
+  <rect x="429" y="438" width="325" height="34" rx="6" fill="#2d3748"/>
+  <text x="467" y="452" font-size="12" font-family="'Courier New', monospace" fill="#fc8181">null</text>
+  <text x="503" y="452" font-size="11" fill="#a0aec0"> — ausencia intencional</text>
+  <text x="467" y="466" font-size="10" font-family="'Courier New', monospace" fill="#718096">let user = null; // vacío a propósito</text>
+
+</svg>

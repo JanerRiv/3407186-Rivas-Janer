@@ -1,0 +1,122 @@
+<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="900" height="520" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">Funciones como Valores y Callbacks</text>
+  <line x1="60" y1="50" x2="840" y2="50" stroke="#F0DB4F" stroke-width="1" opacity="0.3"/>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel superior izq: FUNCIONES COMO VALORES -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="65" width="390" height="165" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="235" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#4fc3f7">FUNCIONES = VALORES</text>
+
+  <text x="60" y="115" font-size="12" font-family="monospace" fill="#888">// Asignadas a variables</text>
+  <text x="60" y="133" font-size="12" font-family="monospace" fill="#ce93d8">const</text>
+  <text x="104" y="133" font-size="12" font-family="monospace" fill="#F0DB4F"> double</text>
+  <text x="148" y="133" font-size="12" font-family="monospace" fill="#ffffff"> = (n) => n * 2;</text>
+  <text x="60" y="151" font-size="12" font-family="monospace" fill="#ce93d8">const</text>
+  <text x="104" y="151" font-size="12" font-family="monospace" fill="#F0DB4F"> triple</text>
+  <text x="148" y="151" font-size="12" font-family="monospace" fill="#ffffff"> = (n) => n * 3;</text>
+
+  <text x="60" y="178" font-size="12" font-family="monospace" fill="#888">// En un array</text>
+  <text x="60" y="198" font-size="12" font-family="monospace" fill="#ffffff">const ops = [</text>
+  <text x="148" y="198" font-size="12" font-family="monospace" fill="#F0DB4F">double</text>
+  <text x="192" y="198" font-size="12" font-family="monospace" fill="#ffffff">, </text>
+  <text x="203" y="198" font-size="12" font-family="monospace" fill="#F0DB4F">triple</text>
+  <text x="247" y="198" font-size="12" font-family="monospace" fill="#ffffff">];</text>
+  <text x="60" y="218" font-size="12" font-family="monospace" fill="#ffffff">ops[0](5); </text>
+  <text x="133" y="218" font-size="12" font-family="monospace" fill="#81c784">// 10</text>
+  <text x="190" y="218" font-size="12" font-family="monospace" fill="#ffffff">ops[1](5); </text>
+  <text x="263" y="218" font-size="12" font-family="monospace" fill="#81c784">// 15</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel superior der: CALLBACK -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="460" y="65" width="400" height="165" rx="8" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="660" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#ce93d8">CALLBACK</text>
+
+  <text x="480" y="115" font-size="12" font-family="monospace" fill="#888">// Función que acepta otra función</text>
+  <text x="480" y="133" font-size="12" font-family="monospace" fill="#ffffff">const process = (data, </text>
+  <text x="636" y="133" font-size="12" font-family="monospace" fill="#ce93d8">callback</text>
+  <text x="695" y="133" font-size="12" font-family="monospace" fill="#ffffff">) => {</text>
+  <text x="480" y="151" font-size="12" font-family="monospace" fill="#ffffff">  const clean = data.trim();</text>
+  <text x="480" y="169" font-size="12" font-family="monospace" fill="#ffffff">  return </text>
+  <text x="531" y="169" font-size="12" font-family="monospace" fill="#ce93d8">callback</text>
+  <text x="590" y="169" font-size="12" font-family="monospace" fill="#ffffff">(clean);</text>
+  <text x="480" y="190" font-size="12" font-family="monospace" fill="#ffffff">};</text>
+
+  <text x="480" y="215" font-size="12" font-family="monospace" fill="#ffffff">process("  hola  ", (t) => t.toUpperCase());</text>
+  <text x="480" y="230" font-size="12" font-family="monospace" fill="#81c784">// → "HOLA"</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Diagrama de flujo callbacks -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="250" width="820" height="120" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="1.5"/>
+  <text x="450" y="273" text-anchor="middle" font-size="13" font-weight="700" fill="#F0DB4F">FLUJO DE EJECUCIÓN CON CALLBACK</text>
+
+  <!-- bloque llamante -->
+  <rect x="60" y="288" width="160" height="50" rx="6" fill="#4fc3f722" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="140" y="310" text-anchor="middle" font-size="12" fill="#4fc3f7">código principal</text>
+  <text x="140" y="328" text-anchor="middle" font-size="12" font-family="monospace" fill="#ffffff">process(data, fn)</text>
+
+  <!-- flecha → -->
+  <line x1="224" y1="313" x2="278" y2="313" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="251" y="308" text-anchor="middle" font-size="10" fill="#888">pasa fn</text>
+
+  <!-- bloque función principal -->
+  <rect x="280" y="288" width="200" height="50" rx="6" fill="#ce93d822" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="380" y="310" text-anchor="middle" font-size="12" fill="#ce93d8">process()</text>
+  <text x="380" y="328" text-anchor="middle" font-size="11" fill="#cccccc">ejecuta lógica interna</text>
+
+  <!-- flecha → -->
+  <line x1="484" y1="313" x2="538" y2="313" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="511" y="308" text-anchor="middle" font-size="10" fill="#888">llama fn()</text>
+
+  <!-- bloque callback -->
+  <rect x="540" y="288" width="200" height="50" rx="6" fill="#F0DB4F22" stroke="#F0DB4F" stroke-width="1.5"/>
+  <text x="640" y="310" text-anchor="middle" font-size="12" fill="#F0DB4F">callback fn()</text>
+  <text x="640" y="328" text-anchor="middle" font-size="11" fill="#cccccc">lógica personalizada</text>
+
+  <!-- flecha → resultado -->
+  <line x1="744" y1="313" x2="798" y2="313" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="771" y="308" text-anchor="middle" font-size="10" fill="#888">return</text>
+
+  <!-- bloque resultado -->
+  <rect x="800" y="288" width="50" height="50" rx="6" fill="#81c78422" stroke="#81c784" stroke-width="1.5"/>
+  <text x="825" y="317" text-anchor="middle" font-size="12" fill="#81c784">✅</text>
+
+  <!-- definición flecha -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#888"/>
+    </marker>
+  </defs>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel inferior: fn nombrada vs anónima -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="390" width="820" height="115" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1"/>
+  <text x="450" y="413" text-anchor="middle" font-size="13" font-weight="700" fill="#81c784">CALLBACK NOMBRADO vs ANÓNIMO</text>
+
+  <!-- Nombrado -->
+  <rect x="60" y="425" width="360" height="68" rx="4" fill="#1a1a2e"/>
+  <text x="240" y="441" text-anchor="middle" font-size="11" fill="#888">Callback nombrado (reutilizable)</text>
+  <text x="70" y="459" font-size="12" font-family="monospace" fill="#ce93d8">const</text>
+  <text x="110" y="459" font-size="12" font-family="monospace" fill="#F0DB4F"> shout</text>
+  <text x="143" y="459" font-size="12" font-family="monospace" fill="#ffffff"> = (t) => t.toUpperCase();</text>
+  <text x="70" y="479" font-size="12" font-family="monospace" fill="#ffffff">process("hola", </text>
+  <text x="186" y="479" font-size="12" font-family="monospace" fill="#F0DB4F">shout</text>
+  <text x="218" y="479" font-size="12" font-family="monospace" fill="#ffffff">);</text>
+  <text x="70" y="484" font-size="12" font-family="monospace" fill="#81c784">            // reutilizable en otro lado</text>
+
+  <!-- Anónimo -->
+  <rect x="440" y="425" width="400" height="68" rx="4" fill="#1a1a2e"/>
+  <text x="640" y="441" text-anchor="middle" font-size="11" fill="#888">Callback anónimo (inline, uso único)</text>
+  <text x="450" y="459" font-size="12" font-family="monospace" fill="#ffffff">process("hola",</text>
+  <text x="450" y="479" font-size="12" font-family="monospace" fill="#4fc3f7">  (t) => t.toUpperCase()</text>
+  <text x="651" y="479" font-size="12" font-family="monospace" fill="#ffffff">);</text>
+
+</svg>

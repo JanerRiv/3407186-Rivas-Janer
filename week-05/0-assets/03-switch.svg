@@ -1,0 +1,72 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, 'Open Sans', system-ui, sans-serif">
+  <!-- Fondo -->
+  <rect width="800" height="400" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="400" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">switch — Selección entre múltiples casos</text>
+  <text x="400" y="57" text-anchor="middle" font-size="13" fill="#a0a0c0">Semana 05 — Etapa 0</text>
+
+  <!-- ===== DIAGRAMA SWITCH ===== -->
+  <!-- Expresión evaluada -->
+  <rect x="290" y="72" width="220" height="38" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="2"/>
+  <text x="400" y="89" text-anchor="middle" font-size="13" fill="#F0DB4F">switch (expresión)</text>
+  <text x="400" y="104" text-anchor="middle" font-size="11" fill="#a0a0c0">evalúa el valor una vez</text>
+
+  <!-- Flecha principal -->
+  <line x1="400" y1="110" x2="400" y2="128" stroke="#a0a0c0" stroke-width="2"/>
+  <polygon points="400,135 394,125 406,125" fill="#a0a0c0"/>
+
+  <!-- Línea horizontal -->
+  <line x1="100" y1="135" x2="700" y2="135" stroke="#4fc3f7" stroke-width="1.5"/>
+
+  <!-- Case 1 -->
+  <line x1="155" y1="135" x2="155" y2="158" stroke="#a0a0c0" stroke-width="1.5"/>
+  <polygon points="155,165 149,155 161,155" fill="#a0a0c0"/>
+  <rect x="75" y="165" width="160" height="48" rx="6" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="155" y="185" text-anchor="middle" font-size="12" fill="#4fc3f7" font-weight="600">case "A":</text>
+  <text x="155" y="203" text-anchor="middle" font-size="11" fill="#a0a0c0">código + break</text>
+
+  <!-- Case 2 -->
+  <line x1="340" y1="135" x2="340" y2="158" stroke="#a0a0c0" stroke-width="1.5"/>
+  <polygon points="340,165 334,155 346,155" fill="#a0a0c0"/>
+  <rect x="260" y="165" width="160" height="48" rx="6" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="340" y="185" text-anchor="middle" font-size="12" fill="#ce93d8" font-weight="600">case "B":</text>
+  <text x="340" y="203" text-anchor="middle" font-size="11" fill="#a0a0c0">código + break</text>
+
+  <!-- Case 3 -->
+  <line x1="520" y1="135" x2="520" y2="158" stroke="#a0a0c0" stroke-width="1.5"/>
+  <polygon points="520,165 514,155 526,155" fill="#a0a0c0"/>
+  <rect x="440" y="165" width="160" height="48" rx="6" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="520" y="185" text-anchor="middle" font-size="12" fill="#81c784" font-weight="600">case "C":</text>
+  <text x="520" y="203" text-anchor="middle" font-size="11" fill="#a0a0c0">código + break</text>
+
+  <!-- Default -->
+  <line x1="685" y1="135" x2="685" y2="158" stroke="#a0a0c0" stroke-width="1.5"/>
+  <polygon points="685,165 679,155 691,155" fill="#a0a0c0"/>
+  <rect x="620" y="165" width="130" height="48" rx="6" fill="#2a1a1a" stroke="#e57373" stroke-width="1.5"/>
+  <text x="685" y="185" text-anchor="middle" font-size="12" fill="#e57373" font-weight="600">default:</text>
+  <text x="685" y="203" text-anchor="middle" font-size="11" fill="#a0a0c0">sin coincidencia</text>
+
+  <!-- ===== SECCIÓN: break vs fall-through ===== -->
+  <!-- Panel break -->
+  <rect x="60" y="232" width="320" height="120" rx="8" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="220" y="252" text-anchor="middle" font-size="13" font-weight="700" fill="#81c784">✔  Con break (correcto)</text>
+  <text x="80" y="274" font-size="12" fill="#a0a0c0" font-family="'Courier New', Courier, monospace">case "lunes":</text>
+  <text x="80" y="292" font-size="12" fill="#ffffff" font-family="'Courier New', Courier, monospace">  console.log("Lunes");</text>
+  <text x="80" y="310" font-size="12" fill="#F0DB4F" font-family="'Courier New', Courier, monospace">  break;</text>
+  <text x="80" y="328" font-size="11" fill="#81c784">← sale del switch, no cae al siguiente</text>
+  <text x="80" y="344" font-size="11" fill="#a0a0c0">→ Solo se ejecuta el caso que coincide</text>
+
+  <!-- Panel fall-through -->
+  <rect x="420" y="232" width="320" height="120" rx="8" fill="#16213e" stroke="#e57373" stroke-width="1.5"/>
+  <text x="580" y="252" text-anchor="middle" font-size="13" font-weight="700" fill="#e57373">⚠  Sin break (fall-through)</text>
+  <text x="440" y="274" font-size="12" fill="#a0a0c0" font-family="'Courier New', Courier, monospace">case "lunes":</text>
+  <text x="440" y="292" font-size="12" fill="#ffffff" font-family="'Courier New', Courier, monospace">  console.log("Lunes");</text>
+  <text x="440" y="310" font-size="12" fill="#e57373" font-family="'Courier New', Courier, monospace">  // sin break</text>
+  <text x="440" y="328" font-size="11" fill="#e57373">← continúa ejecutando el siguiente case</text>
+  <text x="440" y="344" font-size="11" fill="#a0a0c0">→ Útil solo si se hace intencionalmente</text>
+
+  <!-- Nota inferior -->
+  <rect x="60" y="362" width="680" height="24" rx="6" fill="#1a1a1a" stroke="#F0DB4F" stroke-width="1"/>
+  <text x="400" y="378" text-anchor="middle" font-size="12" fill="#F0DB4F">switch usa === internamente — "1" no coincide con 1</text>
+</svg>

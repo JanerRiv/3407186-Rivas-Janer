@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420">
+  <rect width="900" height="420" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="38" font-family="system-ui, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#f0db4f">const vs let vs var</text>
+  <text x="450" y="60" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle" fill="#888888">Variables modernas en JavaScript ES2023</text>
+
+  <!-- === CONST === -->
+  <rect x="40" y="80" width="250" height="300" rx="10" fill="#16213e" stroke="#f0db4f" stroke-width="2"/>
+  <rect x="40" y="80" width="250" height="44" rx="10" fill="#f0db4f"/>
+  <rect x="40" y="110" width="250" height="14" fill="#f0db4f"/>
+  <text x="165" y="108" font-family="system-ui, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#1a1a2e">const</text>
+
+  <text x="165" y="156" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#888888">PRIMERA OPCIÓN</text>
+  <text x="165" y="180" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle" fill="#e0e0e0">El valor NO cambia</text>
+
+  <rect x="60" y="198" width="210" height="28" rx="6" fill="#0d1117"/>
+  <text x="75" y="216" font-family="'Courier New', monospace" font-size="12" fill="#f0db4f">const price = 29900;</text>
+
+  <!-- ticks -->
+  <text x="60" y="252" font-family="system-ui, sans-serif" font-size="13" fill="#4caf50">✓  No reasignable</text>
+  <text x="60" y="272" font-family="system-ui, sans-serif" font-size="13" fill="#4caf50">✓  Block scope</text>
+  <text x="60" y="292" font-family="system-ui, sans-serif" font-size="13" fill="#4caf50">✓  Requiere valor inicial</text>
+  <text x="60" y="312" font-family="system-ui, sans-serif" font-size="13" fill="#4caf50">✓  Intención clara</text>
+  <text x="60" y="346" font-family="system-ui, sans-serif" font-size="12" fill="#f0db4f">Usar siempre por defecto</text>
+
+  <!-- === LET === -->
+  <rect x="325" y="80" width="250" height="300" rx="10" fill="#16213e" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="325" y="80" width="250" height="44" rx="10" fill="#4fc3f7"/>
+  <rect x="325" y="110" width="250" height="14" fill="#4fc3f7"/>
+  <text x="450" y="108" font-family="system-ui, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#1a1a2e">let</text>
+
+  <text x="450" y="156" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#888888">SOLO CUANDO CAMBIA</text>
+  <text x="450" y="180" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle" fill="#e0e0e0">El valor SÍ puede cambiar</text>
+
+  <rect x="345" y="198" width="210" height="28" rx="6" fill="#0d1117"/>
+  <text x="360" y="216" font-family="'Courier New', monospace" font-size="12" fill="#4fc3f7">let count = 0;</text>
+
+  <text x="345" y="252" font-family="system-ui, sans-serif" font-size="13" fill="#4caf50">✓  Reasignable</text>
+  <text x="345" y="272" font-family="system-ui, sans-serif" font-size="13" fill="#4caf50">✓  Block scope</text>
+  <text x="345" y="292" font-family="system-ui, sans-serif" font-size="13" fill="#4caf50">✓  Puede declararse sin valor</text>
+  <text x="345" y="312" font-family="system-ui, sans-serif" font-size="13" fill="#888888">–  Sin intención tan clara</text>
+  <text x="345" y="346" font-family="system-ui, sans-serif" font-size="12" fill="#4fc3f7">Solo si el valor cambia</text>
+
+  <!-- === VAR === -->
+  <rect x="610" y="80" width="250" height="300" rx="10" fill="#16213e" stroke="#ef5350" stroke-width="2"/>
+  <rect x="610" y="80" width="250" height="44" rx="10" fill="#ef5350"/>
+  <rect x="610" y="110" width="250" height="14" fill="#ef5350"/>
+  <text x="735" y="108" font-family="system-ui, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#ffffff">var</text>
+
+  <text x="735" y="156" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#888888">OBSOLETO — EVITAR</text>
+  <text x="735" y="180" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle" fill="#e0e0e0">Comportamiento confuso</text>
+
+  <rect x="630" y="198" width="210" height="28" rx="6" fill="#0d1117"/>
+  <text x="645" y="216" font-family="'Courier New', monospace" font-size="12" fill="#ef5350">var old = 'pasado';</text>
+
+  <text x="630" y="252" font-family="system-ui, sans-serif" font-size="13" fill="#ef5350">✗  Function scope (confuso)</text>
+  <text x="630" y="272" font-family="system-ui, sans-serif" font-size="13" fill="#ef5350">✗  Hoisting impredecible</text>
+  <text x="630" y="292" font-family="system-ui, sans-serif" font-size="13" fill="#ef5350">✗  Permite redeclaración</text>
+  <text x="630" y="312" font-family="system-ui, sans-serif" font-size="13" fill="#ef5350">✗  Fuente de bugs</text>
+  <text x="630" y="346" font-family="system-ui, sans-serif" font-size="12" fill="#ef5350">Nunca usar en ES2023</text>
+
+  <!-- Regla práctica -->
+  <rect x="40" y="395" width="820" height="16" rx="4" fill="#0d1117"/>
+  <text x="450" y="407" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#888888">Regla: empieza con const → si necesitas reasignar, cámbia a let → nunca usar var</text>
+</svg>

@@ -1,0 +1,113 @@
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="900" height="500" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">Arrow Functions  ⇒</text>
+  <line x1="60" y1="50" x2="840" y2="50" stroke="#F0DB4F" stroke-width="1" opacity="0.3"/>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel superior: EVOLUCIÓN DE SINTAXIS -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="65" width="820" height="150" rx="8" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="450" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#4fc3f7">EVOLUCIÓN DE SINTAXIS — misma función, 3 formas</text>
+
+  <!-- columna 1: clásica -->
+  <rect x="55" y="100" width="250" height="100" rx="4" fill="#1a1a2e"/>
+  <text x="180" y="118" text-anchor="middle" font-size="11" fill="#888">función clásica</text>
+  <text x="70" y="140" font-size="12" font-family="monospace" fill="#ce93d8">function</text>
+  <text x="136" y="140" font-size="12" font-family="monospace" fill="#F0DB4F"> double</text>
+  <text x="185" y="140" font-size="12" font-family="monospace" fill="#ffffff">(n) {</text>
+  <text x="70" y="160" font-size="12" font-family="monospace" fill="#ffd54f">  return</text>
+  <text x="125" y="160" font-size="12" font-family="monospace" fill="#ffffff"> n * 2;</text>
+  <text x="70" y="180" font-size="12" font-family="monospace" fill="#ffffff">}</text>
+
+  <!-- Arrow: →  -->
+  <text x="320" y="155" font-size="22" fill="#888">→</text>
+
+  <!-- columna 2: arrow con bloque -->
+  <rect x="355" y="100" width="245" height="100" rx="4" fill="#1a1a2e"/>
+  <text x="477" y="118" text-anchor="middle" font-size="11" fill="#888">arrow con {}</text>
+  <text x="370" y="140" font-size="12" font-family="monospace" fill="#ce93d8">const</text>
+  <text x="411" y="140" font-size="12" font-family="monospace" fill="#F0DB4F"> double</text>
+  <text x="460" y="140" font-size="12" font-family="monospace" fill="#ffffff"> = (n) </text>
+  <text x="510" y="140" font-size="12" font-family="monospace" fill="#4fc3f7">=></text>
+  <text x="530" y="140" font-size="12" font-family="monospace" fill="#ffffff"> {</text>
+  <text x="370" y="160" font-size="12" font-family="monospace" fill="#ffd54f">  return</text>
+  <text x="425" y="160" font-size="12" font-family="monospace" fill="#ffffff"> n * 2;</text>
+  <text x="370" y="180" font-size="12" font-family="monospace" fill="#ffffff">};</text>
+
+  <!-- Arrow: → -->
+  <text x="615" y="155" font-size="22" fill="#888">→</text>
+
+  <!-- columna 3: arrow implícita -->
+  <rect x="645" y="100" width="200" height="100" rx="4" fill="#1a1a2e" stroke="#81c784" stroke-width="1"/>
+  <text x="745" y="118" text-anchor="middle" font-size="11" fill="#81c784">✅ implícita (ES2023)</text>
+  <text x="660" y="155" font-size="12" font-family="monospace" fill="#ce93d8">const</text>
+  <text x="701" y="155" font-size="12" font-family="monospace" fill="#F0DB4F"> double</text>
+  <text x="750" y="155" font-size="12" font-family="monospace" fill="#ffffff"> =</text>
+  <text x="765" y="155" font-size="12" font-family="monospace" fill="#ffffff"> (n) </text>
+  <text x="800" y="155" font-size="12" font-family="monospace" fill="#4fc3f7">=></text>
+  <text x="660" y="175" font-size="12" font-family="monospace" fill="#ffffff">  n * 2;</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel medio izquierdo: PARÉNTESIS EN PARAMS -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="235" width="390" height="145" rx="8" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="235" y="258" text-anchor="middle" font-size="13" font-weight="700" fill="#ce93d8">PARÉNTESIS EN PARÁMETROS</text>
+
+  <text x="60" y="285" font-size="12" font-family="monospace" fill="#888">// Sin params  → () obligatorio</text>
+  <text x="60" y="305" font-size="12" font-family="monospace" fill="#ffffff">const greet = </text>
+  <text x="156" y="305" font-size="12" font-family="monospace" fill="#4fc3f7">()</text>
+  <text x="172" y="305" font-size="12" font-family="monospace" fill="#ffffff"> => "¡Hola!";</text>
+
+  <text x="60" y="330" font-size="12" font-family="monospace" fill="#888">// 1 param  → () recomendado</text>
+  <text x="60" y="350" font-size="12" font-family="monospace" fill="#ffffff">const shout = </text>
+  <text x="158" y="350" font-size="12" font-family="monospace" fill="#4fc3f7">(text)</text>
+  <text x="198" y="350" font-size="12" font-family="monospace" fill="#ffffff"> => text.toUpperCase();</text>
+
+  <text x="60" y="370" font-size="12" font-family="monospace" fill="#888">// 2+ params → () obligatorio</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Panel medio derecho: RETORNO DE OBJETO -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="460" y="235" width="400" height="145" rx="8" fill="#16213e" stroke="#ffd54f" stroke-width="1.5"/>
+  <text x="660" y="258" text-anchor="middle" font-size="13" font-weight="700" fill="#ffd54f">RETORNO DE OBJETO LITERAL</text>
+
+  <!-- MAL -->
+  <rect x="475" y="268" width="175" height="50" rx="4" fill="#e5737322" stroke="#e57373" stroke-width="1"/>
+  <text x="562" y="283" text-anchor="middle" font-size="11" fill="#e57373">❌ Error de sintaxis</text>
+  <text x="480" y="303" font-size="12" font-family="monospace" fill="#ffffff">(n, a) => { n, a }</text>
+
+  <!-- BIEN -->
+  <rect x="665" y="268" width="180" height="50" rx="4" fill="#81c78422" stroke="#81c784" stroke-width="1"/>
+  <text x="755" y="283" text-anchor="middle" font-size="11" fill="#81c784">✅ Correcto</text>
+  <text x="670" y="303" font-size="12" font-family="monospace" fill="#ffffff">(n, a) => ({ n, a })</text>
+
+  <text x="660" y="345" text-anchor="middle" font-size="11" fill="#cccccc">Envuelve el objeto en () para evitar</text>
+  <text x="660" y="363" text-anchor="middle" font-size="11" fill="#cccccc">que las {} se interpreten como cuerpo</text>
+
+  <!-- ══════════════════════════════════════════ -->
+  <!-- Footer: tabla comparativa -->
+  <!-- ══════════════════════════════════════════ -->
+  <rect x="40" y="398" width="820" height="88" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="1"/>
+
+  <!-- Encabezados -->
+  <text x="190" y="420" text-anchor="middle" font-size="12" font-weight="700" fill="#F0DB4F">Característica</text>
+  <text x="430" y="420" text-anchor="middle" font-size="12" font-weight="700" fill="#ce93d8">function</text>
+  <text x="660" y="420" text-anchor="middle" font-size="12" font-weight="700" fill="#81c784">Arrow function</text>
+
+  <line x1="60" y1="428" x2="840" y2="428" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+
+  <text x="190" y="448" text-anchor="middle" font-size="11" fill="#cccccc">Hoisting (uso antes de declarar)</text>
+  <text x="430" y="448" text-anchor="middle" font-size="11" fill="#ce93d8">✅ Sí</text>
+  <text x="660" y="448" text-anchor="middle" font-size="11" fill="#888">❌ No</text>
+
+  <line x1="60" y1="456" x2="840" y2="456" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+
+  <text x="190" y="476" text-anchor="middle" font-size="11" fill="#cccccc">Uso en ES2023 (recomendado)</text>
+  <text x="430" y="476" text-anchor="middle" font-size="11" fill="#888">Solo si necesitas hoisting</text>
+  <text x="660" y="476" text-anchor="middle" font-size="11" fill="#81c784">✅ Por defecto</text>
+
+</svg>

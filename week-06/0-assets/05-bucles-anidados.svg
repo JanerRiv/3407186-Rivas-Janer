@@ -1,0 +1,105 @@
+<svg width="820" height="430" viewBox="0 0 820 430" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, Open Sans, system-ui, sans-serif">
+
+  <!-- Fondo -->
+  <rect width="820" height="430" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="410" y="36" text-anchor="middle" font-size="18" font-weight="700" fill="#F0DB4F">Bucles Anidados · Contador · Acumulador</text>
+
+  <!-- ══════════════════════════════════ -->
+  <!-- Panel izquierdo: bucles anidados  -->
+  <!-- ══════════════════════════════════ -->
+  <rect x="30" y="54" width="360" height="356" rx="10" fill="#16213e" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="210" y="76" text-anchor="middle" font-size="13" font-weight="600" fill="#ce93d8">Bucles Anidados (3 × 3 = 9 ejecuciones)</text>
+
+  <!-- Código -->
+  <rect x="48" y="85" width="324" height="90" rx="6" fill="#0d1117"/>
+  <text x="63" y="106" font-size="12" font-family="monospace" fill="#ce93d8">for (</text>
+  <text x="98" y="106" font-size="12" font-family="monospace" fill="#4fc3f7">let row = 1; row &lt;= 3; row++</text>
+  <text x="63" y="106" font-size="0" fill="none"/>
+  <text x="290" y="106" font-size="12" font-family="monospace" fill="#ce93d8">) {</text>
+  <text x="63" y="124" font-size="12" font-family="monospace" fill="#ce93d8">  for (</text>
+  <text x="105" y="124" font-size="12" font-family="monospace" fill="#81c784">let col = 1; col &lt;= 3; col++</text>
+  <text x="330" y="124" font-size="12" font-family="monospace" fill="#ce93d8">) {</text>
+  <text x="63" y="142" font-size="12" font-family="monospace" fill="#ffd54f">    console.log(row, col);</text>
+  <text x="63" y="160" font-size="12" font-family="monospace" fill="#ce93d8">  }</text>
+  <text x="63" y="175" font-size="12" font-family="monospace" fill="#ce93d8">}</text>
+
+  <!-- Tabla de salida -->
+  <text x="210" y="202" text-anchor="middle" font-size="12" fill="#94a3b8">Salida generada:</text>
+
+  <!-- Grid 3x3 -->
+  <!-- Encabezados col -->
+  <text x="130" y="224" text-anchor="middle" font-size="11" fill="#81c784">col 1</text>
+  <text x="210" y="224" text-anchor="middle" font-size="11" fill="#81c784">col 2</text>
+  <text x="290" y="224" text-anchor="middle" font-size="11" fill="#81c784">col 3</text>
+
+  <!-- Fila 1 -->
+  <text x="68" y="248" text-anchor="middle" font-size="11" fill="#4fc3f7">fila 1</text>
+  <rect x="100" y="232" width="60" height="26" rx="4" fill="#1e2a3e" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="130" y="249" text-anchor="middle" font-size="12" fill="#e2e8f0">1, 1</text>
+  <rect x="180" y="232" width="60" height="26" rx="4" fill="#1e2a3e" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="210" y="249" text-anchor="middle" font-size="12" fill="#e2e8f0">1, 2</text>
+  <rect x="260" y="232" width="60" height="26" rx="4" fill="#1e2a3e" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="290" y="249" text-anchor="middle" font-size="12" fill="#e2e8f0">1, 3</text>
+
+  <!-- Fila 2 -->
+  <text x="68" y="278" text-anchor="middle" font-size="11" fill="#4fc3f7">fila 2</text>
+  <rect x="100" y="262" width="60" height="26" rx="4" fill="#1e2a3e" stroke="#81c784" stroke-width="1"/>
+  <text x="130" y="279" text-anchor="middle" font-size="12" fill="#e2e8f0">2, 1</text>
+  <rect x="180" y="262" width="60" height="26" rx="4" fill="#1e2a3e" stroke="#81c784" stroke-width="1"/>
+  <text x="210" y="279" text-anchor="middle" font-size="12" fill="#e2e8f0">2, 2</text>
+  <rect x="260" y="262" width="60" height="26" rx="4" fill="#1e2a3e" stroke="#81c784" stroke-width="1"/>
+  <text x="290" y="279" text-anchor="middle" font-size="12" fill="#e2e8f0">2, 3</text>
+
+  <!-- Fila 3 -->
+  <text x="68" y="308" text-anchor="middle" font-size="11" fill="#4fc3f7">fila 3</text>
+  <rect x="100" y="292" width="60" height="26" rx="4" fill="#1e2a3e" stroke="#ce93d8" stroke-width="1"/>
+  <text x="130" y="309" text-anchor="middle" font-size="12" fill="#e2e8f0">3, 1</text>
+  <rect x="180" y="292" width="60" height="26" rx="4" fill="#1e2a3e" stroke="#ce93d8" stroke-width="1"/>
+  <text x="210" y="309" text-anchor="middle" font-size="12" fill="#e2e8f0">3, 2</text>
+  <rect x="260" y="292" width="60" height="26" rx="4" fill="#1e2a3e" stroke="#ce93d8" stroke-width="1"/>
+  <text x="290" y="309" text-anchor="middle" font-size="12" fill="#e2e8f0">3, 3</text>
+
+  <!-- Total ejecuciones -->
+  <rect x="48" y="330" width="324" height="30" rx="6" fill="#3d3100"/>
+  <text x="210" y="349" text-anchor="middle" font-size="12" fill="#ffd54f">3 (outer) × 3 (inner) = 9 ejecuciones totales</text>
+
+  <!-- Nota -->
+  <text x="210" y="390" text-anchor="middle" font-size="11" fill="#94a3b8">break en el inner solo sale del inner</text>
+  <text x="210" y="406" text-anchor="middle" font-size="11" fill="#94a3b8">El outer sigue su ejecución</text>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Panel derecho: contador + acumulador    -->
+  <!-- ════════════════════════════════════════ -->
+  <rect x="408" y="54" width="382" height="356" rx="10" fill="#16213e" stroke="#81c784" stroke-width="1.5"/>
+  <text x="599" y="76" text-anchor="middle" font-size="13" font-weight="600" fill="#81c784">Contador y Acumulador</text>
+
+  <!-- Patrón contador -->
+  <rect x="424" y="86" width="350" height="110" rx="6" fill="#0d1117" stroke="#4fc3f7" stroke-width="1"/>
+  <text x="599" y="106" text-anchor="middle" font-size="11" font-weight="600" fill="#4fc3f7">PATRÓN CONTADOR</text>
+  <text x="436" y="124" font-size="12" font-family="monospace" fill="#e57373">let count = 0;</text>
+  <text x="436" y="142" font-size="12" font-family="monospace" fill="#81c784">for (const item of items) {</text>
+  <text x="436" y="160" font-size="12" font-family="monospace" fill="#ffd54f">  if (condición) count++;</text>
+  <text x="436" y="178" font-size="12" font-family="monospace" fill="#81c784">}</text>
+  <text x="436" y="192" font-size="12" font-family="monospace" fill="#94a3b8">// usar count aquí</text>
+
+  <!-- Flecha -->
+  <text x="599" y="220" text-anchor="middle" font-size="11" fill="#94a3b8">Inicializar ANTES · Incrementar DENTRO · Usar DESPUÉS</text>
+
+  <!-- Patrón acumulador -->
+  <rect x="424" y="228" width="350" height="110" rx="6" fill="#0d1117" stroke="#ce93d8" stroke-width="1"/>
+  <text x="599" y="248" text-anchor="middle" font-size="11" font-weight="600" fill="#ce93d8">PATRÓN ACUMULADOR</text>
+  <text x="436" y="266" font-size="12" font-family="monospace" fill="#e57373">let total = 0;</text>
+  <text x="436" y="284" font-size="12" font-family="monospace" fill="#81c784">for (const value of values) {</text>
+  <text x="436" y="302" font-size="12" font-family="monospace" fill="#ffd54f">  total += value;</text>
+  <text x="436" y="320" font-size="12" font-family="monospace" fill="#81c784">}</text>
+  <text x="436" y="334" font-size="12" font-family="monospace" fill="#94a3b8">// usar total aquí</text>
+
+  <!-- Máximo / mínimo -->
+  <rect x="424" y="350" width="350" height="46" rx="6" fill="#1e2a4e" stroke="#ffd54f" stroke-width="1"/>
+  <text x="424" y="367" font-size="0" fill="none"/>
+  <text x="599" y="369" text-anchor="middle" font-size="11" font-weight="600" fill="#ffd54f">MÁXIMO / MÍNIMO</text>
+  <text x="436" y="386" font-size="12" font-family="monospace" fill="#e2e8f0">let max = arr[0];  → if (v &gt; max) max = v;</text>
+
+</svg>

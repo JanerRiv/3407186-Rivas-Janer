@@ -1,0 +1,71 @@
+<svg width="800" height="420" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Roboto, 'Open Sans', system-ui, sans-serif">
+  <!-- Fondo principal -->
+  <rect width="800" height="420" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="400" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#F0DB4F">Condicionales: if / else if / else</text>
+
+  <!-- Subtítulo -->
+  <text x="400" y="62" text-anchor="middle" font-size="13" fill="#a0a0c0">Semana 05 — Etapa 0</text>
+
+  <!-- ===== DIAGRAMA DE FLUJO ===== -->
+  <!-- Inicio -->
+  <rect x="310" y="85" width="180" height="40" rx="8" fill="#16213e" stroke="#F0DB4F" stroke-width="2"/>
+  <text x="400" y="110" text-anchor="middle" font-size="13" fill="#F0DB4F" font-weight="600">inicio</text>
+
+  <!-- Flecha inicio → if -->
+  <line x1="400" y1="125" x2="400" y2="148" stroke="#a0a0c0" stroke-width="2"/>
+  <polygon points="400,155 394,145 406,145" fill="#a0a0c0"/>
+
+  <!-- Rombo: condición if -->
+  <polygon points="400,155 500,198 400,241 300,198" fill="#16213e" stroke="#4fc3f7" stroke-width="2"/>
+  <text x="400" y="194" text-anchor="middle" font-size="12" fill="#4fc3f7">condición 1</text>
+  <text x="400" y="210" text-anchor="middle" font-size="11" fill="#a0a0c0">if (...)</text>
+
+  <!-- Flecha SI (derecha) -->
+  <line x1="500" y1="198" x2="590" y2="198" stroke="#a0a0c0" stroke-width="2"/>
+  <polygon points="597,198 587,192 587,204" fill="#a0a0c0"/>
+  <text x="545" y="188" text-anchor="middle" font-size="11" fill="#81c784">✔ true</text>
+  <!-- Bloque SI -->
+  <rect x="597" y="175" width="120" height="46" rx="6" fill="#1a2a1a" stroke="#81c784" stroke-width="1.5"/>
+  <text x="657" y="197" text-anchor="middle" font-size="12" fill="#81c784">Bloque if</text>
+  <text x="657" y="213" text-anchor="middle" font-size="11" fill="#a0a0c0">se ejecuta</text>
+
+  <!-- Flecha NO (abajo) -->
+  <line x1="400" y1="241" x2="400" y2="264" stroke="#a0a0c0" stroke-width="2"/>
+  <polygon points="400,271 394,261 406,261" fill="#a0a0c0"/>
+  <text x="352" y="260" text-anchor="middle" font-size="11" fill="#e57373">✘ false</text>
+
+  <!-- Rombo: condición else if -->
+  <polygon points="400,271 500,314 400,357 300,314" fill="#16213e" stroke="#ce93d8" stroke-width="2"/>
+  <text x="400" y="310" text-anchor="middle" font-size="12" fill="#ce93d8">condición 2</text>
+  <text x="400" y="326" text-anchor="middle" font-size="11" fill="#a0a0c0">else if (...)</text>
+
+  <!-- Flecha SI else if (derecha) -->
+  <line x1="500" y1="314" x2="590" y2="314" stroke="#a0a0c0" stroke-width="2"/>
+  <polygon points="597,314 587,308 587,320" fill="#a0a0c0"/>
+  <text x="545" y="304" text-anchor="middle" font-size="11" fill="#81c784">✔ true</text>
+  <!-- Bloque else if -->
+  <rect x="597" y="291" width="120" height="46" rx="6" fill="#1a1a2a" stroke="#ce93d8" stroke-width="1.5"/>
+  <text x="657" y="313" text-anchor="middle" font-size="12" fill="#ce93d8">Bloque else if</text>
+  <text x="657" y="329" text-anchor="middle" font-size="11" fill="#a0a0c0">se ejecuta</text>
+
+  <!-- Flecha NO (abajo) -->
+  <line x1="400" y1="357" x2="400" y2="380" stroke="#a0a0c0" stroke-width="2"/>
+  <polygon points="400,387 394,377 406,377" fill="#a0a0c0"/>
+  <text x="352" y="376" text-anchor="middle" font-size="11" fill="#e57373">✘ false</text>
+
+  <!-- Bloque else -->
+  <rect x="310" y="387" width="180" height="24" rx="6" fill="#2a1a1a" stroke="#e57373" stroke-width="1.5"/>
+  <text x="400" y="403" text-anchor="middle" font-size="12" fill="#e57373">Bloque else — se ejecuta</text>
+
+  <!-- Leyenda colores -->
+  <rect x="30" y="170" width="14" height="14" rx="3" fill="#4fc3f7"/>
+  <text x="50" y="182" font-size="12" fill="#a0a0c0">condición evaluada</text>
+  <rect x="30" y="194" width="14" height="14" rx="3" fill="#81c784"/>
+  <text x="50" y="206" font-size="12" fill="#a0a0c0">bloque verdadero</text>
+  <rect x="30" y="218" width="14" height="14" rx="3" fill="#e57373"/>
+  <text x="50" y="230" font-size="12" fill="#a0a0c0">rama false / else</text>
+  <rect x="30" y="242" width="14" height="14" rx="3" fill="#ce93d8"/>
+  <text x="50" y="254" font-size="12" fill="#a0a0c0">else if opcional</text>
+</svg>

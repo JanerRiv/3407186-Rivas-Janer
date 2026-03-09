@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380">
+  <rect width="900" height="380" fill="#1a1a2e"/>
+
+  <!-- Título -->
+  <text x="450" y="36" font-family="system-ui, sans-serif" font-size="22" font-weight="700" text-anchor="middle" fill="#f0db4f">Los Cinco Tipos Primitivos</text>
+  <text x="450" y="57" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle" fill="#888888">JavaScript ES2023 — typeof</text>
+
+  <!-- string -->
+  <rect x="30" y="80" width="158" height="160" rx="10" fill="#16213e" stroke="#f0db4f" stroke-width="1.5"/>
+  <text x="109" y="108" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#f0db4f">string</text>
+  <text x="109" y="127" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#888888">Texto</text>
+  <rect x="46" y="140" width="126" height="26" rx="5" fill="#0d1117"/>
+  <text x="109" y="157" font-family="'Courier New', monospace" font-size="11" text-anchor="middle" fill="#f0db4f">'Hola, mundo'</text>
+  <rect x="46" y="172" width="126" height="26" rx="5" fill="#0d1117"/>
+  <text x="109" y="189" font-family="'Courier New', monospace" font-size="11" text-anchor="middle" fill="#f0db4f">"JavaScript"</text>
+  <text x="109" y="224" font-family="'Courier New', monospace" font-size="11" text-anchor="middle" fill="#888888">typeof → "string"</text>
+
+  <!-- number -->
+  <rect x="208" y="80" width="158" height="160" rx="10" fill="#16213e" stroke="#4fc3f7" stroke-width="1.5"/>
+  <text x="287" y="108" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#4fc3f7">number</text>
+  <text x="287" y="127" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#888888">Enteros y decimales</text>
+  <rect x="224" y="140" width="126" height="26" rx="5" fill="#0d1117"/>
+  <text x="287" y="157" font-family="'Courier New', monospace" font-size="11" text-anchor="middle" fill="#4fc3f7">42    3.14    -10</text>
+  <rect x="224" y="172" width="126" height="26" rx="5" fill="#0d1117"/>
+  <text x="287" y="189" font-family="'Courier New', monospace" font-size="11" text-anchor="middle" fill="#4fc3f7">1_000_000</text>
+  <text x="287" y="224" font-family="'Courier New', monospace" font-size="11" text-anchor="middle" fill="#888888">typeof → "number"</text>
+
+  <!-- boolean -->
+  <rect x="386" y="80" width="158" height="160" rx="10" fill="#16213e" stroke="#ab47bc" stroke-width="1.5"/>
+  <text x="465" y="108" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#ab47bc">boolean</text>
+  <text x="465" y="127" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#888888">Solo dos valores</text>
+  <rect x="402" y="140" width="126" height="26" rx="5" fill="#0d1117"/>
+  <text x="465" y="157" font-family="'Courier New', monospace" font-size="11" text-anchor="middle" fill="#ab47bc">true</text>
+  <rect x="402" y="172" width="126" height="26" rx="5" fill="#0d1117"/>
+  <text x="465" y="189" font-family="'Courier New', monospace" font-size="11" text-anchor="middle" fill="#ab47bc">false</text>
+  <text x="465" y="224" font-family="'Courier New', monospace" font-size="11" text-anchor="middle" fill="#888888">typeof → "boolean"</text>
+
+  <!-- null -->
+  <rect x="564" y="80" width="158" height="160" rx="10" fill="#16213e" stroke="#ff7043" stroke-width="1.5"/>
+  <text x="643" y="108" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#ff7043">null</text>
+  <text x="643" y="127" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#888888">Ausencia intencional</text>
+  <rect x="580" y="140" width="126" height="26" rx="5" fill="#0d1117"/>
+  <text x="643" y="157" font-family="'Courier New', monospace" font-size="11" text-anchor="middle" fill="#ff7043">null</text>
+  <rect x="580" y="172" width="126" height="26" rx="5" fill="#2a0a00"/>
+  <text x="643" y="183" font-family="'Courier New', monospace" font-size="10" text-anchor="middle" fill="#ff7043">typeof → "object" ⚠️</text>
+  <text x="643" y="193" font-family="system-ui, sans-serif" font-size="9" text-anchor="middle" fill="#888888">bug histórico</text>
+  <text x="643" y="224" font-family="'Courier New', monospace" font-size="11" text-anchor="middle" fill="#888888">null === null → true</text>
+
+  <!-- undefined -->
+  <rect x="742" y="80" width="128" height="160" rx="10" fill="#16213e" stroke="#78909c" stroke-width="1.5"/>
+  <text x="806" y="108" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#78909c">undefined</text>
+  <text x="806" y="127" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#888888">Sin inicializar</text>
+  <rect x="758" y="140" width="96" height="26" rx="5" fill="#0d1117"/>
+  <text x="806" y="157" font-family="'Courier New', monospace" font-size="10" text-anchor="middle" fill="#78909c">let x; → x</text>
+  <rect x="758" y="172" width="96" height="26" rx="5" fill="#0d1117"/>
+  <text x="806" y="189" font-family="'Courier New', monospace" font-size="10" text-anchor="middle" fill="#78909c">undefined</text>
+  <text x="806" y="224" font-family="'Courier New', monospace" font-size="10" text-anchor="middle" fill="#888888">typeof →"undefined"</text>
+
+  <!-- null vs undefined -->
+  <rect x="30" y="262" width="840" height="50" rx="8" fill="#16213e" stroke="#2a2a4a" stroke-width="1"/>
+  <text x="450" y="282" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#e0e0e0">null vs undefined</text>
+  <text x="450" y="302" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" fill="#888888">null = el programador lo pone intencionalmente   ·   undefined = JavaScript lo asigna cuando no hay valor</text>
+
+  <!-- Línea divisoria footer -->
+  <line x1="30" y1="328" x2="870" y2="328" stroke="#2a2a4a" stroke-width="1"/>
+  <text x="450" y="348" font-family="'Courier New', monospace" font-size="12" text-anchor="middle" fill="#888888">null == undefined → true   ·   null === undefined → false</text>
+  <text x="450" y="366" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle" fill="#555">Usa siempre === para comparaciones precisas</text>
+</svg>
