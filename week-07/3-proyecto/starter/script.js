@@ -1,13 +1,19 @@
+// ============================================
+// PROYECTO SEMANA 07 — Librería de Funciones
+// Dominio: Remesas Internacionales
+// ============================================
 
+"use strict"; // activa el modo estricto — mejores errores
 
 // ============================================
 // SECCIÓN 1: Constantes y datos del dominio
 // ============================================
 
+// TODO: Define las constantes globales de tu dominio
 const DOMAIN_NAME = "TransWorld Remesas";
 const VALUE_LABEL = "monto USD";
-const CURRENCY = "USD";
 
+// TODO: Define un array con al menos 5 elementos de tu dominio.
 const items = [
   { id: 1, name: "Remesa USA - Juan", category: "familiar", value: 500, active: true },
   { id: 2, name: "Remesa España - Empresa", category: "negocio", value: 1200, active: true },
@@ -21,16 +27,15 @@ const items = [
 // ============================================
 
 const formatItem = (item) => {
-  return ` ${item.name} [${item.category}] — ${CURRENCY} ${item.value}`;
+  return `${item.name} [${item.category}] — USD ${item.value}`;
 };
 
 // ============================================
 // SECCIÓN 3: Función de cálculo (pura)
 // ============================================
 
-// calcular monto con comisión del 5%
-const calculateValue = (baseValue, feeRate = 0.05) => {
-  return +(baseValue * (1 - feeRate)).toFixed(2);
+const calculateValue = (baseValue, factor = 0.95) => {
+  return +(baseValue * factor).toFixed(2);
 };
 
 // ============================================
@@ -45,7 +50,7 @@ const isValid = (item) => {
 // SECCIÓN 5: Función con parámetro por defecto
 // ============================================
 
-const formatWithDefault = (value, label = VALUE_LABEL, currency = CURRENCY) => {
+const formatWithDefault = (value, label = VALUE_LABEL, currency = "USD") => {
   return `${label}: ${currency} ${value}`;
 };
 
@@ -58,11 +63,12 @@ console.log(`   REPORTE — ${DOMAIN_NAME}`);
 console.log(`${"═".repeat(45)}`);
 
 if (items.length === 0) {
-  console.log("\n  No hay elementos.");
+  console.log("\nNo hay elementos. Agrega datos en la Sección 1.");
 } else {
   // --- Listado ---
-  console.log("\n Listado:");
+  console.log("\nListado:");
   let lineNumber = 1;
+
   for (const item of items) {
     console.log(`  ${lineNumber}. ${formatItem(item)}`);
     lineNumber++;
@@ -70,17 +76,20 @@ if (items.length === 0) {
 
   // --- Validación ---
   let validCount = 0;
+
   for (const item of items) {
     if (isValid(item)) {
       validCount++;
     }
   }
-  console.log(`\n✅ Remesas válidas: ${validCount} / ${items.length}`);
+
+  console.log(`\nElementos válidos: ${validCount} / ${items.length}`);
 
   // --- Cálculo ---
   let totalValue = 0;
+
   for (const item of items) {
-    totalValue += calculateValue(item.value);
+    totalValue += calculateValue(item.value ?? 0);
   }
 
   console.log(formatWithDefault(totalValue, `Total ${VALUE_LABEL}`));
