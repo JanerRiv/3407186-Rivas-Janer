@@ -60,11 +60,11 @@ const formatItem = (item) => {
 // ============================================
 
 console.log(`\n${"=".repeat(50)}`);
-console.log(`📦 GESTIÓN DE ${DOMAIN_NAME.toUpperCase()}`);
+console.log(` GESTIÓN DE ${DOMAIN_NAME.toUpperCase()}`);
 console.log(`${"=".repeat(50)}\n`);
 
 // Estado inicial
-console.log(`📋 Inventario inicial (${items.length} ${VALUE_LABEL}):`);
+console.log(` Inventario inicial (${items.length} ${VALUE_LABEL}):`);
 items.forEach((item) => {
   console.log(`  ${formatItem(item)}`);
 });
@@ -121,5 +121,5 @@ const activeCount = getActiveItems().length;
 console.log(`Activos: ${activeCount} | Inactivos: ${items.length - activeCount}`);
 
 console.log(`\n${"=".repeat(50)}`);
-console.log("✅ Reporte completado");
+console.log(" Reporte completado");
 console.log(`${"=".repeat(50)}\n`);
