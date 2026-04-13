@@ -1,5 +1,5 @@
 // ============================================
-// SEMANA 08 — PROYECTO: Gestión de Inventario
+// PROYECTO SEMANA 08 — PROYECTO: Gestión de Inventario
 // Dominio: Remesas Internacionales
 // ============================================
 
@@ -13,16 +13,16 @@
 // CONFIGURACIÓN DEL DOMINIO
 // ============================================
 
-const DOMAIN_NAME = "TransWorld Remesas";
-const VALUE_LABEL = "remesas";
+const DOMAIN_NAME = "TransWorld Remesas"; // constante que guarda el nombre del sistema
+const VALUE_LABEL = "remesas"; // etiqueta para mostrar el tipo de elementos
 
 // ============================================
 // 1. ARRAY INICIAL
 // ============================================
 
-// TODO: Definir el array con mínimo 5 objetos del dominio
+// arreglo principal que almacena todas las remesas como objetos
 const items = [
-  { id: 1, name: "Remesa USA - Juan", amount: 500, active: true, country: "USA", type: "familiar" },
+  { id: 1, name: "Remesa USA - Juan", amount: 500, active: true, country: "USA", type: "familiar" }, // objeto con datos de una remesa
   { id: 2, name: "Remesa España - Empresa", amount: 1200, active: true, country: "España", type: "negocio" },
   { id: 3, name: "Remesa Chile - Ana", amount: 300, active: false, country: "Chile", type: "personal" },
   { id: 4, name: "Remesa Canadá - Carlos", amount: 700, active: true, country: "Canadá", type: "familiar" },
@@ -36,132 +36,128 @@ const items = [
 /**
  * Agrega un nuevo elemento al inventario
  */
-const addItem = (newItem) => {
-  // TODO: usar push
-  items.push(newItem);
-  console.log(`Agregado: ${newItem.name}`);
+const addItem = (newItem) => { // función que recibe una nueva remesa
+  items.push(newItem); // agrega esa remesa al FINAL del array
+  console.log(`Agregado: ${newItem.name}`); // muestra mensaje confirmando el nombre agregado
 };
 
 /**
  * Elimina el último elemento
  */
-const removeLastItem = () => {
-  // TODO: usar pop
-  const removed = items.pop();
-  console.log(`Eliminado último: ${removed?.name}`);
-  return removed;
+const removeLastItem = () => { // función sin parámetros
+  const removed = items.pop(); // elimina el último elemento del array y lo guarda
+  console.log(`Eliminado último: ${removed?.name}`); // muestra el nombre del eliminado (?. evita error si no existe)
+  return removed; // retorna el elemento eliminado
 };
 
 /**
  * Agrega elemento prioritario
  */
-const addPriorityItem = (priorityItem) => {
-  // TODO: usar unshift
-  items.unshift(priorityItem);
-  console.log(`Prioritario agregado: ${priorityItem.name}`);
+const addPriorityItem = (priorityItem) => { // recibe un elemento prioritario
+  items.unshift(priorityItem); // lo agrega al INICIO del array
+  console.log(`Prioritario agregado: ${priorityItem.name}`); // muestra mensaje
 };
 
 /**
  * Elimina por índice
  */
-const removeByIndex = (index) => {
-  // TODO: usar splice
-  const removed = items.splice(index, 1);
-  console.log(`Eliminado por índice: ${removed[0]?.name}`);
+const removeByIndex = (index) => { // recibe la posición
+  const removed = items.splice(index, 1); // elimina 1 elemento en esa posición
+  console.log(`Eliminado por índice: ${removed[0]?.name}`); // muestra el nombre eliminado
 };
 
 /**
  * Obtener activos
  */
-const getActiveItems = () => {
-  // TODO: usar filter
-  return items.filter(item => item.active === true);
+const getActiveItems = () => { 
+  return items.filter(item => item.active === true); // filtra y devuelve solo los que estén activos
 };
 
 /**
  * Buscar por nombre
  */
-const findByName = (name) => {
-  // TODO: usar find
-  return items.find(item => item.name === name);
+const findByName = (name) => { 
+  return items.find(item => item.name === name); // busca el primer elemento que coincida con ese nombre
 };
 
 /**
  * Formatear elemento
  */
-const formatItem = (item) => {
-  // TODO: personalizar salida
-  return `[${item.id}] ${item.name} — ${item.type} — USD ${item.amount} — ${item.country}`;
+const formatItem = (item) => { 
+  return `[${item.id}] ${item.name} — ${item.type} — USD ${item.amount} — ${item.country}`; 
+  // construye un texto con los datos del objeto
 };
 
 // ============================================
 // 3. REPORTE
 // ============================================
 
-console.log(`\n${"=".repeat(50)}`);
-console.log(`GESTIÓN DE ${DOMAIN_NAME.toUpperCase()}`);
-console.log(`${"=".repeat(50)}\n`);
+console.log(`\n${"=".repeat(50)}`); // imprime una línea separadora
+console.log(`GESTIÓN DE ${DOMAIN_NAME.toUpperCase()}`); // muestra el título en mayúsculas
+console.log(`${"=".repeat(50)}\n`); // otra línea separadora
 
 // Estado inicial
-console.log(`Inventario inicial (${items.length} ${VALUE_LABEL}):`);
+console.log(`Inventario inicial (${items.length} ${VALUE_LABEL}):`); // muestra cantidad de elementos
 
-// TODO: usar forEach
+// recorre el array y muestra cada elemento formateado
 items.forEach((item) => {
-  console.log(`  ${formatItem(item)}`);
+  console.log(`  ${formatItem(item)}`); // imprime cada remesa usando la función de formato
 });
 
-console.log("\n--- Operaciones de mutación ---\n");
+console.log("\n--- Operaciones de mutación ---\n"); // separador de sección
 
-// TODO: agregar nuevo elemento
+// agrega una nueva remesa al final
 addItem({ id: 6, name: "Remesa Perú - Luis", amount: 400, active: true, country: "Perú", type: "personal" });
 
-// TODO: agregar prioritario
+// agrega una remesa al inicio (prioritaria)
 addPriorityItem({ id: 0, name: "Remesa Urgente - VIP", amount: 2000, active: true, country: "USA", type: "negocio" });
 
-// TODO: eliminar del medio
+// elimina un elemento en la posición 2
 removeByIndex(2);
 
-// TODO: eliminar último
+// elimina el último elemento del array
 removeLastItem();
 
 console.log("\n--- Inventario después de mutaciones ---\n");
 
-// TODO: mostrar actualizado
+// muestra el array actualizado después de cambios
 items.forEach((item) => {
   console.log(`  ${formatItem(item)}`);
 });
 
 console.log("\n--- Búsqueda y filtrado ---\n");
 
-// TODO: búsqueda
+// busca una remesa específica por nombre
 const found = findByName("Remesa USA - Juan");
-console.log("Resultado búsqueda:", found);
+console.log("Resultado búsqueda:", found); // muestra el objeto encontrado
 
-// TODO: activos
+// obtiene las remesas activas
 const activeItems = getActiveItems();
-console.log(`Activos: ${activeItems.length}`);
+console.log(`Activos: ${activeItems.length}`); // muestra cuántos hay
 
-// TODO: snapshot con spread
+// crea una copia del array sin modificar el original usando spread (...)
 const snapshot = [...items, { id: 99, name: "Simulación", amount: 999, active: false, country: "Test", type: "test" }];
-console.log("Snapshot creado:", snapshot.length);
+console.log("Snapshot creado:", snapshot.length); // muestra tamaño del nuevo array
 
 console.log("\n--- Transformación con map ---\n");
 
-// TODO: nombres
+// crea un array solo con los nombres
 const names = items.map(item => item.name);
 console.log("Nombres:", names);
 
-// TODO: transformación numérica
+// crea un array con los montos aplicando comisión del 5%
 const amountsWithFee = items.map(item => (item.amount * 0.95).toFixed(2));
 console.log("Montos con comisión:", amountsWithFee);
 
 console.log("\n--- Resumen final ---\n");
 
+// muestra total de elementos
 console.log(`Total en inventario: ${items.length} ${VALUE_LABEL}`);
 
+// cuenta activos e inactivos
 const activeCount = getActiveItems().length;
 console.log(`Activos: ${activeCount} | Inactivos: ${items.length - activeCount}`);
 
 console.log(`\n${"=".repeat(50)}`);
-console.log("Reporte completado");
+console.log("Reporte completado"); // mensaje final
 console.log(`${"=".repeat(50)}\n`);
