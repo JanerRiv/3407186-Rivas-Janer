@@ -94,15 +94,15 @@ console.log("=== Condiciones lógicas ===");
 const isSystemOnline = true;
 const amountToSend = 500;
 
-// condición con &&
+// condición con && ambos deben cumplirse
 const canProcessRemittance = isSystemOnline && amountToSend > 0;
 console.log("¿Se puede procesar la remesa?", canProcessRemittance);
 
-// condición con ||
+// condición con ||es un o tal alguna de las debe cumplirse 
 const qualifiesForPriority = amountToSend >= 1000 || isSystemOnline;
 console.log("¿Califica para prioridad?", qualifiesForPriority);
 
-// negación
+// negación 
 const systemOffline = !isSystemOnline;
 console.log("¿El sistema está fuera de línea?", systemOffline);
 
