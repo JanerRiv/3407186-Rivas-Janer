@@ -19,11 +19,11 @@
 
 // TODO: Reemplaza con el nombre de tu dominio
 // Ejemplos: "Biblioteca", "Farmacia", "Gimnasio", "Restaurante"
-const DOMAIN_NAME = "Sistema de Remesas";
+const DOMAIN_NAME = "Sistema de Remesas"; // Define el nombre del sistema
 
 // TODO: Reemplaza con el nombre del tipo de elemento
 // Ejemplos: "libros", "medicamentos", "equipos", "platillos"
-const VALUE_LABEL = "remesas";
+const VALUE_LABEL = "remesas"; // Define cómo se llaman los elementos
 
 // ============================================
 // DATOS DEL CATÁLOGO
@@ -38,12 +38,12 @@ const VALUE_LABEL = "remesas";
 //   - Al menos 1 propiedad opcional (no todos los objetos la tienen)
 
 const items = [
-  { id: 1, name: "Remesa USA - Juan", amount: 500, active: true, type: "familiar", fee: 25 },
-  { id: 2, name: "Remesa España - Empresa", amount: 1200, active: true, type: "negocio" },
-  { id: 3, name: "Remesa Chile - Ana", amount: 300, active: false, type: "personal", note: "pendiente" },
-  { id: 4, name: "Remesa Canadá - Carlos", amount: 700, active: true, type: "familiar" },
-  { id: 5, name: "Remesa México - Tienda", amount: 950, active: true, type: "negocio", fee: 40 },
-  { id: 6, name: "Remesa Perú - Luis", amount: 400, active: false, type: "personal" }
+  { id: 1, name: "Remesa USA - Juan", amount: 500, active: true, type: "familiar", fee: 25 }, // Objeto con comisión
+  { id: 2, name: "Remesa España - Empresa", amount: 1200, active: true, type: "negocio" }, // Objeto sin opcional
+  { id: 3, name: "Remesa Chile - Ana", amount: 300, active: false, type: "personal", note: "pendiente" }, // Tiene nota
+  { id: 4, name: "Remesa Canadá - Carlos", amount: 700, active: true, type: "familiar" }, // Activa
+  { id: 5, name: "Remesa México - Tienda", amount: 950, active: true, type: "negocio", fee: 40 }, // Con fee
+  { id: 6, name: "Remesa Perú - Luis", amount: 400, active: false, type: "personal" } // Inactiva
 ];
 
 // ============================================
@@ -55,11 +55,11 @@ const items = [
  * @param {Object} item - El objeto a inspeccionar
  */
 const inspectItem = (item) => {
-  console.log(`\n📋 Detalle de: ${item.name}`);
+  console.log(`\n📋 Detalle de: ${item.name}`); // Imprime el nombre del objeto
   // TODO: Usar Object.entries() + forEach para imprimir cada clave y valor
   // Alinear las claves con padEnd para formato de tabla
-  Object.entries(item).forEach(([key, value]) => {
-    console.log(key.padEnd(15), ":", value);
+  Object.entries(item).forEach(([key, value]) => { // Recorre cada propiedad
+    console.log(key.padEnd(15), ":", value); // Muestra clave alineada y valor
   });
 };
 
@@ -71,18 +71,18 @@ const calculateStats = (numericKey) => {
   // TODO: Usar Object.values() sobre el array de valores numéricos
   // Calcular: total, promedio, máximo, mínimo
   // Imprimir los resultados
-  const values = items.map(item => item[numericKey]);
+  const values = items.map(item => item[numericKey]); // Extrae los valores numéricos
 
-  const total = values.reduce((a, b) => a + b, 0);
-  const promedio = total / values.length;
-  const max = Math.max(...values);
-  const min = Math.min(...values);
+  const total = values.reduce((a, b) => a + b, 0); // Suma todos los valores
+  const promedio = total / values.length; // Calcula el promedio
+  const max = Math.max(...values); // Encuentra el máximo
+  const min = Math.min(...values); // Encuentra el mínimo
 
-  console.log("\nEstadísticas:");
-  console.log("Total:", total);
-  console.log("Promedio:", promedio);
-  console.log("Máximo:", max);
-  console.log("Mínimo:", min);
+  console.log("\nEstadísticas:"); // Título
+  console.log("Total:", total); // Muestra suma total
+  console.log("Promedio:", promedio); // Muestra promedio
+  console.log("Máximo:", max); // Muestra valor mayor
+  console.log("Mínimo:", min); // Muestra valor menor
 };
 
 // ============================================
@@ -95,19 +95,19 @@ const calculateStats = (numericKey) => {
  * @param {Object} item - El objeto a mostrar
  */
 const showWithOptionals = (item) => {
-  console.log(`\n→ ${item.name}`);
+  console.log(`\n→ ${item.name}`); // Muestra el nombre
   // TODO: Mostrar propiedades básicas siempre
   // TODO: Usar Object.hasOwn() para verificar propiedades opcionales
   //       y mostrarlas solo si existen
-  console.log("Monto:", item.amount);
-  console.log("Activa:", item.active);
+  console.log("Monto:", item.amount); // Imprime el monto
+  console.log("Activa:", item.active); // Imprime si está activa
 
-  if (Object.hasOwn(item, "fee")) {
-    console.log("Comisión:", item.fee);
+  if (Object.hasOwn(item, "fee")) { // Verifica si tiene fee
+    console.log("Comisión:", item.fee); // Muestra la comisión
   }
 
-  if (Object.hasOwn(item, "note")) {
-    console.log("Nota:", item.note);
+  if (Object.hasOwn(item, "note")) { // Verifica si tiene nota
+    console.log("Nota:", item.note); // Muestra la nota
   }
 };
 
@@ -120,12 +120,12 @@ const showWithOptionals = (item) => {
  * @param {Object} item - El objeto a recorrer
  */
 const printAllProperties = (item) => {
-  console.log(`\n Propiedades de "${item.name}":`);
+  console.log(`\n Propiedades de "${item.name}":`); // Título
   // TODO: Usar for...in + Object.hasOwn() para recorrer propiedades propias
   // Imprimir cada clave y su valor
-  for (const key in item) {
-    if (Object.hasOwn(item, key)) {
-      console.log(key, ":", item[key]);
+  for (const key in item) { // Recorre claves
+    if (Object.hasOwn(item, key)) { // Verifica propiedad propia
+      console.log(key, ":", item[key]); // Imprime clave y valor
     }
   }
 };
@@ -143,7 +143,7 @@ const printAllProperties = (item) => {
 const updateItem = (item, changes) => {
   // TODO: Retornar un nuevo objeto usando spread + changes
   // El objeto original NO debe modificarse
-  return { ...item, ...changes };
+  return { ...item, ...changes }; // Crea copia y aplica cambios
 };
 
 // ============================================
@@ -156,7 +156,7 @@ const updateItem = (item, changes) => {
  */
 const getAvailable = () => {
   // TODO: Usar filter() por la propiedad booleana de tu dominio
-  return items.filter(item => item.active);
+  return items.filter(item => item.active); // Filtra activos
 };
 
 /**
@@ -166,7 +166,7 @@ const getAvailable = () => {
  */
 const findById = (id) => {
   // TODO: Usar find()
-  return items.find(item => item.id === id);
+  return items.find(item => item.id === id); // Busca por id
 };
 
 /**
@@ -177,9 +177,9 @@ const addCalculatedProp = () => {
   // TODO: Usar map() para agregar una propiedad calculada
   // Ejemplos: priceWithTax, totalPages, formattedDuration
   // Recuerda: item => ({ ...item, newProp: calculation })
-  return items.map(item => ({
-    ...item,
-    netAmount: item.amount - (item.fee || 0)
+  return items.map(item => ({ // Recorre cada objeto
+    ...item, // Copia el objeto
+    netAmount: item.amount - (item.fee || 0) // Calcula monto neto
   }));
 };
 
@@ -191,8 +191,8 @@ const addCalculatedProp = () => {
 const sortByNumericProp = (ascending = true) => {
   // TODO: Usar [...items].sort() con un comparador
   // No mutar el array original
-  return [...items].sort((a, b) =>
-    ascending ? a.amount - b.amount : b.amount - a.amount
+  return [...items].sort((a, b) => // Copia y ordena
+    ascending ? a.amount - b.amount : b.amount - a.amount // Ordena según parámetro
   );
 };
 
@@ -204,58 +204,58 @@ const sortByNumericProp = (ascending = true) => {
  * Imprime el reporte completo del catálogo
  */
 const buildReport = () => {
-  console.log("\n" + "=".repeat(50));
-  console.log(` CATÁLOGO: ${DOMAIN_NAME.toUpperCase()}`);
-  console.log("=".repeat(50));
+  console.log("\n" + "=".repeat(50)); // Línea decorativa
+  console.log(` CATÁLOGO: ${DOMAIN_NAME.toUpperCase()}`); // Título
+  console.log("=".repeat(50)); // Línea
 
   // TODO: Mostrar cantidad total de elementos
-  console.log("Total:", items.length);
+  console.log("Total:", items.length); // Cantidad total
 
   // TODO: Mostrar cuántos están disponibles/activos
-  console.log("Activas:", getAvailable().length);
+  console.log("Activas:", getAvailable().length); // Cantidad activas
 
   // TODO: Mostrar estadísticas de la propiedad numérica principal
-  calculateStats("amount");
+  calculateStats("amount"); // Llama estadísticas
 
   // TODO: Listar todos los elementos ordenados (usar sortByNumericProp)
-  sortByNumericProp().forEach(item => {
-    console.log(item.name, "-", item.amount);
+  sortByNumericProp().forEach(item => { // Recorre ordenados
+    console.log(item.name, "-", item.amount); // Imprime datos
   });
 
   // TODO: Mostrar el elemento con el valor numérico más alto y más bajo
-  const ordenados = sortByNumericProp();
-  console.log("Mayor:", ordenados[ordenados.length - 1].name);
-  console.log("Menor:", ordenados[0].name);
+  const ordenados = sortByNumericProp(); // Guarda ordenados
+  console.log("Mayor:", ordenados[ordenados.length - 1].name); // Mayor
+  console.log("Menor:", ordenados[0].name); // Menor
 
-  console.log("=".repeat(50));
+  console.log("=".repeat(50)); // Línea final
 };
 
 // ============================================
 // EJECUCIÓN PRINCIPAL
 // ============================================
 
-console.log(`\n🚀 Iniciando catálogo: ${DOMAIN_NAME}`);
-console.log(`   Total de ${VALUE_LABEL}: ${items.length}`);
+console.log(`\n🚀 Iniciando catálogo: ${DOMAIN_NAME}`); // Inicio
+console.log(`   Total de ${VALUE_LABEL}: ${items.length}`); // Total
 
 // TODO: Llamar a las funciones implementadas en este orden:
-inspectItem(items[0]);
+inspectItem(items[0]); // Inspecciona primer elemento
 
-calculateStats("amount");
+calculateStats("amount"); // Calcula estadísticas
 
-items.forEach(showWithOptionals);
+items.forEach(showWithOptionals); // Muestra todos
 
-printAllProperties(items[0]);
+printAllProperties(items[0]); // Propiedades del primero
 
-const updated = updateItem(items[0], { amount: 600 });
-console.log(updated);
+const updated = updateItem(items[0], { amount: 600 }); // Actualiza
+console.log(updated); // Muestra actualizado
 
-console.log(getAvailable());
+console.log(getAvailable()); // Muestra activos
 
-console.log(findById(2));
-console.log(findById(99));
+console.log(findById(2)); // Busca existente
+console.log(findById(99)); // Busca inexistente
 
-console.log(addCalculatedProp());
+console.log(addCalculatedProp()); // Muestra con cálculo
 
-console.log(sortByNumericProp());
+console.log(sortByNumericProp()); // Muestra ordenados
 
-buildReport();
+buildReport(); // Genera reporte
